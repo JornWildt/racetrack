@@ -19,7 +19,7 @@ BlueStar = {
 };
 
 TeamCount = 2;
-TeamNames = ["52", null];
+TeamNames = ["52", "56"];
 TeamMarkers = [null, null];
 TeamIcons = [GoldStar, BlueStar];
 
@@ -62,6 +62,14 @@ function Initialize() {
 }
 
 
+function ClearScores() {
+  for (var i = 0; i < TeamCount; ++i) {
+    document.getElementById("teamScore" + i).innerHTML = 0;
+    TeamScore[i] = 0;
+  }
+}
+
+
 /*********************************************************************************
   Animation handling
 *********************************************************************************/
@@ -71,8 +79,11 @@ function UpdateTimeFrame() {
     return;
   UpdateDisplay();
   TimeFrame = (TimeFrame + 1) % CheckpointHeatMaps.length;
+  if (TimeFrame == 0)
+    ClearScores();
 }
 
+TeamScore = [0,0];
 
 function UpdateDisplay() {
   HeatMap.setData(CheckpointHeatMaps[TimeFrame].map);
@@ -88,11 +99,12 @@ function UpdateDisplay() {
       var teamScore = null;
       for (var j = 0; j < teamTimes.length; ++j) {
         var location = teamTimes[j].location;
-        if (teamTimes[j].end < TimeFrame && teamScores.hasOwnProperty(location))
+        if (teamTimes[j].end < TimeFrame && teamScores.hasOwnProperty(location) && teamScores[location].end > TeamScore[i])
           teamScore = teamScores[location].end;
         if (teamTimes[j].start <= TimeFrame && TimeFrame <= teamTimes[j].end) {
           teamLocation = CheckpointLocations[location];
-          teamScore = (teamScores.hasOwnProperty(location) ? teamScores[location].start : teamScore);
+          if (teamScores.hasOwnProperty(location) && teamScores[location].start > TeamScore[i])
+            teamScore = teamScores[location].start;
           TeamMarkers[i].setPosition(teamLocation);
           break;
         }
@@ -100,8 +112,10 @@ function UpdateDisplay() {
       var newMap = (teamLocation != null ? map : null);
       if (TeamMarkers[i].getMap() != newMap)
         TeamMarkers[i].setMap(newMap);
-      if (teamScore != null)
+      if (teamScore != null) {
+        TeamScore[i] = teamScore;
         document.getElementById("teamScore" + i).innerHTML = teamScore;
+      }
     }
   }
 }
@@ -116,13 +130,19 @@ function OnTogglePauseClicked() {
 }
 
 function OnTeamSelectorChanged(selector) {
-  TeamNames[selector.id.substring(12)] = selector.value;
+  var teamIndex = selector.id.substring(12);
+  TeamScore[teamIndex] = 0;
+  document.getElementById("teamScore" + teamIndex).innerHTML = 0;
+  TeamNames[teamIndex] = selector.value;
 }
 
 function OnForward() {
   TimeFrame += 10;
-  if (TimeFrame >= CheckpointHeatMaps.length)
+  if (TimeFrame >= CheckpointHeatMaps.length) {
     TimeFrame = 0;
+    for (var i = 0; i < TeamCount; ++i)
+      TeamScore[i] = 0;
+  }
   UpdateDisplay();
 }
 
@@ -130,6 +150,7 @@ function OnBackward() {
   TimeFrame -= 10;
   // FIXME: use more specific variable for "length"
   if (TimeFrame < 0)
-    TimeFrame = CheckpointHeatMaps.length + TimeFrame; 
+    TimeFrame = CheckpointHeatMaps.length + TimeFrame;
+  ClearScores();
   UpdateDisplay();
 }
