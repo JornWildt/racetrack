@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Alligatorløb 2013 minut for minut</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="CheckpointAnimation.css" />
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization"></script>
+    <script type="text/javascript"src="CheckpointData.js"></script>
+    <script type="text/javascript" src="CheckpointAnimation.js"></script>
+  </head>
+  <body onload="Initialize()">
+    <div id="headerpanel">
+      Fremhæv sjak A (gul): <select id="teamSelector0" onchange="OnTeamSelectorChanged(this)"></select>
+      Fremhæv sjak B (blå): <select id="teamSelector1" onchange="OnTeamSelectorChanged(this)"></select>
+      &nbsp;&nbsp;&nbsp;
+      <button onclick="OnBackward()">&lt;&lt;</button>
+      <button onclick="OnTogglePauseClicked()" id="pauseButton">Start</button>
+      <button onclick="OnForward()">&gt;&gt;</button>
+      <div id="infolink"><a href="http://www.alligator.dk">Alligatorløbet 2013</a></div>
+    </div>
+    <div id="map_canvas"></div>
+    <div id="clockpanel"><span id="time">00-00-0000 00:00:00</span></div>
+  </body>
+</html>

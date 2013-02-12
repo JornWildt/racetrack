@@ -1,0 +1,45 @@
+﻿html { height: 100% }
+
+body { height: 100%; margin: 0; padding: 0 }
+
+select, button, body
+{
+  font-size: 14pt;
+  font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+}
+
+#map_canvas { height: 90% }
+
+#headerpanel
+{
+  height: 6%;
+  width: 100%;
+  padding: 5px;
+  background-color: White;
+  border-bottom: 2px solid black;
+  font-size: 14pt;
+  font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+}
+
+#clockpanel
+{
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  border: 1px solid black;
+  color: Red;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: ‘Courier New’, Courier, monospace;
+  left: 20px;
+  bottom: 20px;
+  width: 280px;
+  height: 25px;
+  text-align: center;
+}
+
+#infolink
+{
+  float: right;
+  margin-right: 10px;
+}

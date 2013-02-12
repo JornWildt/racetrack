@@ -1,0 +1,7 @@
+bin/
+obj/
+*.user
+*.suo
+TestResult.xml
+*.VisualState.xml
+packages/
