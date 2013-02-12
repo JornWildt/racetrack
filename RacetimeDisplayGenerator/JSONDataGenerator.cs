@@ -98,14 +98,26 @@ namespace RacetimeDisplayGenerator
         w.WriteLine("  \"{0}\": {{", team);
         w.WriteLine("    name: \"{0}\",", team);
         w.WriteLine("    times: [");
-        foreach (CheckpointTimeRegistration reg in indecies.TeamAndTimeInterval[team])
+        foreach (CheckpointTimeRegistration reg in indecies.TeamAndTimeInterval[team].OrderBy(r => r.StartTimeFrame))
         {
           w.WriteLine("      {{ start: {0}, end: {1}, location: \"{2}\" }},",
             Configuration.ConvertInputTimeFrameToOutput(reg.StartTimeFrame.Value), 
             Configuration.ConvertInputTimeFrameToOutput(reg.EndTimeFrame.Value), 
             reg.Checkpoint);
         }
-        w.WriteLine("    ]");
+        w.WriteLine("    ],");
+        w.WriteLine("    scores: {");
+        if (indecies.TeamTeamScore.ContainsKey(team))
+        {
+          foreach (TeamScoreRegistration reg in indecies.TeamTeamScore[team])
+          {
+            w.WriteLine("      \"{0}\": {{ start:{1}, end:{2} }},",
+              reg.Checkpoint,
+              reg.Start,
+              reg.End);
+          }
+        }
+        w.WriteLine("    }");
         w.Write("  }");
         if (team != lastTeam)
           w.WriteLine(",");

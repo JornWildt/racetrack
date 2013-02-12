@@ -15,6 +15,11 @@ namespace RacetimeDisplayGenerator
   }
 
 
+  public class TeamTeamScoreIndex : Dictionary<string, List<TeamScoreRegistration>>
+  {
+  }
+
+
   public class TeamAndTimeFrameIndex : Dictionary<string, Dictionary<int, CheckpointTimeRegistration>>
   {
   }
@@ -33,6 +38,7 @@ namespace RacetimeDisplayGenerator
 
     public CheckpointAndTimeFrameIndex CheckpointAndTimeFrame { get; set; }
     public TimeFrameAndCheckpointIndex TimeFrameAndCheckpoint { get; set; }
+    public TeamTeamScoreIndex TeamTeamScore { get; set; }
     public TeamAndTimeFrameIndex TeamAndTimeFrame { get; set; }
     public TeamAndTimeIntervalIndex TeamAndTimeInterval { get; set; }
 
@@ -40,6 +46,7 @@ namespace RacetimeDisplayGenerator
     {
       CheckpointAndTimeFrame = new CheckpointAndTimeFrameIndex();
       TimeFrameAndCheckpoint = new TimeFrameAndCheckpointIndex();
+      TeamTeamScore = new TeamTeamScoreIndex();
       TeamAndTimeFrame = new TeamAndTimeFrameIndex();
       TeamAndTimeInterval = new TeamAndTimeIntervalIndex();
     }

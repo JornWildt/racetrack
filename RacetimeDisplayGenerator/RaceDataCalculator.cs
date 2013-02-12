@@ -7,10 +7,10 @@ namespace RacetimeDisplayGenerator
 {
   public class RaceDataCalculator
   {
-    public RaceData CalcuateData(IList<CheckpointTimeRegistration> checkpointTimes)
+    public RaceData CalcuateData(IList<CheckpointTimeRegistration> checkpointTimes, IList<TeamScoreRegistration> teamScores)
     {
       RaceData data = new RaceData();
-      InitializeRegistrations(data, checkpointTimes);
+      InitializeRegistrations(data, checkpointTimes, teamScores);
 
       foreach (CheckpointTimeRegistration reg in checkpointTimes)
       {
@@ -20,11 +20,28 @@ namespace RacetimeDisplayGenerator
         UpdateTeamAndTimeIntervalIndex(data.TeamAndTimeInterval, reg);
       }
 
+      foreach (TeamScoreRegistration reg in teamScores)
+      {
+        UpdateTeamAndCheckpointTeamScoreIndex(data.TeamTeamScore, reg);
+      }
+
+      foreach (string team in data.TeamTeamScore.Keys)
+      {
+        int score = 0;
+        foreach (TeamScoreRegistration reg in data.TeamTeamScore[team])
+        {
+          score += reg.Fixed.Value;
+          reg.Start = score;
+          score += reg.Work.Value;
+          reg.End = score;
+        }
+      }
+
       return data;
     }
 
-    
-    private void InitializeRegistrations(RaceData data, IList<CheckpointTimeRegistration> checkpointTimes)
+
+    private void InitializeRegistrations(RaceData data, IList<CheckpointTimeRegistration> checkpointTimes, IList<TeamScoreRegistration> teamScores)
     {
       DateTime? start = null;
       DateTime? end = null;
@@ -56,6 +73,14 @@ namespace RacetimeDisplayGenerator
           reg.StartTimeFrame = data.ConvertDateTimeToTimeFrame(reg.Start.Value);
         if (reg.End != null)
           reg.EndTimeFrame = data.ConvertDateTimeToTimeFrame(reg.End.Value);
+      }
+
+      foreach (TeamScoreRegistration reg in teamScores)
+      {
+        if (reg.Fixed == null)
+          reg.Fixed = 0;
+        if (reg.Work == null)
+          reg.Work = 0;
       }
     }
 
@@ -129,6 +154,15 @@ namespace RacetimeDisplayGenerator
 
         index[reg.Team].Add(reg);
       }
+    }
+
+
+    private void UpdateTeamAndCheckpointTeamScoreIndex(TeamTeamScoreIndex index, TeamScoreRegistration reg)
+    {
+      if (!index.ContainsKey(reg.Team))
+        index[reg.Team] = new List<TeamScoreRegistration>();
+
+      index[reg.Team].Add(reg);
     }
 
 

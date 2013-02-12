@@ -80,19 +80,28 @@ function UpdateDisplay() {
 
   for (var i = 0; i < TeamCount; ++i) {
     if (TeamNames[i] != null) {
-      var teamTimes = TeamTracks[TeamNames[i]].times;
+      var teamName = TeamNames[i];
+      var teamTimes = TeamTracks[teamName].times;
+      var teamScores = TeamTracks[teamName].scores;
       var found = false;
+      var teamLocation;
+      var teamScore = null;
       for (var j = 0; j < teamTimes.length; ++j) {
+        var location = teamTimes[j].location;
+        if (teamTimes[j].end < TimeFrame && teamScores.hasOwnProperty(location))
+          teamScore = teamScores[location].end;
         if (teamTimes[j].start <= TimeFrame && TimeFrame <= teamTimes[j].end) {
-          var teamLocation = CheckpointLocations[teamTimes[j].location];
+          teamLocation = CheckpointLocations[location];
+          teamScore = (teamScores.hasOwnProperty(location) ? teamScores[location].start : teamScore);
           TeamMarkers[i].setPosition(teamLocation);
-          found = true;
           break;
         }
       }
-      var newMap = (found ? map : null);
+      var newMap = (teamLocation != null ? map : null);
       if (TeamMarkers[i].getMap() != newMap)
         TeamMarkers[i].setMap(newMap);
+      if (teamScore != null)
+        document.getElementById("teamScore" + i).innerHTML = teamScore;
     }
   }
 }

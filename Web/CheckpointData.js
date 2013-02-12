@@ -1587,1152 +1587,1324 @@ TeamTracks = {
   "1": {
     name: "1",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 9, end: 10, location: "Post 1" },
       { start: 17, end: 28, location: "Post 2" },
       { start: 44, end: 57, location: "Post 3" },
+      { start: 60, end: 61, location: "Post 3½" },
       { start: 69, end: 96, location: "Post 4" },
       { start: 105, end: 114, location: "Post 5" },
       { start: 124, end: 133, location: "Post 6" },
       { start: 141, end: 142, location: "Post 7" },
+      { start: 155, end: 164, location: "Post 7" },
       { start: 172, end: 185, location: "Post 9" },
       { start: 196, end: 202, location: "Post 10" },
       { start: 216, end: 217, location: "Post 11" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 60, end: 61, location: "Post 3½" },
-      { start: 155, end: 164, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "2": {
     name: "2",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 9, end: 11, location: "Post 1" },
       { start: 19, end: 32, location: "Post 2" },
       { start: 49, end: 60, location: "Post 3" },
+      { start: 65, end: 66, location: "Post 3½" },
       { start: 76, end: 86, location: "Post 4" },
       { start: 99, end: 106, location: "Post 5" },
       { start: 122, end: 128, location: "Post 6" },
       { start: 144, end: 144, location: "Post 7" },
       { start: 153, end: 153, location: "Post 8" },
-      { start: 188, end: 193, location: "Post 9" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 65, end: 66, location: "Post 3½" },
       { start: 159, end: 165, location: "Post 7" },
-    ]
+      { start: 188, end: 193, location: "Post 9" },
+    ],
+    scores: {
+    }
   },
   "3": {
     name: "3",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 18, end: 20, location: "Post 1" },
       { start: 32, end: 43, location: "Post 2" },
       { start: 62, end: 72, location: "Post 3" },
+      { start: 78, end: 79, location: "Post 3½" },
       { start: 92, end: 98, location: "Post 4" },
       { start: 112, end: 120, location: "Post 5" },
       { start: 133, end: 137, location: "Post 6" },
       { start: 154, end: 155, location: "Post 7" },
+      { start: 159, end: 160, location: "Post 7" },
       { start: 175, end: 182, location: "Post 9" },
       { start: 195, end: 200, location: "Post 10" },
       { start: 211, end: 212, location: "Post 11" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 78, end: 79, location: "Post 3½" },
-      { start: 159, end: 160, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "4": {
     name: "4",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 10, end: 13, location: "Post 1" },
       { start: 22, end: 33, location: "Post 2" },
       { start: 55, end: 64, location: "Post 3" },
+      { start: 69, end: 70, location: "Post 3½" },
       { start: 83, end: 98, location: "Post 4" },
       { start: 119, end: 129, location: "Post 5" },
       { start: 169, end: 173, location: "Post 9" },
       { start: 192, end: 199, location: "Post 10" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 69, end: 70, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "5": {
     name: "5",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 8, end: 10, location: "Post 1" },
       { start: 17, end: 25, location: "Post 2" },
       { start: 39, end: 45, location: "Post 3" },
+      { start: 48, end: 49, location: "Post 3½" },
       { start: 59, end: 75, location: "Post 4" },
       { start: 87, end: 96, location: "Post 5" },
       { start: 121, end: 135, location: "Post 6" },
       { start: 144, end: 145, location: "Post 7" },
+      { start: 156, end: 157, location: "Post 7" },
       { start: 167, end: 174, location: "Post 9" },
       { start: 185, end: 194, location: "Post 10" },
       { start: 204, end: 205, location: "Post 11" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 48, end: 49, location: "Post 3½" },
-      { start: 156, end: 157, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "6": {
     name: "6",
     times: [
+      { start: 0, end: 0, location: "Start" },
       { start: 8, end: 10, location: "Post 1" },
       { start: 19, end: 28, location: "Post 2" },
       { start: 48, end: 58, location: "Post 3" },
+      { start: 63, end: 64, location: "Post 3½" },
       { start: 74, end: 94, location: "Post 4" },
       { start: 105, end: 119, location: "Post 5" },
       { start: 127, end: 136, location: "Post 6" },
       { start: 154, end: 155, location: "Post 7" },
+      { start: 156, end: 157, location: "Post 7" },
       { start: 167, end: 179, location: "Post 9" },
       { start: 193, end: 203, location: "Post 10" },
-      { start: 0, end: 0, location: "Start" },
-      { start: 63, end: 64, location: "Post 3½" },
-      { start: 156, end: 157, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "7": {
     name: "7",
     times: [
+      { start: 0, end: 0, location: "Start" },
       { start: 7, end: 9, location: "Post 1" },
       { start: 17, end: 26, location: "Post 2" },
       { start: 41, end: 49, location: "Post 3" },
+      { start: 54, end: 55, location: "Post 3½" },
       { start: 64, end: 89, location: "Post 4" },
       { start: 101, end: 111, location: "Post 5" },
       { start: 121, end: 135, location: "Post 6" },
       { start: 150, end: 151, location: "Post 7" },
+      { start: 156, end: 157, location: "Post 7" },
       { start: 167, end: 175, location: "Post 9" },
       { start: 188, end: 197, location: "Post 10" },
-      { start: 0, end: 0, location: "Start" },
-      { start: 54, end: 55, location: "Post 3½" },
-      { start: 156, end: 157, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "8": {
     name: "8",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 11, end: 13, location: "Post 1" },
       { start: 25, end: 31, location: "Post 2" },
       { start: 49, end: 61, location: "Post 3" },
+      { start: 68, end: 69, location: "Post 3½" },
       { start: 79, end: 94, location: "Post 4" },
       { start: 106, end: 119, location: "Post 5" },
       { start: 133, end: 140, location: "Post 6" },
       { start: 150, end: 151, location: "Post 7" },
+      { start: 156, end: 157, location: "Post 7" },
       { start: 169, end: 176, location: "Post 9" },
       { start: 189, end: 201, location: "Post 10" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 68, end: 69, location: "Post 3½" },
-      { start: 156, end: 157, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "9": {
     name: "9",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 8, end: 9, location: "Post 1" },
       { start: 16, end: 25, location: "Post 2" },
       { start: 39, end: 46, location: "Post 3" },
+      { start: 49, end: 50, location: "Post 3½" },
       { start: 62, end: 84, location: "Post 4" },
       { start: 92, end: 104, location: "Post 5" },
       { start: 113, end: 125, location: "Post 6" },
       { start: 136, end: 136, location: "Post 7" },
       { start: 148, end: 148, location: "Post 8" },
+      { start: 153, end: 160, location: "Post 7" },
       { start: 169, end: 179, location: "Post 9" },
       { start: 189, end: 196, location: "Post 10" },
       { start: 204, end: 205, location: "Post 11" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 49, end: 50, location: "Post 3½" },
-      { start: 153, end: 160, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "10": {
     name: "10",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 7, end: 9, location: "Post 1" },
       { start: 19, end: 24, location: "Post 2" },
       { start: 39, end: 49, location: "Post 3" },
+      { start: 54, end: 55, location: "Post 3½" },
       { start: 64, end: 84, location: "Post 4" },
       { start: 92, end: 102, location: "Post 5" },
       { start: 112, end: 119, location: "Post 6" },
       { start: 130, end: 130, location: "Post 7" },
       { start: 137, end: 137, location: "Post 8" },
+      { start: 141, end: 157, location: "Post 7" },
       { start: 167, end: 173, location: "Post 9" },
       { start: 183, end: 187, location: "Post 10" },
       { start: 199, end: 200, location: "Post 11" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 54, end: 55, location: "Post 3½" },
-      { start: 141, end: 157, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "11": {
     name: "11",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 18, end: 24, location: "Post 1" },
       { start: 38, end: 49, location: "Post 2" },
       { start: 87, end: 107, location: "Post 4" },
       { start: 162, end: 171, location: "Post 9" },
-      { start: 0, end: 3, location: "Start" },
-    ]
+    ],
+    scores: {
+    }
   },
   "12": {
     name: "12",
     times: [
+      { start: 0, end: 4, location: "Start" },
       { start: 19, end: 22, location: "Post 1" },
       { start: 40, end: 55, location: "Post 2" },
       { start: 88, end: 117, location: "Post 4" },
       { start: 143, end: 144, location: "Post 7" },
+      { start: 162, end: 163, location: "Post 7" },
       { start: 178, end: 188, location: "Post 9" },
       { start: 206, end: 211, location: "Post 10" },
-      { start: 0, end: 4, location: "Start" },
-      { start: 162, end: 163, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "13": {
     name: "13",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 11, end: 13, location: "Post 1" },
       { start: 24, end: 35, location: "Post 2" },
       { start: 61, end: 73, location: "Post 3" },
+      { start: 77, end: 78, location: "Post 3½" },
       { start: 89, end: 113, location: "Post 4" },
       { start: 130, end: 138, location: "Post 6" },
       { start: 152, end: 153, location: "Post 7" },
+      { start: 158, end: 159, location: "Post 7" },
       { start: 169, end: 180, location: "Post 9" },
       { start: 191, end: 202, location: "Post 10" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 77, end: 78, location: "Post 3½" },
-      { start: 158, end: 159, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "14": {
     name: "14",
     times: [
+      { start: 0, end: -215, location: "Start" },
       { start: 11, end: 14, location: "Post 1" },
       { start: 30, end: 42, location: "Post 2" },
       { start: 60, end: 72, location: "Post 3" },
+      { start: 79, end: 80, location: "Post 3½" },
       { start: 95, end: 120, location: "Post 4" },
       { start: 143, end: 144, location: "Post 7" },
-      { start: 0, end: -215, location: "Start" },
-      { start: 79, end: 80, location: "Post 3½" },
       { start: 159, end: 160, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "15": {
     name: "15",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 12, end: 14, location: "Post 1" },
       { start: 29, end: 41, location: "Post 2" },
       { start: 60, end: 72, location: "Post 3" },
-      { start: 97, end: 119, location: "Post 4" },
-      { start: 197, end: 198, location: "Post 5" },
-      { start: 171, end: 182, location: "Post 9" },
-      { start: 200, end: 201, location: "Post 11" },
-      { start: 0, end: 3, location: "Start" },
       { start: 83, end: 84, location: "Post 3½" },
-    ]
+      { start: 97, end: 119, location: "Post 4" },
+      { start: 171, end: 182, location: "Post 9" },
+      { start: 197, end: 198, location: "Post 5" },
+      { start: 200, end: 201, location: "Post 11" },
+    ],
+    scores: {
+    }
   },
   "16": {
     name: "16",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 10, end: 11, location: "Post 1" },
       { start: 21, end: 32, location: "Post 2" },
       { start: 51, end: 65, location: "Post 3" },
+      { start: 69, end: 70, location: "Post 3½" },
       { start: 84, end: 106, location: "Post 4" },
       { start: 125, end: 126, location: "Post 7" },
-      { start: 192, end: 199, location: "Post 10" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 69, end: 70, location: "Post 3½" },
       { start: 161, end: 162, location: "Post 7" },
-    ]
+      { start: 192, end: 199, location: "Post 10" },
+    ],
+    scores: {
+    }
   },
   "17": {
     name: "17",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 10, end: 12, location: "Post 1" },
       { start: 23, end: 33, location: "Post 2" },
       { start: 52, end: 64, location: "Post 3" },
+      { start: 69, end: 70, location: "Post 3½" },
       { start: 80, end: 95, location: "Post 4" },
       { start: 107, end: 116, location: "Post 5" },
       { start: 126, end: 136, location: "Post 6" },
       { start: 153, end: 154, location: "Post 7" },
+      { start: 158, end: 159, location: "Post 7" },
       { start: 172, end: 184, location: "Post 9" },
       { start: 196, end: 204, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 69, end: 70, location: "Post 3½" },
-      { start: 158, end: 159, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "18": {
     name: "18",
     times: [
+      { start: 0, end: 4, location: "Start" },
       { start: 18, end: 22, location: "Post 1" },
       { start: 36, end: 49, location: "Post 2" },
       { start: 71, end: 82, location: "Post 3" },
+      { start: 90, end: 91, location: "Post 3½" },
       { start: 106, end: 128, location: "Post 4" },
       { start: 143, end: 145, location: "Post 6" },
       { start: 172, end: 188, location: "Post 9" },
       { start: 202, end: 213, location: "Post 10" },
-      { start: 0, end: 4, location: "Start" },
-      { start: 90, end: 91, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "19": {
     name: "19",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 9, end: 11, location: "Post 1" },
       { start: 19, end: 36, location: "Post 2" },
       { start: 54, end: 67, location: "Post 3" },
+      { start: 71, end: 72, location: "Post 3½" },
       { start: 83, end: 83, location: "Post 4" },
       { start: 113, end: 125, location: "Post 5" },
       { start: 136, end: 138, location: "Post 6" },
       { start: 152, end: 153, location: "Post 7" },
+      { start: 156, end: 157, location: "Post 7" },
       { start: 167, end: 177, location: "Post 9" },
       { start: 194, end: 200, location: "Post 10" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 71, end: 72, location: "Post 3½" },
-      { start: 156, end: 157, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "20": {
     name: "20",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 12, end: 14, location: "Post 1" },
       { start: 24, end: 34, location: "Post 2" },
       { start: 52, end: 62, location: "Post 3" },
+      { start: 68, end: 69, location: "Post 3½" },
       { start: 82, end: 105, location: "Post 4" },
       { start: 120, end: 121, location: "Post 7" },
+      { start: 159, end: 160, location: "Post 7" },
       { start: 175, end: 185, location: "Post 9" },
       { start: 197, end: 204, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 68, end: 69, location: "Post 3½" },
-      { start: 159, end: 160, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "21": {
     name: "21",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 11, end: 14, location: "Post 1" },
       { start: 27, end: 37, location: "Post 2" },
       { start: 57, end: 68, location: "Post 3" },
+      { start: 74, end: 75, location: "Post 3½" },
       { start: 86, end: 103, location: "Post 4" },
       { start: 117, end: 124, location: "Post 5" },
       { start: 137, end: 141, location: "Post 6" },
       { start: 157, end: 164, location: "Post 9" },
       { start: 181, end: 187, location: "Post 10" },
       { start: 208, end: 209, location: "Post 11" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 74, end: 75, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "22": {
     name: "22",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 10, end: 12, location: "Post 1" },
       { start: 19, end: 32, location: "Post 2" },
       { start: 48, end: 60, location: "Post 3" },
+      { start: 64, end: 65, location: "Post 3½" },
       { start: 72, end: 99, location: "Post 4" },
       { start: 108, end: 120, location: "Post 5" },
       { start: 127, end: 135, location: "Post 6" },
       { start: 146, end: 147, location: "Post 7" },
+      { start: 161, end: 162, location: "Post 7" },
       { start: 174, end: 183, location: "Post 9" },
       { start: 192, end: 202, location: "Post 10" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 64, end: 65, location: "Post 3½" },
-      { start: 161, end: 162, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "23": {
     name: "23",
     times: [
+      { start: 0, end: 4, location: "Start" },
       { start: 19, end: 22, location: "Post 1" },
       { start: 35, end: 51, location: "Post 2" },
       { start: 130, end: 131, location: "Post 7" },
+      { start: 157, end: 158, location: "Post 7" },
       { start: 172, end: 182, location: "Post 9" },
       { start: 195, end: 205, location: "Post 10" },
-      { start: 0, end: 4, location: "Start" },
-      { start: 157, end: 158, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "24": {
     name: "24",
     times: [
+      { start: 0, end: 0, location: "Start" },
       { start: 9, end: 11, location: "Post 1" },
       { start: 21, end: 31, location: "Post 2" },
       { start: 50, end: 59, location: "Post 3" },
+      { start: 64, end: 65, location: "Post 3½" },
       { start: 77, end: 99, location: "Post 4" },
       { start: 113, end: 124, location: "Post 5" },
       { start: 135, end: 136, location: "Post 7" },
+      { start: 156, end: 157, location: "Post 7" },
       { start: 170, end: 177, location: "Post 9" },
       { start: 192, end: 203, location: "Post 10" },
-      { start: 0, end: 0, location: "Start" },
-      { start: 64, end: 65, location: "Post 3½" },
-      { start: 156, end: 157, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "25": {
     name: "25",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 9, end: 11, location: "Post 1" },
       { start: 19, end: 30, location: "Post 2" },
       { start: 48, end: 59, location: "Post 3" },
+      { start: 63, end: 64, location: "Post 3½" },
       { start: 74, end: 96, location: "Post 4" },
       { start: 110, end: 120, location: "Post 5" },
       { start: 126, end: 142, location: "Post 6" },
       { start: 152, end: 153, location: "Post 7" },
+      { start: 160, end: 161, location: "Post 7" },
       { start: 172, end: 179, location: "Post 9" },
       { start: 189, end: 201, location: "Post 10" },
       { start: 209, end: 210, location: "Post 11" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 63, end: 64, location: "Post 3½" },
-      { start: 160, end: 161, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "26": {
     name: "26",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 9, end: 12, location: "Post 1" },
       { start: 20, end: 34, location: "Post 2" },
       { start: 52, end: 63, location: "Post 3" },
+      { start: 68, end: 69, location: "Post 3½" },
       { start: 79, end: 112, location: "Post 4" },
       { start: 133, end: 140, location: "Post 6" },
       { start: 150, end: 151, location: "Post 7" },
+      { start: 156, end: 157, location: "Post 7" },
       { start: 169, end: 181, location: "Post 9" },
       { start: 193, end: 209, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 68, end: 69, location: "Post 3½" },
-      { start: 156, end: 157, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "27": {
     name: "27",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 9, end: 12, location: "Post 1" },
       { start: 21, end: 30, location: "Post 2" },
       { start: 50, end: 58, location: "Post 3" },
+      { start: 64, end: 65, location: "Post 3½" },
       { start: 76, end: 101, location: "Post 4" },
       { start: 113, end: 120, location: "Post 5" },
       { start: 133, end: 140, location: "Post 6" },
       { start: 151, end: 152, location: "Post 7" },
+      { start: 158, end: 159, location: "Post 7" },
       { start: 172, end: 181, location: "Post 9" },
       { start: 195, end: 202, location: "Post 10" },
       { start: 212, end: 213, location: "Post 11" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 64, end: 65, location: "Post 3½" },
-      { start: 158, end: 159, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "29": {
     name: "29",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 19, end: 23, location: "Post 1" },
       { start: 38, end: 50, location: "Post 2" },
       { start: 75, end: 84, location: "Post 3" },
+      { start: 92, end: 93, location: "Post 3½" },
       { start: 107, end: 123, location: "Post 4" },
       { start: 144, end: 145, location: "Post 7" },
+      { start: 156, end: 157, location: "Post 7" },
       { start: 172, end: 182, location: "Post 9" },
       { start: 200, end: 210, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 92, end: 93, location: "Post 3½" },
-      { start: 156, end: 157, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "30": {
     name: "30",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 19, end: 24, location: "Post 1" },
       { start: 39, end: 56, location: "Post 2" },
       { start: 87, end: 103, location: "Post 4" },
       { start: 123, end: 130, location: "Post 5" },
       { start: 182, end: 192, location: "Post 9" },
-      { start: 0, end: 3, location: "Start" },
-    ]
+    ],
+    scores: {
+    }
   },
   "31": {
     name: "31",
     times: [
+      { start: 0, end: -215, location: "Start" },
       { start: 11, end: 13, location: "Post 1" },
       { start: 24, end: 36, location: "Post 2" },
       { start: 56, end: 69, location: "Post 3" },
+      { start: 75, end: 76, location: "Post 3½" },
       { start: 88, end: 120, location: "Post 4" },
       { start: 143, end: 144, location: "Post 7" },
+      { start: 156, end: 157, location: "Post 7" },
       { start: 172, end: 183, location: "Post 9" },
       { start: 203, end: 210, location: "Post 10" },
-      { start: 0, end: -215, location: "Start" },
-      { start: 75, end: 76, location: "Post 3½" },
-      { start: 156, end: 157, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "32": {
     name: "32",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 13, end: 16, location: "Post 1" },
       { start: 28, end: 37, location: "Post 2" },
       { start: 59, end: 74, location: "Post 3" },
+      { start: 81, end: 82, location: "Post 3½" },
       { start: 97, end: 100, location: "Post 4" },
       { start: 117, end: 128, location: "Post 5" },
       { start: 184, end: 192, location: "Post 9" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 81, end: 82, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "33": {
     name: "33",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 12, end: 14, location: "Post 1" },
       { start: 24, end: 33, location: "Post 2" },
       { start: 52, end: 63, location: "Post 3" },
+      { start: 69, end: 70, location: "Post 3½" },
       { start: 81, end: 95, location: "Post 4" },
       { start: 107, end: 115, location: "Post 5" },
       { start: 126, end: 136, location: "Post 6" },
       { start: 153, end: 154, location: "Post 7" },
+      { start: 157, end: 158, location: "Post 7" },
       { start: 169, end: 175, location: "Post 9" },
       { start: 190, end: 197, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 69, end: 70, location: "Post 3½" },
-      { start: 157, end: 158, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "34": {
     name: "34",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 11, end: 13, location: "Post 1" },
       { start: 22, end: 36, location: "Post 2" },
       { start: 55, end: 66, location: "Post 3" },
+      { start: 71, end: 72, location: "Post 3½" },
       { start: 82, end: 103, location: "Post 4" },
       { start: 113, end: 122, location: "Post 5" },
       { start: 137, end: 143, location: "Post 6" },
       { start: 158, end: 159, location: "Post 7" },
+      { start: 164, end: 165, location: "Post 7" },
       { start: 187, end: 196, location: "Post 9" },
       { start: 209, end: 215, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 71, end: 72, location: "Post 3½" },
-      { start: 164, end: 165, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "35": {
     name: "35",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 19, end: 22, location: "Post 1" },
       { start: 37, end: 47, location: "Post 2" },
       { start: 72, end: 84, location: "Post 3" },
+      { start: 91, end: 92, location: "Post 3½" },
       { start: 107, end: 130, location: "Post 4" },
       { start: 165, end: 173, location: "Post 9" },
       { start: 195, end: 206, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 91, end: 92, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "36": {
     name: "36",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 10, end: 12, location: "Post 1" },
       { start: 22, end: 35, location: "Post 2" },
       { start: 57, end: 69, location: "Post 3" },
+      { start: 74, end: 75, location: "Post 3½" },
       { start: 86, end: 102, location: "Post 4" },
       { start: 113, end: 125, location: "Post 5" },
       { start: 140, end: 144, location: "Post 6" },
       { start: 155, end: 156, location: "Post 7" },
+      { start: 162, end: 163, location: "Post 7" },
       { start: 176, end: 185, location: "Post 9" },
       { start: 200, end: 210, location: "Post 10" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 74, end: 75, location: "Post 3½" },
-      { start: 162, end: 163, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "37": {
     name: "37",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 12, end: 17, location: "Post 1" },
       { start: 27, end: 46, location: "Post 2" },
       { start: 64, end: 76, location: "Post 3" },
+      { start: 93, end: 94, location: "Post 3½" },
       { start: 112, end: 127, location: "Post 4" },
       { start: 151, end: 152, location: "Post 7" },
+      { start: 162, end: 163, location: "Post 7" },
       { start: 174, end: 186, location: "Post 9" },
       { start: 201, end: 205, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 93, end: 94, location: "Post 3½" },
-      { start: 162, end: 163, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "38": {
     name: "38",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 9, end: 10, location: "Post 1" },
       { start: 19, end: 29, location: "Post 2" },
       { start: 48, end: 58, location: "Post 3" },
+      { start: 63, end: 64, location: "Post 3½" },
       { start: 74, end: 94, location: "Post 4" },
       { start: 105, end: 118, location: "Post 5" },
       { start: 127, end: 136, location: "Post 6" },
       { start: 154, end: 155, location: "Post 7" },
+      { start: 156, end: 157, location: "Post 7" },
       { start: 167, end: 179, location: "Post 9" },
       { start: 193, end: 203, location: "Post 10" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 63, end: 64, location: "Post 3½" },
-      { start: 156, end: 157, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "39": {
     name: "39",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 9, end: 11, location: "Post 1" },
       { start: 20, end: 30, location: "Post 2" },
       { start: 52, end: 62, location: "Post 3" },
+      { start: 68, end: 69, location: "Post 3½" },
       { start: 79, end: 99, location: "Post 4" },
       { start: 112, end: 126, location: "Post 5" },
       { start: 160, end: 173, location: "Post 9" },
       { start: 185, end: 194, location: "Post 10" },
       { start: 204, end: 205, location: "Post 11" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 68, end: 69, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "40": {
     name: "40",
     times: [
+      { start: 0, end: 4, location: "Start" },
       { start: 18, end: 22, location: "Post 1" },
       { start: 57, end: 68, location: "Post 2" },
       { start: 107, end: 130, location: "Post 4" },
       { start: 152, end: 153, location: "Post 7" },
+      { start: 163, end: 164, location: "Post 7" },
       { start: 178, end: 189, location: "Post 9" },
       { start: 214, end: 215, location: "Post 10" },
-      { start: 0, end: 4, location: "Start" },
-      { start: 163, end: 164, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "41": {
     name: "41",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 12, end: 15, location: "Post 1" },
       { start: 27, end: 42, location: "Post 2" },
       { start: 62, end: 73, location: "Post 3" },
+      { start: 79, end: 80, location: "Post 3½" },
       { start: 91, end: 122, location: "Post 4" },
       { start: 142, end: 143, location: "Post 6" },
       { start: 155, end: 156, location: "Post 7" },
+      { start: 162, end: 163, location: "Post 7" },
       { start: 176, end: 185, location: "Post 9" },
       { start: 197, end: 206, location: "Post 10" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 79, end: 80, location: "Post 3½" },
-      { start: 162, end: 163, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "42": {
     name: "42",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 17, end: 19, location: "Post 1" },
       { start: 32, end: 48, location: "Post 2" },
       { start: 81, end: 92, location: "Post 3" },
+      { start: 100, end: 101, location: "Post 3½" },
       { start: 112, end: 129, location: "Post 4" },
       { start: 144, end: 145, location: "Post 7" },
+      { start: 164, end: 165, location: "Post 7" },
       { start: 176, end: 193, location: "Post 9" },
       { start: 206, end: 211, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 100, end: 101, location: "Post 3½" },
-      { start: 164, end: 165, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "44": {
     name: "44",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 13, end: 17, location: "Post 1" },
       { start: 29, end: 39, location: "Post 2" },
       { start: 60, end: 73, location: "Post 3" },
+      { start: 83, end: 84, location: "Post 3½" },
       { start: 97, end: 127, location: "Post 4" },
       { start: 152, end: 153, location: "Post 7" },
+      { start: 158, end: 159, location: "Post 7" },
       { start: 174, end: 183, location: "Post 9" },
       { start: 207, end: 213, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 83, end: 84, location: "Post 3½" },
-      { start: 158, end: 159, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "45": {
     name: "45",
     times: [
+      { start: 0, end: 4, location: "Start" },
       { start: 20, end: 22, location: "Post 1" },
       { start: 34, end: 50, location: "Post 2" },
       { start: 73, end: 78, location: "Post 3" },
+      { start: 86, end: 87, location: "Post 3½" },
       { start: 99, end: 129, location: "Post 4" },
       { start: 144, end: 145, location: "Post 7" },
+      { start: 157, end: 158, location: "Post 7" },
       { start: 169, end: 182, location: "Post 9" },
       { start: 195, end: 200, location: "Post 10" },
-      { start: 0, end: 4, location: "Start" },
-      { start: 86, end: 87, location: "Post 3½" },
-      { start: 157, end: 158, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "46": {
     name: "46",
     times: [
+      { start: 0, end: 4, location: "Start" },
       { start: 18, end: 20, location: "Post 1" },
       { start: 36, end: 52, location: "Post 2" },
       { start: 73, end: 84, location: "Post 3" },
+      { start: 87, end: 88, location: "Post 3½" },
       { start: 98, end: 131, location: "Post 4" },
       { start: 173, end: 183, location: "Post 9" },
       { start: 200, end: 211, location: "Post 10" },
-      { start: 0, end: 4, location: "Start" },
-      { start: 87, end: 88, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "47": {
     name: "47",
     times: [
+      { start: 0, end: 4, location: "Start" },
       { start: 18, end: 21, location: "Post 1" },
       { start: 40, end: 55, location: "Post 2" },
       { start: 88, end: 120, location: "Post 4" },
       { start: 143, end: 144, location: "Post 7" },
+      { start: 162, end: 163, location: "Post 7" },
       { start: 178, end: 188, location: "Post 9" },
       { start: 206, end: 212, location: "Post 10" },
-      { start: 0, end: 4, location: "Start" },
-      { start: 162, end: 163, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "48": {
     name: "48",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 9, end: 11, location: "Post 1" },
       { start: 20, end: 35, location: "Post 2" },
       { start: 49, end: 59, location: "Post 3" },
+      { start: 63, end: 64, location: "Post 3½" },
       { start: 72, end: 94, location: "Post 4" },
       { start: 104, end: 115, location: "Post 5" },
       { start: 125, end: 130, location: "Post 6" },
       { start: 140, end: 140, location: "Post 7" },
       { start: 147, end: 147, location: "Post 8" },
+      { start: 153, end: 163, location: "Post 7" },
       { start: 175, end: 181, location: "Post 9" },
       { start: 193, end: 204, location: "Post 10" },
       { start: 212, end: 213, location: "Post 11" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 63, end: 64, location: "Post 3½" },
-      { start: 153, end: 163, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "49": {
     name: "49",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 10, end: 12, location: "Post 1" },
       { start: 23, end: 31, location: "Post 2" },
       { start: 49, end: 62, location: "Post 3" },
+      { start: 68, end: 69, location: "Post 3½" },
       { start: 80, end: 91, location: "Post 4" },
       { start: 104, end: 116, location: "Post 5" },
       { start: 125, end: 135, location: "Post 6" },
       { start: 147, end: 148, location: "Post 7" },
+      { start: 159, end: 160, location: "Post 7" },
       { start: 170, end: 178, location: "Post 9" },
       { start: 189, end: 198, location: "Post 10" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 68, end: 69, location: "Post 3½" },
-      { start: 159, end: 160, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "50": {
     name: "50",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 7, end: 9, location: "Post 1" },
       { start: 18, end: 25, location: "Post 2" },
       { start: 44, end: 53, location: "Post 3" },
+      { start: 61, end: 62, location: "Post 3½" },
       { start: 72, end: 93, location: "Post 4" },
       { start: 106, end: 116, location: "Post 5" },
       { start: 136, end: 141, location: "Post 6" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 61, end: 62, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "51": {
     name: "51",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 20, end: 23, location: "Post 1" },
       { start: 34, end: 42, location: "Post 2" },
       { start: 58, end: 64, location: "Post 3" },
+      { start: 70, end: 71, location: "Post 3½" },
       { start: 83, end: 101, location: "Post 4" },
       { start: 112, end: 118, location: "Post 5" },
       { start: 131, end: 136, location: "Post 6" },
       { start: 148, end: 149, location: "Post 7" },
+      { start: 156, end: 157, location: "Post 7" },
       { start: 169, end: 174, location: "Post 9" },
       { start: 185, end: 195, location: "Post 10" },
       { start: 208, end: 209, location: "Post 11" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 70, end: 71, location: "Post 3½" },
-      { start: 156, end: 157, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "52": {
     name: "52",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 7, end: 8, location: "Post 1" },
       { start: 15, end: 22, location: "Post 2" },
       { start: 34, end: 42, location: "Post 3" },
+      { start: 46, end: 47, location: "Post 3½" },
       { start: 55, end: 79, location: "Post 4" },
       { start: 87, end: 97, location: "Post 5" },
       { start: 106, end: 117, location: "Post 6" },
       { start: 125, end: 125, location: "Post 7" },
       { start: 132, end: 133, location: "Post 8" },
+      { start: 137, end: 158, location: "Post 7" },
       { start: 164, end: 172, location: "Post 9" },
       { start: 179, end: 189, location: "Post 10" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 46, end: 47, location: "Post 3½" },
-      { start: 137, end: 158, location: "Post 7" },
-    ]
+    ],
+    scores: {
+      "Start": { start:10, end:10 },
+      "Post 1": { start:15, end:15 },
+      "Post 2": { start:20, end:44 },
+      "Post 3": { start:49, end:72 },
+      "Post 3½": { start:72, end:77 },
+      "Post 4": { start:82, end:139 },
+      "Post 5": { start:144, end:165 },
+      "Post 6": { start:170, end:196 },
+      "Post 7": { start:201, end:224 },
+      "Post 8": { start:264, end:264 },
+      "Post 9": { start:269, end:290 },
+      "post 10": { start:295, end:308 },
+      "Post 11": { start:313, end:326 },
+    }
   },
   "53": {
     name: "53",
     times: [
+      { start: 0, end: 0, location: "Start" },
       { start: 11, end: 13, location: "Post 1" },
       { start: 24, end: 31, location: "Post 2" },
       { start: 49, end: 59, location: "Post 3" },
+      { start: 65, end: 66, location: "Post 3½" },
       { start: 80, end: 100, location: "Post 4" },
       { start: 113, end: 123, location: "Post 5" },
       { start: 140, end: 143, location: "Post 6" },
       { start: 159, end: 160, location: "Post 7" },
+      { start: 163, end: 164, location: "Post 7" },
       { start: 180, end: 189, location: "Post 9" },
       { start: 200, end: 211, location: "Post 10" },
-      { start: 0, end: 0, location: "Start" },
-      { start: 65, end: 66, location: "Post 3½" },
-      { start: 163, end: 164, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "54": {
     name: "54",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 7, end: 9, location: "Post 1" },
       { start: 18, end: 27, location: "Post 2" },
       { start: 42, end: 50, location: "Post 3" },
+      { start: 59, end: 60, location: "Post 3½" },
       { start: 69, end: 96, location: "Post 4" },
       { start: 105, end: 113, location: "Post 5" },
       { start: 125, end: 132, location: "Post 6" },
       { start: 142, end: 143, location: "Post 7" },
       { start: 148, end: 148, location: "Post 8" },
+      { start: 155, end: 162, location: "Post 7" },
       { start: 174, end: 185, location: "Post 9" },
       { start: 198, end: 204, location: "Post 10" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 59, end: 60, location: "Post 3½" },
-      { start: 155, end: 162, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "55": {
     name: "55",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 7, end: 9, location: "Post 1" },
       { start: 18, end: 26, location: "Post 2" },
       { start: 42, end: 49, location: "Post 3" },
+      { start: 54, end: 55, location: "Post 3½" },
       { start: 65, end: 65, location: "Post 4" },
       { start: 93, end: 104, location: "Post 5" },
       { start: 115, end: 122, location: "Post 6" },
       { start: 134, end: 136, location: "Post 7" },
       { start: 144, end: 145, location: "Post 8" },
+      { start: 151, end: 161, location: "Post 7" },
       { start: 176, end: 182, location: "Post 9" },
       { start: 191, end: 196, location: "Post 10" },
       { start: 208, end: 209, location: "Post 11" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 54, end: 55, location: "Post 3½" },
-      { start: 151, end: 161, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "56": {
     name: "56",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 7, end: 8, location: "Post 1" },
       { start: 15, end: 22, location: "Post 2" },
       { start: 34, end: 42, location: "Post 3" },
+      { start: 46, end: 47, location: "Post 3½" },
       { start: 55, end: 80, location: "Post 4" },
       { start: 87, end: 97, location: "Post 5" },
       { start: 106, end: 114, location: "Post 6" },
       { start: 123, end: 123, location: "Post 7" },
       { start: 131, end: 131, location: "Post 8" },
+      { start: 136, end: 157, location: "Post 7" },
       { start: 164, end: 171, location: "Post 9" },
       { start: 179, end: 180, location: "Post 10" },
       { start: 197, end: 198, location: "Post 11" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 46, end: 47, location: "Post 3½" },
-      { start: 136, end: 157, location: "Post 7" },
-    ]
+    ],
+    scores: {
+      "Start": { start:10, end:10 },
+      "Post 1": { start:15, end:15 },
+      "Post 2": { start:20, end:38 },
+      "Post 3": { start:43, end:57 },
+      "Post 3½": { start:57, end:72 },
+      "Post 4": { start:77, end:138 },
+      "Post 5": { start:143, end:167 },
+      "Post 6": { start:172, end:194 },
+      "Post 7": { start:199, end:222 },
+      "Post 8": { start:262, end:262 },
+      "Post 9": { start:267, end:283 },
+      "post 10": { start:288, end:301 },
+      "Post 11": { start:306, end:319 },
+    }
   },
   "57": {
     name: "57",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 20, end: 24, location: "Post 1" },
       { start: 39, end: 56, location: "Post 2" },
       { start: 87, end: 117, location: "Post 4" },
       { start: 139, end: 140, location: "Post 7" },
-      { start: 0, end: 3, location: "Start" },
       { start: 160, end: 161, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "58": {
     name: "58",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 11, end: 14, location: "Post 1" },
       { start: 23, end: 37, location: "Post 2" },
       { start: 54, end: 69, location: "Post 3" },
+      { start: 75, end: 76, location: "Post 3½" },
       { start: 86, end: 106, location: "Post 4" },
       { start: 126, end: 137, location: "Post 6" },
       { start: 154, end: 155, location: "Post 7" },
+      { start: 162, end: 163, location: "Post 7" },
       { start: 174, end: 183, location: "Post 9" },
       { start: 194, end: 202, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 75, end: 76, location: "Post 3½" },
-      { start: 162, end: 163, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "59": {
     name: "59",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 13, end: 15, location: "Post 1" },
       { start: 30, end: 39, location: "Post 2" },
       { start: 59, end: 72, location: "Post 3" },
+      { start: 77, end: 78, location: "Post 3½" },
       { start: 91, end: 121, location: "Post 4" },
-      { start: 211, end: 212, location: "Post 5" },
       { start: 140, end: 141, location: "Post 7" },
+      { start: 160, end: 161, location: "Post 7" },
       { start: 173, end: 181, location: "Post 9" },
       { start: 193, end: 200, location: "Post 10" },
+      { start: 211, end: 212, location: "Post 5" },
       { start: 213, end: 214, location: "Post 11" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 77, end: 78, location: "Post 3½" },
-      { start: 160, end: 161, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "60": {
     name: "60",
     times: [
+      { start: 0, end: 0, location: "Start" },
       { start: 8, end: 10, location: "Post 1" },
       { start: 19, end: 29, location: "Post 2" },
       { start: 50, end: 63, location: "Post 3" },
+      { start: 68, end: 69, location: "Post 3½" },
       { start: 78, end: 102, location: "Post 4" },
       { start: 111, end: 120, location: "Post 5" },
       { start: 130, end: 137, location: "Post 6" },
       { start: 150, end: 151, location: "Post 7" },
+      { start: 161, end: 162, location: "Post 7" },
       { start: 173, end: 185, location: "Post 9" },
       { start: 196, end: 202, location: "Post 10" },
       { start: 214, end: 215, location: "Post 11" },
-      { start: 0, end: 0, location: "Start" },
-      { start: 68, end: 69, location: "Post 3½" },
-      { start: 161, end: 162, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "61": {
     name: "61",
     times: [
+      { start: 0, end: -215, location: "Start" },
       { start: 12, end: 15, location: "Post 1" },
       { start: 24, end: 33, location: "Post 2" },
       { start: 49, end: 58, location: "Post 3" },
+      { start: 62, end: 63, location: "Post 3½" },
       { start: 73, end: 100, location: "Post 4" },
       { start: 110, end: 120, location: "Post 5" },
       { start: 131, end: 136, location: "Post 6" },
       { start: 147, end: 148, location: "Post 7" },
+      { start: 157, end: 158, location: "Post 7" },
       { start: 169, end: 177, location: "Post 9" },
       { start: 189, end: 201, location: "Post 10" },
-      { start: 0, end: -215, location: "Start" },
-      { start: 62, end: 63, location: "Post 3½" },
-      { start: 157, end: 158, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "62": {
     name: "62",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 9, end: 10, location: "Post 1" },
       { start: 20, end: 28, location: "Post 2" },
       { start: 47, end: 57, location: "Post 3" },
+      { start: 62, end: 63, location: "Post 3½" },
       { start: 73, end: 98, location: "Post 4" },
       { start: 108, end: 121, location: "Post 5" },
       { start: 132, end: 138, location: "Post 6" },
       { start: 147, end: 148, location: "Post 7" },
+      { start: 161, end: 162, location: "Post 7" },
       { start: 173, end: 182, location: "Post 9" },
       { start: 196, end: 202, location: "Post 10" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 62, end: 63, location: "Post 3½" },
-      { start: 161, end: 162, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "63": {
     name: "63",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 10, end: 11, location: "Post 1" },
       { start: 22, end: 31, location: "Post 2" },
       { start: 49, end: 55, location: "Post 3" },
+      { start: 60, end: 61, location: "Post 3½" },
       { start: 70, end: 93, location: "Post 4" },
       { start: 109, end: 117, location: "Post 5" },
       { start: 127, end: 130, location: "Post 6" },
       { start: 142, end: 143, location: "Post 7" },
       { start: 148, end: 149, location: "Post 8" },
+      { start: 155, end: 164, location: "Post 7" },
       { start: 180, end: 188, location: "Post 9" },
       { start: 200, end: 211, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 60, end: 61, location: "Post 3½" },
-      { start: 155, end: 164, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "64": {
     name: "64",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 14, end: 15, location: "Post 1" },
       { start: 31, end: 38, location: "Post 2" },
       { start: 58, end: 67, location: "Post 3" },
+      { start: 72, end: 73, location: "Post 3½" },
       { start: 86, end: 109, location: "Post 4" },
-      { start: 199, end: 200, location: "Post 5" },
       { start: 137, end: 141, location: "Post 6" },
       { start: 157, end: 167, location: "Post 9" },
       { start: 182, end: 189, location: "Post 10" },
+      { start: 199, end: 200, location: "Post 5" },
       { start: 202, end: 203, location: "Post 11" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 72, end: 73, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "65": {
     name: "65",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 10, end: 12, location: "Post 1" },
       { start: 23, end: 35, location: "Post 2" },
       { start: 54, end: 67, location: "Post 3" },
+      { start: 72, end: 73, location: "Post 3½" },
       { start: 83, end: 102, location: "Post 4" },
       { start: 113, end: 121, location: "Post 5" },
       { start: 137, end: 142, location: "Post 6" },
       { start: 157, end: 166, location: "Post 9" },
       { start: 181, end: 189, location: "Post 10" },
       { start: 201, end: 202, location: "Post 11" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 72, end: 73, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "66": {
     name: "66",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 9, end: 10, location: "Post 1" },
       { start: 17, end: 27, location: "Post 2" },
       { start: 46, end: 57, location: "Post 3" },
+      { start: 62, end: 63, location: "Post 3½" },
       { start: 71, end: 97, location: "Post 4" },
       { start: 106, end: 118, location: "Post 5" },
       { start: 127, end: 134, location: "Post 6" },
       { start: 144, end: 144, location: "Post 7" },
       { start: 152, end: 152, location: "Post 8" },
+      { start: 158, end: 162, location: "Post 7" },
       { start: 172, end: 178, location: "Post 9" },
       { start: 187, end: 194, location: "Post 10" },
       { start: 205, end: 206, location: "Post 11" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 62, end: 63, location: "Post 3½" },
-      { start: 158, end: 162, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "67": {
     name: "67",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 10, end: 12, location: "Post 1" },
       { start: 25, end: 34, location: "Post 2" },
       { start: 54, end: 61, location: "Post 3" },
+      { start: 72, end: 73, location: "Post 3½" },
       { start: 86, end: 122, location: "Post 4" },
       { start: 139, end: 142, location: "Post 6" },
       { start: 168, end: 178, location: "Post 9" },
       { start: 191, end: 203, location: "Post 10" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 72, end: 73, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "68": {
     name: "68",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 12, end: 16, location: "Post 1" },
       { start: 26, end: 34, location: "Post 2" },
       { start: 57, end: 68, location: "Post 3" },
+      { start: 75, end: 76, location: "Post 3½" },
       { start: 87, end: 112, location: "Post 4" },
       { start: 144, end: 145, location: "Post 6" },
       { start: 165, end: 178, location: "Post 9" },
       { start: 195, end: 205, location: "Post 10" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 75, end: 76, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "69": {
     name: "69",
     times: [
+      { start: 0, end: 1, location: "Start" },
       { start: 8, end: 9, location: "Post 1" },
       { start: 19, end: 29, location: "Post 2" },
       { start: 43, end: 50, location: "Post 3" },
+      { start: 54, end: 55, location: "Post 3½" },
       { start: 64, end: 87, location: "Post 4" },
       { start: 99, end: 112, location: "Post 5" },
       { start: 120, end: 130, location: "Post 6" },
       { start: 139, end: 139, location: "Post 7" },
       { start: 148, end: 149, location: "Post 8" },
+      { start: 153, end: 161, location: "Post 7" },
       { start: 172, end: 179, location: "Post 9" },
       { start: 190, end: 195, location: "Post 10" },
       { start: 204, end: 205, location: "Post 11" },
-      { start: 0, end: 1, location: "Start" },
-      { start: 54, end: 55, location: "Post 3½" },
-      { start: 153, end: 161, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "70": {
     name: "70",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 8, end: 10, location: "Post 1" },
       { start: 19, end: 27, location: "Post 2" },
       { start: 43, end: 51, location: "Post 3" },
+      { start: 60, end: 61, location: "Post 3½" },
       { start: 70, end: 89, location: "Post 4" },
       { start: 100, end: 111, location: "Post 5" },
       { start: 121, end: 137, location: "Post 6" },
       { start: 145, end: 146, location: "Post 7" },
+      { start: 159, end: 160, location: "Post 7" },
       { start: 174, end: 179, location: "Post 9" },
       { start: 191, end: 205, location: "Post 10" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 60, end: 61, location: "Post 3½" },
-      { start: 159, end: 160, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   },
   "71": {
     name: "71",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 20, end: 22, location: "Post 1" },
       { start: 34, end: 40, location: "Post 2" },
       { start: 61, end: 75, location: "Post 3" },
+      { start: 84, end: 85, location: "Post 3½" },
       { start: 96, end: 126, location: "Post 4" },
       { start: 143, end: 145, location: "Post 6" },
       { start: 169, end: 178, location: "Post 9" },
       { start: 194, end: 207, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 84, end: 85, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "72": {
     name: "72",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 14, end: 17, location: "Post 1" },
       { start: 35, end: 41, location: "Post 2" },
       { start: 73, end: 75, location: "Post 3" },
-      { start: 112, end: 119, location: "Post 4" },
-      { start: 197, end: 198, location: "Post 5" },
-      { start: 171, end: 182, location: "Post 9" },
-      { start: 200, end: 201, location: "Post 11" },
-      { start: 0, end: 3, location: "Start" },
       { start: 93, end: 94, location: "Post 3½" },
-    ]
+      { start: 112, end: 119, location: "Post 4" },
+      { start: 171, end: 182, location: "Post 9" },
+      { start: 197, end: 198, location: "Post 5" },
+      { start: 200, end: 201, location: "Post 11" },
+    ],
+    scores: {
+    }
   },
   "73": {
     name: "73",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 17, end: 20, location: "Post 1" },
       { start: 34, end: 44, location: "Post 2" },
       { start: 64, end: 77, location: "Post 3" },
+      { start: 84, end: 85, location: "Post 3½" },
       { start: 98, end: 117, location: "Post 4" },
       { start: 140, end: 143, location: "Post 6" },
       { start: 168, end: 184, location: "Post 9" },
       { start: 199, end: 209, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-      { start: 84, end: 85, location: "Post 3½" },
-    ]
+    ],
+    scores: {
+    }
   },
   "74": {
     name: "74",
     times: [
+      { start: 0, end: 3, location: "Start" },
       { start: 17, end: 19, location: "Post 1" },
       { start: 40, end: 56, location: "Post 2" },
       { start: 97, end: 122, location: "Post 4" },
       { start: 143, end: 144, location: "Post 6" },
       { start: 166, end: 182, location: "Post 9" },
       { start: 199, end: 213, location: "Post 10" },
-      { start: 0, end: 3, location: "Start" },
-    ]
+    ],
+    scores: {
+    }
   },
   "75": {
     name: "75",
     times: [
+      { start: 0, end: 2, location: "Start" },
       { start: 10, end: 13, location: "Post 1" },
       { start: 26, end: 37, location: "Post 2" },
       { start: 68, end: 81, location: "Post 3" },
+      { start: 88, end: 89, location: "Post 3½" },
       { start: 107, end: 114, location: "Post 4" },
       { start: 139, end: 140, location: "Post 7" },
+      { start: 157, end: 158, location: "Post 7" },
       { start: 174, end: 179, location: "Post 9" },
       { start: 192, end: 201, location: "Post 10" },
-      { start: 0, end: 2, location: "Start" },
-      { start: 88, end: 89, location: "Post 3½" },
-      { start: 157, end: 158, location: "Post 7" },
-    ]
+    ],
+    scores: {
+    }
   }
 }

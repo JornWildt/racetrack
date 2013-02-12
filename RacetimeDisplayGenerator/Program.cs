@@ -27,6 +27,8 @@ namespace RacetimeDisplayGenerator
     
     const string CheckpointLocationsFilename = "Checkpoint_locations.kml";
 
+    const string TeamScoresFilename = "Team_scores.csv";
+
     const string OutputDir = "C:\\Projects\\Racetracker\\Web";
 
     const string JSONDataFilename = "CheckpointData.js";
@@ -38,8 +40,12 @@ namespace RacetimeDisplayGenerator
       CsvReader checkPointTimesReader = new CsvReader(new StreamReader(Path.Combine(BaseDir, CheckpointTimesFilename), Encoding.GetEncoding(1252)), cfg);
       IList<CheckpointTimeRegistration> checkpointTimes = checkPointTimesReader.GetRecords<CheckpointTimeRegistration>().ToList();
 
+      cfg = new CsvConfiguration { Delimiter = ";", IsStrictMode = false };
+      CsvReader teamScoresReader = new CsvReader(new StreamReader(Path.Combine(BaseDir, TeamScoresFilename), Encoding.GetEncoding(1252)), cfg);
+      IList<TeamScoreRegistration> teamScores = teamScoresReader.GetRecords<TeamScoreRegistration>().ToList();
+
       RaceDataCalculator converter = new RaceDataCalculator();
-      RaceData indecies = converter.CalcuateData(checkpointTimes);
+      RaceData indecies = converter.CalcuateData(checkpointTimes, teamScores);
 
       CheckpointLocationsLoader locationsLoader = new CheckpointLocationsLoader();
       List<CheckpointLocation> checkpointLocations = locationsLoader.LoadCheckpointsFromKML(Path.Combine(BaseDir, CheckpointLocationsFilename));
