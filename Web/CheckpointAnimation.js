@@ -39,7 +39,7 @@ BlueStarSmall = {
 
 
 TeamCount = 2;
-TeamNames = ["52", "56"];
+TeamNames = ["52", "64"];
 TeamMarkers = [null, null];
 TeamIcons = [GoldStar, BlueStar];
 TeamIconsSmall = [GoldStarSmall, BlueStarSmall];

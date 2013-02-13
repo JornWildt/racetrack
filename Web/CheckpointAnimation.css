@@ -1,24 +1,39 @@
-﻿html { height: 100% }
+﻿html 
+{ 
+  height: 100% 
+}
 
-body { height: 100%; margin: 0; padding: 0 }
+body 
+{ 
+  height: 100%; 
+  margin: 0; 
+  padding: 0 
+}
 
 select, button, body
 {
-  font-size: 14pt;
+  font-size: 12pt;
   font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
 }
 
-#map_canvas { height: 90% }
+#map_canvas 
+{ 
+  position: absolute;
+  top: 67px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 0px;
+  margin: 0px;
+}
 
 #headerpanel
 {
-  height: 60px;
+  height: 55px;
   width: 100%;
   padding: 5px;
   background-color: White;
   border-bottom: 2px solid black;
-  font-size: 12pt;
-  font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
 }
 
 #clockpanel
