@@ -21,24 +21,25 @@ GoldStarSmall = {
   path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
   fillColor: "yellow",
   fillOpacity: 0.8,
-  scale: 0.07,
+  scale: 0.06,
   strokeColor: "black",
-  strokeWeight: 0.8
+  strokeWeight: 0.8,
+  anchor: { x: 0, y: 100 }
 };
 
 BlueStarSmall = {
   path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
   fillColor: "deepskyblue",
   fillOpacity: 0.8,
-  scale: 0.07,
+  scale: 0.06,
   strokeColor: "darkblue",
   strokeWeight: 0.8,
-  anchor: { x: 200, y: 0 }
+  anchor: { x: 200, y: 100 }
 };
 
 
 TeamCount = 2;
-TeamNames = ["56", "52"];
+TeamNames = ["52", "56"];
 TeamMarkers = [null, null];
 TeamIcons = [GoldStar, BlueStar];
 TeamIconsSmall = [GoldStarSmall, BlueStarSmall];
@@ -55,7 +56,7 @@ function Initialize() {
     mapTypeId: google.maps.MapTypeId.HYBRID
   };
   map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-  var ctaLayer = new google.maps.KmlLayer("http://www.elfisk.dk/Checkpoint_locations.7.kml");
+  var ctaLayer = new google.maps.KmlLayer("http://www.elfisk.dk/allitrack/Checkpoint_locations.kml");
   ctaLayer.setMap(map);
 
   HeatMap = new google.maps.visualization.HeatmapLayer({ maxIntensity: 40 });
