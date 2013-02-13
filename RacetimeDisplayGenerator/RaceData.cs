@@ -5,6 +5,11 @@ using System.Text;
 
 namespace RacetimeDisplayGenerator
 {
+  public class CheckpointRegistrationIndex : Dictionary<string, CheckpointRegistration>
+  {
+  }
+
+
   public class CheckpointAndTimeFrameIndex : Dictionary<string, Dictionary<int, List<CheckpointTimeRegistration>>>
   {
   }
@@ -36,6 +41,7 @@ namespace RacetimeDisplayGenerator
     public DateTime EndTime { get; set; }
     public int EndTimeFrame { get; set; }
 
+    public CheckpointRegistrationIndex CheckpointRegistration { get; set; }
     public CheckpointAndTimeFrameIndex CheckpointAndTimeFrame { get; set; }
     public TimeFrameAndCheckpointIndex TimeFrameAndCheckpoint { get; set; }
     public TeamTeamScoreIndex TeamTeamScore { get; set; }
@@ -44,6 +50,7 @@ namespace RacetimeDisplayGenerator
 
     public RaceData()
     {
+      CheckpointRegistration = new CheckpointRegistrationIndex();
       CheckpointAndTimeFrame = new CheckpointAndTimeFrameIndex();
       TimeFrameAndCheckpoint = new TimeFrameAndCheckpointIndex();
       TeamTeamScore = new TeamTeamScoreIndex();

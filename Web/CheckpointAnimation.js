@@ -1,14 +1,32 @@
-﻿
-GoldStar = {
+﻿GoldStar = {
   path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
   fillColor: "yellow",
   fillOpacity: 0.8,
   scale: 0.07,
-  strokeColor: "gold",
+  strokeColor: "black",
   strokeWeight: 0.8
 };
 
 BlueStar = {
+  path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
+  fillColor: "deepskyblue",
+  fillOpacity: 0.8,
+  scale: 0.07,
+  strokeColor: "black",
+  strokeWeight: 0.8,
+  anchor: { x: 200, y: 0 }
+};
+
+GoldStarSmall = {
+  path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
+  fillColor: "yellow",
+  fillOpacity: 0.8,
+  scale: 0.07,
+  strokeColor: "black",
+  strokeWeight: 0.8
+};
+
+BlueStarSmall = {
   path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
   fillColor: "deepskyblue",
   fillOpacity: 0.8,
@@ -18,10 +36,12 @@ BlueStar = {
   anchor: { x: 200, y: 0 }
 };
 
+
 TeamCount = 2;
-TeamNames = ["52", "56"];
+TeamNames = ["56", "52"];
 TeamMarkers = [null, null];
 TeamIcons = [GoldStar, BlueStar];
+TeamIconsSmall = [GoldStarSmall, BlueStarSmall];
 
 HeatMap = null;
 
@@ -90,7 +110,7 @@ function UpdateDisplay() {
   document.getElementById("time").innerHTML = CheckpointHeatMaps[TimeFrame].time;
 
   for (var i = 0; i < TeamCount; ++i) {
-    if (TeamNames[i] != null) {
+    if (TeamNames[i] != null && TeamNames[i] != "") {
       var teamName = TeamNames[i];
       var teamTimes = TeamTracks[teamName].times;
       var teamScores = TeamTracks[teamName].scores;
@@ -102,9 +122,9 @@ function UpdateDisplay() {
         if (teamTimes[j].end < TimeFrame && teamScores.hasOwnProperty(location) && teamScores[location].end > TeamScore[i])
           teamScore = teamScores[location].end;
         if (teamTimes[j].start <= TimeFrame && TimeFrame <= teamTimes[j].end) {
-          teamLocation = CheckpointLocations[location];
           if (teamScores.hasOwnProperty(location) && teamScores[location].start > TeamScore[i])
             teamScore = teamScores[location].start;
+          teamLocation = CheckpointLocations[location];
           TeamMarkers[i].setPosition(teamLocation);
           break;
         }
@@ -112,6 +132,12 @@ function UpdateDisplay() {
       var newMap = (teamLocation != null ? map : null);
       if (TeamMarkers[i].getMap() != newMap)
         TeamMarkers[i].setMap(newMap);
+      if (location != null) {
+        if (location.indexOf("#") > 0)
+          TeamMarkers[i].setIcon(TeamIconsSmall[i]);
+        else
+          TeamMarkers[i].setIcon(TeamIcons[i]);
+      }
       if (teamScore != null) {
         TeamScore[i] = teamScore;
         document.getElementById("teamScore" + i).innerHTML = teamScore;
@@ -132,6 +158,7 @@ function OnTogglePauseClicked() {
 function OnTeamSelectorChanged(selector) {
   var teamIndex = selector.id.substring(12);
   TeamScore[teamIndex] = 0;
+  TeamMarkers[teamIndex].setMap(null);
   document.getElementById("teamScore" + teamIndex).innerHTML = 0;
   TeamNames[teamIndex] = selector.value;
 }

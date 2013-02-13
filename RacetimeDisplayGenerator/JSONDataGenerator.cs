@@ -10,25 +10,25 @@ namespace RacetimeDisplayGenerator
 {
   public class JSONDataGenerator
   {
-    public void Write(string filename, List<CheckpointLocation> checkpointLocations, RaceData indecies)
+    public void Write(string filename, List<CheckpointLocation> checkpointLocations, RaceData data)
     {
       using (StreamWriter w = new StreamWriter(filename, false, Encoding.UTF8))
       {
         WriteCheckpointLocations(checkpointLocations, w);
 
         Dictionary<string, decimal> maxTeamsOnCheckpoint = new Dictionary<string, decimal>();
-        foreach (string checkpoint in indecies.CheckpointAndTimeFrame.Keys)
+        foreach (string checkpoint in data.CheckpointAndTimeFrame.Keys)
         {
-          int max = indecies.CheckpointAndTimeFrame[checkpoint].Values.Max(r => r.Count);
+          int max = data.CheckpointAndTimeFrame[checkpoint].Values.Max(r => r.Count);
           maxTeamsOnCheckpoint[checkpoint] = max;
         }
 
         HashSet<string> checkpointNames = new HashSet<string>();
         foreach (CheckpointLocation checkpoint in checkpointLocations)
           checkpointNames.Add(checkpoint.Name);
-        WriteHeatMapData(indecies, checkpointNames, maxTeamsOnCheckpoint, w);
+        WriteHeatMapData(data, checkpointNames, maxTeamsOnCheckpoint, w);
 
-        WriteTeamData(indecies, checkpointNames, maxTeamsOnCheckpoint, w);
+        WriteTeamData(data, checkpointNames, maxTeamsOnCheckpoint, w);
       }
     }
 
@@ -88,9 +88,9 @@ namespace RacetimeDisplayGenerator
     }
 
 
-    private void WriteTeamData(RaceData indecies, HashSet<string> checkpointNames, Dictionary<string, decimal> maxTeamsOnCheckpoint, StreamWriter w)
+    private void WriteTeamData(RaceData data, HashSet<string> checkpointNames, Dictionary<string, decimal> maxTeamsOnCheckpoint, StreamWriter w)
     {
-      List<string> teams = indecies.TeamAndTimeInterval.Keys.OrderBy(x => x.PadLeft(4)).ToList();
+      List<string> teams = data.TeamAndTimeInterval.Keys.OrderBy(x => x.PadLeft(4)).ToList();
       string lastTeam = teams.Last();
       w.WriteLine("TeamTracks = {");
       foreach (string team in teams)
@@ -98,18 +98,27 @@ namespace RacetimeDisplayGenerator
         w.WriteLine("  \"{0}\": {{", team);
         w.WriteLine("    name: \"{0}\",", team);
         w.WriteLine("    times: [");
-        foreach (CheckpointTimeRegistration reg in indecies.TeamAndTimeInterval[team].OrderBy(r => r.StartTimeFrame))
+        CheckpointTimeRegistration prevReg = null;
+        foreach (CheckpointTimeRegistration reg in data.TeamAndTimeInterval[team].OrderBy(r => r.StartTimeFrame))
         {
+          if (prevReg != null)
+          {
+            w.WriteLine("      {{ start: {0}, end: {1}, location: \"{2}\" }},",
+              Configuration.ConvertInputTimeFrameToOutput(prevReg.EndTimeFrame.Value + 1),
+              Configuration.ConvertInputTimeFrameToOutput(reg.StartTimeFrame.Value - 1),
+              prevReg.Checkpoint + "#" + reg.Checkpoint);
+          }
           w.WriteLine("      {{ start: {0}, end: {1}, location: \"{2}\" }},",
             Configuration.ConvertInputTimeFrameToOutput(reg.StartTimeFrame.Value), 
             Configuration.ConvertInputTimeFrameToOutput(reg.EndTimeFrame.Value), 
             reg.Checkpoint);
+          prevReg = reg;
         }
         w.WriteLine("    ],");
         w.WriteLine("    scores: {");
-        if (indecies.TeamTeamScore.ContainsKey(team))
+        if (data.TeamTeamScore.ContainsKey(team))
         {
-          foreach (TeamScoreRegistration reg in indecies.TeamTeamScore[team])
+          foreach (TeamScoreRegistration reg in data.TeamTeamScore[team])
           {
             w.WriteLine("      \"{0}\": {{ start:{1}, end:{2} }},",
               reg.Checkpoint,

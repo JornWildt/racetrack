@@ -1,16 +1,64 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using SharpKml.Base;
 
 
 namespace RacetimeDisplayGenerator
 {
   public class RaceDataCalculator
   {
-    public RaceData CalcuateData(IList<CheckpointTimeRegistration> checkpointTimes, IList<TeamScoreRegistration> teamScores)
+    public RaceData CalcuateData(
+      IList<CheckpointTimeRegistration> checkpointTimes, 
+      IList<TeamScoreRegistration> teamScores,
+      List<CheckpointRegistration> checkpoints,
+      IList<CheckpointLocation> checkpointLocations)
     {
       RaceData data = new RaceData();
       InitializeRegistrations(data, checkpointTimes, teamScores);
+
+      CalculateCheckpointLocations(checkpoints, checkpointLocations, data);
+
+      List<CheckpointRegistration> extendedCheckpoints = new List<CheckpointRegistration>();
+      for (int i=0; i<checkpoints.Count; ++i)
+      {
+        CheckpointRegistration c1 = checkpoints[i];
+        extendedCheckpoints.Add(c1);
+        for (int j = i+1; j < checkpoints.Count; ++j)
+        {
+          if (i != j)
+          {
+            CheckpointRegistration c2 = checkpoints[j];
+            if (c1.Location != null && c2.Location != null)
+            {
+              CheckpointRegistration c = new CheckpointRegistration
+              {
+                Checkpoint = c1.Checkpoint + "#" + c2.Checkpoint,
+                Location = new Vector((c1.Location.Latitude + c2.Location.Latitude) / 2, (c1.Location.Longitude + c2.Location.Longitude) / 2),
+                Type = CheckpointType.Intermediate
+              };
+              checkpointLocations.Add(new CheckpointLocation { Name = c.Checkpoint, Location = c.Location });
+              extendedCheckpoints.Add(c);
+
+              c = new CheckpointRegistration
+              {
+                Checkpoint = c2.Checkpoint + "#" + c1.Checkpoint,
+                Location = new Vector((c1.Location.Latitude + c2.Location.Latitude) / 2, (c1.Location.Longitude + c2.Location.Longitude) / 2),
+                Type = CheckpointType.Intermediate
+              };
+              checkpointLocations.Add(new CheckpointLocation { Name = c.Checkpoint, Location = c.Location });
+              extendedCheckpoints.Add(c);
+            }
+          }
+        }
+      }
+      checkpoints.Clear();
+      checkpoints.AddRange(extendedCheckpoints);
+
+      foreach (CheckpointRegistration reg in checkpoints)
+      {
+        data.CheckpointRegistration[reg.Checkpoint] = reg;
+      }
 
       foreach (CheckpointTimeRegistration reg in checkpointTimes)
       {
@@ -25,17 +73,7 @@ namespace RacetimeDisplayGenerator
         UpdateTeamAndCheckpointTeamScoreIndex(data.TeamTeamScore, reg);
       }
 
-      foreach (string team in data.TeamTeamScore.Keys)
-      {
-        int score = 0;
-        foreach (TeamScoreRegistration reg in data.TeamTeamScore[team])
-        {
-          score += reg.Fixed.Value;
-          reg.Start = score;
-          score += reg.Work.Value;
-          reg.End = score;
-        }
-      }
+      CalculateSummarizedScores(data);
 
       return data;
     }
@@ -81,6 +119,21 @@ namespace RacetimeDisplayGenerator
           reg.Fixed = 0;
         if (reg.Work == null)
           reg.Work = 0;
+      }
+    }
+
+
+    private static void CalculateCheckpointLocations(IList<CheckpointRegistration> checkpoints, IList<CheckpointLocation> checkpointLocations, RaceData data)
+    {
+      foreach (CheckpointRegistration reg in checkpoints)
+      {
+        data.CheckpointRegistration[reg.Checkpoint] = reg;
+      }
+
+      foreach (CheckpointLocation l in checkpointLocations)
+      {
+        if (data.CheckpointRegistration.ContainsKey(l.Name))
+          data.CheckpointRegistration[l.Name].Location = l.Location;
       }
     }
 
@@ -163,6 +216,22 @@ namespace RacetimeDisplayGenerator
         index[reg.Team] = new List<TeamScoreRegistration>();
 
       index[reg.Team].Add(reg);
+    }
+
+
+    private static void CalculateSummarizedScores(RaceData data)
+    {
+      foreach (string team in data.TeamTeamScore.Keys)
+      {
+        int score = 0;
+        foreach (TeamScoreRegistration reg in data.TeamTeamScore[team])
+        {
+          score += reg.Fixed.Value;
+          reg.Start = score;
+          score += reg.Work.Value;
+          reg.End = score;
+        }
+      }
     }
 
 
