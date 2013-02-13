@@ -11,14 +11,16 @@
   </head>
   <body onload="Initialize()">
     <div id="headerpanel">
+      <div id="buttons">
+        <button onclick="OnBackward()">&lt;&lt;</button>
+        <button onclick="OnTogglePauseClicked()" id="pauseButton">Start</button>
+        <button onclick="OnForward()">&gt;&gt;</button>
+      </div>
       Fremhæv sjak A (gul): <select id="teamSelector0" onchange="OnTeamSelectorChanged(this)"></select>
       point: <span id="teamScore0">0</span><br />
       Fremhæv sjak B (blå): <select id="teamSelector1" onchange="OnTeamSelectorChanged(this)"></select>
       point: <span id="teamScore1">0</span>
       &nbsp;&nbsp;&nbsp;
-      <button onclick="OnBackward()">&lt;&lt;</button>
-      <button onclick="OnTogglePauseClicked()" id="pauseButton">Start</button>
-      <button onclick="OnForward()">&gt;&gt;</button>
       <div id="infolink"><a href="http://www.alligator.dk">Alligatorløbet 2013</a></div>
     </div>
     <div id="map_canvas"></div>

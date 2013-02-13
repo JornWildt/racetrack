@@ -58,3 +58,13 @@ select, button, body
   float: right;
   margin-right: 10px;
 }
+
+#buttons
+{
+  position: absolute;
+  height: 35px;
+  width: 170px;
+  margin: 0 0 0 -85px;
+  left: 50%;
+  top: 15px;
+}
