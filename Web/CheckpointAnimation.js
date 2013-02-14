@@ -183,7 +183,7 @@ function OnTeamSelectorChanged(selector) {
 }
 
 function OnForward() {
-  TimeFrame += 10;
+  TimeFrame += (IsActive ? 10 : 12);
   if (TimeFrame >= CheckpointHeatMaps.length) {
     TimeFrame = 0;
     for (var i = 0; i < TeamCount; ++i)
@@ -193,7 +193,7 @@ function OnForward() {
 }
 
 function OnBackward() {
-  TimeFrame -= 10;
+  TimeFrame -= (IsActive ? 10 : 12);
   // FIXME: use more specific variable for "length"
   if (TimeFrame < 0)
     TimeFrame = CheckpointHeatMaps.length + TimeFrame;
