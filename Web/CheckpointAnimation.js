@@ -39,7 +39,8 @@ BlueStarSmall = {
 
 
 TeamCount = 2;
-TeamNames = ["52", "64"];
+TeamNamesDefault = ["52", "64"];
+TeamNames = TeamNamesDefault;
 TeamMarkers = [null, null];
 TeamIcons = [GoldStar, BlueStar];
 TeamIconsSmall = [GoldStarSmall, BlueStarSmall];
@@ -147,13 +148,28 @@ function UpdateDisplay() {
   }
 }
 
+
+/*********************************************************************************
+  Display update helpers
+*********************************************************************************/
+
+function RefreshButtons() {
+  document.getElementById("pauseButton").innerHTML = (IsActive ? "Pause" : "Start");
+}
+
+function RefreshScores() {
+}
+
+function RefreshTeamNames(teamIndex) {
+}
+
 /*********************************************************************************
   User input handlers
 *********************************************************************************/
 
 function OnTogglePauseClicked() {
   IsActive = !IsActive;
-  document.getElementById("pauseButton").innerHTML = (IsActive ? "Pause" : "Start");
+  RefreshButtons();
 }
 
 function OnTeamSelectorChanged(selector) {
@@ -180,5 +196,16 @@ function OnBackward() {
   if (TimeFrame < 0)
     TimeFrame = CheckpointHeatMaps.length + TimeFrame;
   ClearScores();
+  UpdateDisplay();
+}
+
+function OnReset() {
+  TimeFrame = 0;
+  IsActive = false;
+  TeamNames = TeamNamesDefault;
+  for (var i=0; i<TeamCount; ++i) {
+    TeamScore[i] = 0;
+  }
+  RefreshButtons();
   UpdateDisplay();
 }

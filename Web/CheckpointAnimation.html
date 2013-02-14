@@ -5,7 +5,7 @@
     <title>Alligatorløb 2013 minut for minut</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="CheckpointAnimation.css" />
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization&key=AIzaSyBMOpV97gLT2lczMSw0MRPdOnu1WPUX__0"></script>
     <script type="text/javascript"src="CheckpointData.js"></script>
     <script type="text/javascript" src="CheckpointAnimation.js"></script>
   </head>
@@ -14,7 +14,8 @@
       <div id="buttons">
         <button onclick="OnBackward()">&lt;&lt;</button>
         <button onclick="OnTogglePauseClicked()" id="pauseButton">Start</button>
-        <button onclick="OnForward()">&gt;&gt;</button>
+        <button onclick="OnForward()">&gt;&gt;</button><br />
+        <a href="#" onclick="OnReset()">Genstart</a>
       </div>
       Fremhæv sjak A (gul): <select id="teamSelector0" onchange="OnTeamSelectorChanged(this)"></select>
       point: <span id="teamScore0">0</span><br />
