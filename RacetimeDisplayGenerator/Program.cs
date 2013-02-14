@@ -6,16 +6,6 @@ using CsvHelper;
 using CsvHelper.Configuration;
 using System.Text;
 
-// Skal skalere til max. pr. post
-// ... eller hvad? Der er også en finte i at kunne se hvor mange der maks. kommer på posten.
-// Flytte javascript code til egen fil
-// Skal kunne stoppe loopet
-// Skal kunne vælge tidspunkt
-// Mangler fornuftig afslutning (ellers dør det lige efter post 11)
-// Skal kunne speede op og ned
-// Skal kunne udpege sjak
-// Skal kunne vise hvor mange der er på vej mellem to poster
-// Tegne linier ind på det færdige kort
 
 namespace RacetimeDisplayGenerator
 {
@@ -31,6 +21,8 @@ namespace RacetimeDisplayGenerator
 
     const string CheckpointsFilename = "Checkpoints.csv";
 
+    const string TeamsFilename = "Teams.csv";
+
     const string OutputDir = "C:\\Projects\\Racetracker\\Web";
 
     const string JSONDataFilename = "CheckpointData.js";
@@ -39,6 +31,10 @@ namespace RacetimeDisplayGenerator
     static void Main(string[] args)
     {
       CsvConfiguration cfg = new CsvConfiguration { Delimiter = ";", IsStrictMode = false };
+      CsvReader teamsReader = new CsvReader(new StreamReader(Path.Combine(BaseDir, TeamsFilename), Encoding.GetEncoding(1252)), cfg);
+      List<TeamRegistration> teams = teamsReader.GetRecords<TeamRegistration>().ToList();
+
+      cfg = new CsvConfiguration { Delimiter = ";", IsStrictMode = false };
       CsvReader checkPointTimesReader = new CsvReader(new StreamReader(Path.Combine(BaseDir, CheckpointTimesFilename), Encoding.GetEncoding(1252)), cfg);
       List<CheckpointTimeRegistration> checkpointTimes = checkPointTimesReader.GetRecords<CheckpointTimeRegistration>().ToList();
 
@@ -54,7 +50,7 @@ namespace RacetimeDisplayGenerator
       List<CheckpointLocation> checkpointLocations = locationsLoader.LoadCheckpointsFromKML(Path.Combine(BaseDir, CheckpointLocationsFilename));
 
       RaceDataCalculator converter = new RaceDataCalculator();
-      RaceData indecies = converter.CalcuateData(checkpointTimes, teamScores, checkpoints, checkpointLocations);
+      RaceData indecies = converter.CalcuateData(teams, checkpointTimes, teamScores, checkpoints, checkpointLocations);
 
       JSONDataGenerator generator = new JSONDataGenerator();
       generator.Write(Path.Combine(OutputDir, JSONDataFilename), checkpointLocations, indecies);

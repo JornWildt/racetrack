@@ -41,6 +41,7 @@ namespace RacetimeDisplayGenerator
     public DateTime EndTime { get; set; }
     public int EndTimeFrame { get; set; }
 
+    public List<TeamRegistration> Teams { get; set; }
     public CheckpointRegistrationIndex CheckpointRegistration { get; set; }
     public CheckpointAndTimeFrameIndex CheckpointAndTimeFrame { get; set; }
     public TimeFrameAndCheckpointIndex TimeFrameAndCheckpoint { get; set; }
@@ -50,6 +51,7 @@ namespace RacetimeDisplayGenerator
 
     public RaceData()
     {
+      Teams = new List<TeamRegistration>();
       CheckpointRegistration = new CheckpointRegistrationIndex();
       CheckpointAndTimeFrame = new CheckpointAndTimeFrameIndex();
       TimeFrameAndCheckpoint = new TimeFrameAndCheckpointIndex();

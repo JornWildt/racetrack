@@ -5,26 +5,34 @@
     <title>Alligatorløb 2013 minut for minut</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="CheckpointAnimation.css" />
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization&key=AIzaSyBMOpV97gLT2lczMSw0MRPdOnu1WPUX__0"></script>
-    <script type="text/javascript"src="CheckpointData.js"></script>
-    <script type="text/javascript" src="CheckpointAnimation.js"></script>
+    <link rel="stylesheet" href="tinybox2/style.css" type="text/css" />
   </head>
   <body onload="Initialize()">
     <div id="headerpanel">
       <div id="buttons">
-        <button onclick="OnBackward()">&lt;&lt;</button>
+        <button onclick="OnBackward()" title="Hurtigt baglæns">&lt;&lt;</button>
         <button onclick="OnTogglePauseClicked()" id="pauseButton">Start</button>
-        <button onclick="OnForward()">&gt;&gt;</button><br />
+        <button onclick="OnForward() title="Hurtigt fremad"">&gt;&gt;</button><br />
         <a href="#" onclick="OnReset()">Genstart</a>
       </div>
-      Fremhæv sjak A (gul): <select id="teamSelector0" onchange="OnTeamSelectorChanged(this)"></select>
-      point: <span id="teamScore0">0</span><br />
-      Fremhæv sjak B (blå): <select id="teamSelector1" onchange="OnTeamSelectorChanged(this)"></select>
-      point: <span id="teamScore1">0</span>
-      &nbsp;&nbsp;&nbsp;
+      <div class="selector-row">
+        Fremhæv sjak A (gul): <select id="teamSelector0" onchange="OnTeamSelectorChanged(this)"></select>
+        <span onclick="OnShowTeamHelp()" class="help">?</span>
+        <span>point: </span><span id="teamScore0">0</span>
+      </div>
+      <div class="selector-row">
+        Fremhæv sjak B (blå): <select id="teamSelector1" onchange="OnTeamSelectorChanged(this)"></select>
+        <span onclick="OnShowTeamHelp()" class="help">?</span>
+        <span>point: </span><span id="teamScore1">0</span>
+      </div>
       <div id="infolink"><a href="http://www.alligator.dk">Alligatorløbet 2013</a></div>
     </div>
     <div id="map_canvas"></div>
     <div id="clockpanel"><span id="time">00-00-0000 00:00:00</span></div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization&key=AIzaSyBMOpV97gLT2lczMSw0MRPdOnu1WPUX__0"></script>
+    <script type="text/javascript"src="CheckpointData.js"></script>
+    <script type="text/javascript"src="tinybox2/tinybox.js"></script>
+    <script type="text/javascript" src="CheckpointAnimation.js"></script>
   </body>
 </html>

@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{FFEDE28A-E78
 		Web\CheckpointAnimation.css = Web\CheckpointAnimation.css
 		Web\CheckpointAnimation.html = Web\CheckpointAnimation.html
 		Web\CheckpointAnimation.js = Web\CheckpointAnimation.js
+		Web\Introduction.html = Web\Introduction.html
+		Web\TeamHelp.html = Web\TeamHelp.html
 	EndProjectSection
 EndProject
 Global

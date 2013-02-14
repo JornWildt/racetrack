@@ -93,13 +93,18 @@ namespace RacetimeDisplayGenerator
       List<string> teams = data.TeamAndTimeInterval.Keys.OrderBy(x => x.PadLeft(4)).ToList();
       string lastTeam = teams.Last();
       w.WriteLine("TeamTracks = {");
-      foreach (string team in teams)
+      foreach (string teamName in teams)
       {
-        w.WriteLine("  \"{0}\": {{", team);
-        w.WriteLine("    name: \"{0}\",", team);
+        TeamRegistration team = data.Teams.FirstOrDefault(t => t.Name == teamName);
+        string extendedTeamName = teamName;
+        if (team != null && !string.IsNullOrEmpty(team.Comment))
+          extendedTeamName += " (" + team.Comment + ")";
+        w.WriteLine("  \"{0}\": {{", teamName);
+        w.WriteLine("    name: \"{0}\",", teamName);
+        w.WriteLine("    extendedName: \"{0}\",", extendedTeamName);
         w.WriteLine("    times: [");
         CheckpointTimeRegistration prevReg = null;
-        foreach (CheckpointTimeRegistration reg in data.TeamAndTimeInterval[team].OrderBy(r => r.StartTimeFrame))
+        foreach (CheckpointTimeRegistration reg in data.TeamAndTimeInterval[teamName].OrderBy(r => r.StartTimeFrame))
         {
           if (prevReg != null)
           {
@@ -116,9 +121,9 @@ namespace RacetimeDisplayGenerator
         }
         w.WriteLine("    ],");
         w.WriteLine("    scores: {");
-        if (data.TeamTeamScore.ContainsKey(team))
+        if (data.TeamTeamScore.ContainsKey(teamName))
         {
-          foreach (TeamScoreRegistration reg in data.TeamTeamScore[team])
+          foreach (TeamScoreRegistration reg in data.TeamTeamScore[teamName])
           {
             w.WriteLine("      \"{0}\": {{ start:{1}, end:{2} }},",
               reg.Checkpoint,
@@ -128,7 +133,7 @@ namespace RacetimeDisplayGenerator
         }
         w.WriteLine("    }");
         w.Write("  }");
-        if (team != lastTeam)
+        if (teamName != lastTeam)
           w.WriteLine(",");
         else
           w.WriteLine("");

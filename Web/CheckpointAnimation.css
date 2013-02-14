@@ -74,3 +74,48 @@ select, button, body
 {
   font-size: 10pt;
 }
+
+.selector-row 
+{
+  padding-bottom: 2px;
+}
+
+.selector-row *, .selector-row span *
+{
+  vertical-align: middle;
+}
+
+.help
+{
+  background-color: #DDD;
+  color: White;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.help:hover
+{
+  cursor: pointer;
+}
+
+dl dt
+{
+  float: left;
+  clear: left;
+  font-weight: bold;
+  width: 6em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+dl dd
+{
+  float: left;
+  padding: 0;
+  margin: 0;
+  margin-left: 0;
+  padding-left: 0;
+}

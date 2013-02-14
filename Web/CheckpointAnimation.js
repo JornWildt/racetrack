@@ -74,13 +74,15 @@ function Initialize() {
     selector.options[selector.options.length] = new Option("- Vælg sjak -", "");
     for (var key in TeamTracks) {
       if (TeamTracks.hasOwnProperty(key)) {
-        selector.options[selector.options.length] = new Option(TeamTracks[key].name, TeamTracks[key].name);
+        selector.options[selector.options.length] = new Option(TeamTracks[key].extendedName, TeamTracks[key].name);
       }
     }
     selector.value = TeamNames[i];
   }
 
   window.setInterval(UpdateTimeFrame, 500);
+  
+  TINY.box.show({ url: 'Introduction.html', width: 500, height: 250 });
 }
 
 
@@ -208,4 +210,8 @@ function OnReset() {
   }
   RefreshButtons();
   UpdateDisplay();
+}
+
+function OnShowTeamHelp() {
+  TINY.box.show({ url: 'TeamHelp.html', width: 500, height: 250 });
 }

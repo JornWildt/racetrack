@@ -9,12 +9,15 @@ namespace RacetimeDisplayGenerator
   public class RaceDataCalculator
   {
     public RaceData CalcuateData(
-      IList<CheckpointTimeRegistration> checkpointTimes, 
-      IList<TeamScoreRegistration> teamScores,
+      List<TeamRegistration> teams,
+      List<CheckpointTimeRegistration> checkpointTimes, 
+      List<TeamScoreRegistration> teamScores,
       List<CheckpointRegistration> checkpoints,
-      IList<CheckpointLocation> checkpointLocations)
+      List<CheckpointLocation> checkpointLocations)
     {
       RaceData data = new RaceData();
+      data.Teams = teams;
+
       InitializeRegistrations(data, checkpointTimes, teamScores);
 
       CalculateCheckpointLocations(checkpoints, checkpointLocations, data);
