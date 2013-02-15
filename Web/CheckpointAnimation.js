@@ -57,7 +57,7 @@ function Initialize() {
     mapTypeId: google.maps.MapTypeId.HYBRID
   };
   map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-  var ctaLayer = new google.maps.KmlLayer("http://www.elfisk.dk/allitrack/Checkpoint_locations.kml");
+  var ctaLayer = new google.maps.KmlLayer("http://www.elfisk.dk/allitrack/Checkpoint_locations.3.kml");
   ctaLayer.setMap(map);
 
   HeatMap = new google.maps.visualization.HeatmapLayer({ maxIntensity: 40 });
@@ -81,8 +81,10 @@ function Initialize() {
   }
 
   window.setInterval(UpdateTimeFrame, 500);
-  
+
   TINY.box.show({ url: 'Introduction.html', width: 500, height: 250 });
+
+  UpdateDisplay();
 }
 
 
@@ -103,8 +105,13 @@ function UpdateTimeFrame() {
     return;
   UpdateDisplay();
   TimeFrame = (TimeFrame + 1) % CheckpointHeatMaps.length;
-  if (TimeFrame == 0)
+  if (TimeFrame == 0) {
+    IsActive = false;
+    RefreshButtons();
+  }
+  else if (TimeFrame == 1) {
     ClearScores();
+  }
 }
 
 TeamScore = [0,0];
@@ -128,6 +135,10 @@ function UpdateDisplay() {
         if (teamTimes[j].start <= TimeFrame && TimeFrame <= teamTimes[j].end) {
           if (teamScores.hasOwnProperty(location) && teamScores[location].start > TeamScore[i])
             teamScore = teamScores[location].start;
+          if (location.indexOf("#") > 0)
+            TeamMarkers[i].setIcon(TeamIconsSmall[i]);
+          else
+            TeamMarkers[i].setIcon(TeamIcons[i]);
           teamLocation = CheckpointLocations[location];
           TeamMarkers[i].setPosition(teamLocation);
           break;
@@ -136,12 +147,6 @@ function UpdateDisplay() {
       var newMap = (teamLocation != null ? map : null);
       if (TeamMarkers[i].getMap() != newMap)
         TeamMarkers[i].setMap(newMap);
-      if (location != null) {
-        if (location.indexOf("#") > 0)
-          TeamMarkers[i].setIcon(TeamIconsSmall[i]);
-        else
-          TeamMarkers[i].setIcon(TeamIcons[i]);
-      }
       if (teamScore != null) {
         TeamScore[i] = teamScore;
         document.getElementById("teamScore" + i).innerHTML = teamScore;

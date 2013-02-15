@@ -1,4 +1,4 @@
-﻿namespace RacetimeDisplayGenerator
+﻿namespace RacetimeDisplayGenerator.Registrations
 {
   public class TeamScoreRegistration
   {

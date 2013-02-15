@@ -40,16 +40,15 @@ select, button, body
 {
   position: absolute;
   z-index: 10;
-  background-color: white;
-  border: 1px solid black;
   color: Red;
   font-weight: bold;
   font-size: 24px;
   font-family: ‘Courier New’, Courier, monospace;
-  left: 20px;
-  bottom: 20px;
+  left: 50%;
+  top: 3px;
   width: 280px;
   height: 25px;
+  margin: 0 0 0 -140px;
   text-align: center;
 }
 
@@ -63,16 +62,31 @@ select, button, body
 {
   position: absolute;
   height: 35px;
-  width: 170px;
-  margin: 0 0 0 -85px;
+  width: 300px;
+  margin: 0 0 0 -150px;
   left: 50%;
-  top: 10px;
+  top: 30px;
   text-align: center;
 }
 
 #buttons a
 {
   font-size: 10pt;
+}
+
+.color0, .color1
+{
+  font-weight: bold;
+}
+
+.color0
+{
+  color: Yellow;
+}
+
+.color1
+{
+  color: Blue;
 }
 
 .selector-row 
@@ -118,4 +132,9 @@ dl dd
   margin: 0;
   margin-left: 0;
   padding-left: 0;
+}
+
+button
+{
+  font-weight: bold;
 }

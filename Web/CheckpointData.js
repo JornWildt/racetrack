@@ -13,6 +13,8 @@
   "Start" : new google.maps.LatLng(56.0632970570807, 13.0930210732038),
   "Post 3½" : new google.maps.LatLng(56.0789188309173, 13.1162493021312),
   "Slut" : new google.maps.LatLng(56.0114158511424, 13.2397471926395),
+  "Post 1/3" : new google.maps.LatLng(56.0623777387933, 13.0853487142114),
+  "Post 2/3" : new google.maps.LatLng(56.0640311699374, 13.0720347900814),
   "Start#Post 1" : new google.maps.LatLng(56.0641864450015, 13.0782886605701),
   "Post 1#Start" : new google.maps.LatLng(56.0641864450015, 13.0782886605701),
   "Start#Post 2" : new google.maps.LatLng(56.0761645971837, 13.0729458328667),
@@ -212,119 +214,145 @@ CheckpointHeatMaps = [
   {
     time: "02-02-2013 18:05:00",
     map: [
-      { location: CheckpointLocations["Start"], weight: 35 }
+      { location: CheckpointLocations["Start"], weight: 35 },
+      { location: CheckpointLocations["Post 1/3"], weight: 4 }
     ]
     },
   {
     time: "02-02-2013 18:10:00",
     map: [
-      { location: CheckpointLocations["Start"], weight: 17 }
+      { location: CheckpointLocations["Start"], weight: 17 },
+      { location: CheckpointLocations["Post 1/3"], weight: 27 }
     ]
     },
   {
     time: "02-02-2013 18:15:00",
     map: [
-      { location: CheckpointLocations["Start"], weight: 3 }
+      { location: CheckpointLocations["Start"], weight: 3 },
+      { location: CheckpointLocations["Post 1/3"], weight: 31 }
     ]
     },
   {
     time: "02-02-2013 18:20:00",
     map: [
+      { location: CheckpointLocations["Post 1/3"], weight: 47 },
+      { location: CheckpointLocations["Post 2/3"], weight: 2 }
     ]
     },
   {
     time: "02-02-2013 18:25:00",
     map: [
+      { location: CheckpointLocations["Post 1/3"], weight: 38 },
+      { location: CheckpointLocations["Post 2/3"], weight: 19 }
     ]
     },
   {
     time: "02-02-2013 18:30:00",
     map: [
-      { location: CheckpointLocations["Post 1"], weight: 13 }
+      { location: CheckpointLocations["Post 1"], weight: 13 },
+      { location: CheckpointLocations["Post 1/3"], weight: 27 },
+      { location: CheckpointLocations["Post 2/3"], weight: 50 }
     ]
     },
   {
     time: "02-02-2013 18:35:00",
     map: [
-      { location: CheckpointLocations["Post 1"], weight: 25 }
+      { location: CheckpointLocations["Post 1"], weight: 25 },
+      { location: CheckpointLocations["Post 1/3"], weight: 18 },
+      { location: CheckpointLocations["Post 2/3"], weight: 47 }
     ]
     },
   {
     time: "02-02-2013 18:40:00",
     map: [
-      { location: CheckpointLocations["Post 1"], weight: 42 }
+      { location: CheckpointLocations["Post 1"], weight: 42 },
+      { location: CheckpointLocations["Post 1/3"], weight: 2 },
+      { location: CheckpointLocations["Post 2/3"], weight: 25 }
     ]
     },
   {
     time: "02-02-2013 18:45:00",
     map: [
-      { location: CheckpointLocations["Post 1"], weight: 48 }
+      { location: CheckpointLocations["Post 1"], weight: 48 },
+      { location: CheckpointLocations["Post 2/3"], weight: 19 }
     ]
     },
   {
     time: "02-02-2013 18:50:00",
     map: [
-      { location: CheckpointLocations["Post 1"], weight: 46 }
+      { location: CheckpointLocations["Post 1"], weight: 46 },
+      { location: CheckpointLocations["Post 2/3"], weight: 13 }
     ]
     },
   {
     time: "02-02-2013 18:55:00",
     map: [
-      { location: CheckpointLocations["Post 1"], weight: 48 }
+      { location: CheckpointLocations["Post 1"], weight: 48 },
+      { location: CheckpointLocations["Post 1/3"], weight: 2 },
+      { location: CheckpointLocations["Post 2/3"], weight: 8 }
     ]
     },
   {
     time: "02-02-2013 19:00:00",
     map: [
-      { location: CheckpointLocations["Post 1"], weight: 34 }
+      { location: CheckpointLocations["Post 1"], weight: 34 },
+      { location: CheckpointLocations["Post 1/3"], weight: 2 },
+      { location: CheckpointLocations["Post 2/3"], weight: 2 }
     ]
     },
   {
     time: "02-02-2013 19:05:00",
     map: [
-      { location: CheckpointLocations["Post 1"], weight: 23 }
+      { location: CheckpointLocations["Post 1"], weight: 23 },
+      { location: CheckpointLocations["Post 2/3"], weight: 2 }
     ]
     },
   {
     time: "02-02-2013 19:10:00",
     map: [
       { location: CheckpointLocations["Post 1"], weight: 17 },
-      { location: CheckpointLocations["Post 2"], weight: 2 }
+      { location: CheckpointLocations["Post 2"], weight: 2 },
+      { location: CheckpointLocations["Post 2/3"], weight: 33 }
     ]
     },
   {
     time: "02-02-2013 19:15:00",
     map: [
       { location: CheckpointLocations["Post 1"], weight: 7 },
-      { location: CheckpointLocations["Post 2"], weight: 3 }
+      { location: CheckpointLocations["Post 2"], weight: 3 },
+      { location: CheckpointLocations["Post 2/3"], weight: 33 }
     ]
     },
   {
     time: "02-02-2013 19:20:00",
     map: [
       { location: CheckpointLocations["Post 1"], weight: 11 },
-      { location: CheckpointLocations["Post 2"], weight: 8 }
+      { location: CheckpointLocations["Post 2"], weight: 8 },
+      { location: CheckpointLocations["Post 2/3"], weight: 8 }
     ]
     },
   {
     time: "02-02-2013 19:25:00",
     map: [
       { location: CheckpointLocations["Post 1"], weight: 17 },
-      { location: CheckpointLocations["Post 2"], weight: 12 }
+      { location: CheckpointLocations["Post 2"], weight: 12 },
+      { location: CheckpointLocations["Post 2/3"], weight: 2 }
     ]
     },
   {
     time: "02-02-2013 19:30:00",
     map: [
       { location: CheckpointLocations["Post 1"], weight: 26 },
-      { location: CheckpointLocations["Post 2"], weight: 25 }
+      { location: CheckpointLocations["Post 2"], weight: 25 },
+      { location: CheckpointLocations["Post 2/3"], weight: 2 }
     ]
     },
   {
     time: "02-02-2013 19:35:00",
     map: [
       { location: CheckpointLocations["Post 1"], weight: 28 },
-      { location: CheckpointLocations["Post 2"], weight: 30 }
+      { location: CheckpointLocations["Post 2"], weight: 30 },
+      { location: CheckpointLocations["Post 2/3"], weight: 2 }
     ]
     },
   {
@@ -1736,42 +1764,213 @@ CheckpointHeatMaps = [
     map: [
       { location: CheckpointLocations["Post 5"], weight: 1 },
       { location: CheckpointLocations["Post 10"], weight: 6 },
-      { location: CheckpointLocations["Post 11"], weight: 30 }
+      { location: CheckpointLocations["Post 11"], weight: 30 },
+      { location: CheckpointLocations["Slut"], weight: 0 }
     ]
     },
   {
     time: "03-02-2013 11:40:00",
     map: [
       { location: CheckpointLocations["Post 10"], weight: 2 },
-      { location: CheckpointLocations["Post 11"], weight: 30 }
+      { location: CheckpointLocations["Post 11"], weight: 30 },
+      { location: CheckpointLocations["Slut"], weight: 0 }
     ]
     },
   {
     time: "03-02-2013 11:45:00",
     map: [
       { location: CheckpointLocations["Post 10"], weight: 2 },
-      { location: CheckpointLocations["Post 11"], weight: 20 }
+      { location: CheckpointLocations["Post 11"], weight: 20 },
+      { location: CheckpointLocations["Slut"], weight: 0 }
     ]
     },
   {
     time: "03-02-2013 11:50:00",
     map: [
-      { location: CheckpointLocations["Post 10"], weight: 2 }
+      { location: CheckpointLocations["Post 10"], weight: 2 },
+      { location: CheckpointLocations["Slut"], weight: 0 }
     ]
     },
   {
     time: "03-02-2013 11:55:00",
     map: [
-      { location: CheckpointLocations["Post 11"], weight: 10 }
+      { location: CheckpointLocations["Post 11"], weight: 10 },
+      { location: CheckpointLocations["Slut"], weight: 0 }
+    ]
+    },
+  {
+    time: "03-02-2013 12:00:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 2 }
+    ]
+    },
+  {
+    time: "03-02-2013 12:05:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 2 }
+    ]
+    },
+  {
+    time: "03-02-2013 12:10:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 2 }
+    ]
+    },
+  {
+    time: "03-02-2013 12:15:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 3 }
+    ]
+    },
+  {
+    time: "03-02-2013 12:20:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 3 }
+    ]
+    },
+  {
+    time: "03-02-2013 12:25:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 4 }
+    ]
+    },
+  {
+    time: "03-02-2013 12:30:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 6 }
+    ]
+    },
+  {
+    time: "03-02-2013 12:35:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 6 }
+    ]
+    },
+  {
+    time: "03-02-2013 12:40:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 7 }
+    ]
+    },
+  {
+    time: "03-02-2013 12:45:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 7 }
+    ]
+    },
+  {
+    time: "03-02-2013 12:50:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 8 }
+    ]
+    },
+  {
+    time: "03-02-2013 12:55:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 8 }
+    ]
+    },
+  {
+    time: "03-02-2013 13:00:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 9 }
+    ]
+    },
+  {
+    time: "03-02-2013 13:05:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 10 }
+    ]
+    },
+  {
+    time: "03-02-2013 13:10:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 12 }
+    ]
+    },
+  {
+    time: "03-02-2013 13:15:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 14 }
+    ]
+    },
+  {
+    time: "03-02-2013 13:20:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 17 }
+    ]
+    },
+  {
+    time: "03-02-2013 13:25:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 20 }
+    ]
+    },
+  {
+    time: "03-02-2013 13:30:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 22 }
+    ]
+    },
+  {
+    time: "03-02-2013 13:35:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 25 }
+    ]
+    },
+  {
+    time: "03-02-2013 13:40:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 28 }
+    ]
+    },
+  {
+    time: "03-02-2013 13:45:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 29 }
+    ]
+    },
+  {
+    time: "03-02-2013 13:50:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 32 }
+    ]
+    },
+  {
+    time: "03-02-2013 13:55:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 39 }
+    ]
+    },
+  {
+    time: "03-02-2013 14:00:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 45 }
+    ]
+    },
+  {
+    time: "03-02-2013 14:05:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 45 }
+    ]
+    },
+  {
+    time: "03-02-2013 14:10:00",
+    map: [
+      { location: CheckpointLocations["Slut"], weight: 50 }
     ]
     }];
 TeamTracks = {
   "1": {
     name: "1",
-    extendedName: "1 (K3)",
+    extendedName: "1 (K3: 345)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 3, end: 9, location: "Start#Post 1" },
+      { start: 3, end: 4, location: "Start#Post 1/3" },
+      { start: 4, end: 5, location: "Post 1/3" },
+      { start: 6, end: 7, location: "Post 1/3#Post 2/3" },
+      { start: 7, end: 8, location: "Post 2/3" },
+      { start: 8, end: 9, location: "Post 2/3#Post 1" },
       { start: 9, end: 10, location: "Post 1" },
       { start: 10, end: 17, location: "Post 1#Post 2" },
       { start: 17, end: 28, location: "Post 2" },
@@ -1795,13 +1994,15 @@ TeamTracks = {
       { start: 196, end: 202, location: "Post 10" },
       { start: 202, end: 215, location: "Post 10#Post 11" },
       { start: 216, end: 217, location: "Post 11" },
+      { start: 217, end: 240, location: "Post 11#Slut" },
+      { start: 240, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "2": {
     name: "2",
-    extendedName: "2",
+    extendedName: "2 (K: 182)",
     times: [
       { start: 0, end: 3, location: "Start" },
       { start: 3, end: 9, location: "Start#Post 1" },
@@ -1826,16 +2027,20 @@ TeamTracks = {
       { start: 159, end: 165, location: "Post 7" },
       { start: 165, end: 188, location: "Post 7#Post 9" },
       { start: 188, end: 193, location: "Post 9" },
+      { start: 193, end: 242, location: "Post 9#Slut" },
+      { start: 243, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "3": {
     name: "3",
-    extendedName: "3",
+    extendedName: "3 (K: 215)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 18, location: "Start#Post 1" },
+      { start: 3, end: 15, location: "Start#Post 2/3" },
+      { start: 15, end: 16, location: "Post 2/3" },
+      { start: 16, end: 18, location: "Post 2/3#Post 1" },
       { start: 18, end: 20, location: "Post 1" },
       { start: 20, end: 32, location: "Post 1#Post 2" },
       { start: 32, end: 43, location: "Post 2" },
@@ -1859,16 +2064,20 @@ TeamTracks = {
       { start: 195, end: 200, location: "Post 10" },
       { start: 201, end: 211, location: "Post 10#Post 11" },
       { start: 211, end: 212, location: "Post 11" },
+      { start: 212, end: 236, location: "Post 11#Slut" },
+      { start: 236, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "4": {
     name: "4",
-    extendedName: "4",
+    extendedName: "4 (NC: 137)",
     times: [
       { start: 0, end: 1, location: "Start" },
-      { start: 1, end: 10, location: "Start#Post 1" },
+      { start: 1, end: 7, location: "Start#Post 2/3" },
+      { start: 7, end: 8, location: "Post 2/3" },
+      { start: 9, end: 10, location: "Post 2/3#Post 1" },
       { start: 10, end: 13, location: "Post 1" },
       { start: 13, end: 22, location: "Post 1#Post 2" },
       { start: 22, end: 33, location: "Post 2" },
@@ -1884,16 +2093,20 @@ TeamTracks = {
       { start: 169, end: 173, location: "Post 9" },
       { start: 173, end: 191, location: "Post 9#Post 10" },
       { start: 192, end: 199, location: "Post 10" },
+      { start: 199, end: 217, location: "Post 10#Slut" },
+      { start: 217, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "5": {
     name: "5",
-    extendedName: "5",
+    extendedName: "5 (K: 246)",
     times: [
       { start: 0, end: 1, location: "Start" },
-      { start: 1, end: 8, location: "Start#Post 1" },
+      { start: 1, end: 3, location: "Start#Post 1/3" },
+      { start: 3, end: 4, location: "Post 1/3" },
+      { start: 4, end: 8, location: "Post 1/3#Post 1" },
       { start: 8, end: 10, location: "Post 1" },
       { start: 10, end: 16, location: "Post 1#Post 2" },
       { start: 17, end: 25, location: "Post 2" },
@@ -1917,16 +2130,22 @@ TeamTracks = {
       { start: 185, end: 194, location: "Post 10" },
       { start: 195, end: 204, location: "Post 10#Post 11" },
       { start: 204, end: 205, location: "Post 11" },
+      { start: 205, end: 242, location: "Post 11#Slut" },
+      { start: 243, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "6": {
     name: "6",
-    extendedName: "6",
+    extendedName: "6 (K: 279)",
     times: [
       { start: 0, end: 0, location: "Start" },
-      { start: 1, end: 8, location: "Start#Post 1" },
+      { start: 1, end: 2, location: "Start#Post 1/3" },
+      { start: 3, end: 4, location: "Post 1/3" },
+      { start: 4, end: 7, location: "Post 1/3#Post 2/3" },
+      { start: 7, end: 8, location: "Post 2/3" },
+      { start: 8, end: 8, location: "Post 2/3#Post 1" },
       { start: 8, end: 10, location: "Post 1" },
       { start: 10, end: 19, location: "Post 1#Post 2" },
       { start: 19, end: 28, location: "Post 2" },
@@ -1948,16 +2167,22 @@ TeamTracks = {
       { start: 167, end: 179, location: "Post 9" },
       { start: 179, end: 193, location: "Post 9#Post 10" },
       { start: 193, end: 203, location: "Post 10" },
+      { start: 203, end: 229, location: "Post 10#Slut" },
+      { start: 229, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "7": {
     name: "7",
-    extendedName: "7",
+    extendedName: "7 (K: 261)",
     times: [
       { start: 0, end: 0, location: "Start" },
-      { start: 1, end: 7, location: "Start#Post 1" },
+      { start: 1, end: 2, location: "Start#Post 1/3" },
+      { start: 2, end: 3, location: "Post 1/3" },
+      { start: 3, end: 5, location: "Post 1/3#Post 2/3" },
+      { start: 5, end: 6, location: "Post 2/3" },
+      { start: 6, end: 7, location: "Post 2/3#Post 1" },
       { start: 7, end: 9, location: "Post 1" },
       { start: 9, end: 16, location: "Post 1#Post 2" },
       { start: 17, end: 26, location: "Post 2" },
@@ -1979,16 +2204,22 @@ TeamTracks = {
       { start: 167, end: 175, location: "Post 9" },
       { start: 175, end: 187, location: "Post 9#Post 10" },
       { start: 188, end: 197, location: "Post 10" },
+      { start: 197, end: 212, location: "Post 10#Slut" },
+      { start: 212, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "8": {
     name: "8",
-    extendedName: "8",
+    extendedName: "8 (K: 227)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 2, end: 11, location: "Start#Post 1" },
+      { start: 2, end: 4, location: "Start#Post 1/3" },
+      { start: 4, end: 5, location: "Post 1/3" },
+      { start: 5, end: 8, location: "Post 1/3#Post 2/3" },
+      { start: 9, end: 10, location: "Post 2/3" },
+      { start: 10, end: 11, location: "Post 2/3#Post 1" },
       { start: 11, end: 13, location: "Post 1" },
       { start: 13, end: 24, location: "Post 1#Post 2" },
       { start: 25, end: 31, location: "Post 2" },
@@ -2010,16 +2241,22 @@ TeamTracks = {
       { start: 169, end: 176, location: "Post 9" },
       { start: 177, end: 189, location: "Post 9#Post 10" },
       { start: 189, end: 201, location: "Post 10" },
+      { start: 201, end: 234, location: "Post 10#Slut" },
+      { start: 234, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "9": {
     name: "9",
-    extendedName: "9 (K1)",
+    extendedName: "9 (K1: 413)",
     times: [
       { start: 0, end: 1, location: "Start" },
-      { start: 2, end: 8, location: "Start#Post 1" },
+      { start: 2, end: 2, location: "Start#Post 1/3" },
+      { start: 2, end: 3, location: "Post 1/3" },
+      { start: 4, end: 7, location: "Post 1/3#Post 2/3" },
+      { start: 7, end: 8, location: "Post 2/3" },
+      { start: 8, end: 8, location: "Post 2/3#Post 1" },
       { start: 8, end: 9, location: "Post 1" },
       { start: 9, end: 16, location: "Post 1#Post 2" },
       { start: 16, end: 25, location: "Post 2" },
@@ -2045,16 +2282,22 @@ TeamTracks = {
       { start: 189, end: 196, location: "Post 10" },
       { start: 196, end: 204, location: "Post 10#Post 11" },
       { start: 204, end: 205, location: "Post 11" },
+      { start: 205, end: 232, location: "Post 11#Slut" },
+      { start: 232, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "10": {
     name: "10",
-    extendedName: "10 (K2)",
+    extendedName: "10 (K2: 399)",
     times: [
       { start: 0, end: 1, location: "Start" },
-      { start: 1, end: 7, location: "Start#Post 1" },
+      { start: 1, end: 2, location: "Start#Post 1/3" },
+      { start: 3, end: 4, location: "Post 1/3" },
+      { start: 4, end: 6, location: "Post 1/3#Post 2/3" },
+      { start: 6, end: 7, location: "Post 2/3" },
+      { start: 7, end: 7, location: "Post 2/3#Post 1" },
       { start: 7, end: 9, location: "Post 1" },
       { start: 9, end: 18, location: "Post 1#Post 2" },
       { start: 19, end: 24, location: "Post 2" },
@@ -2080,16 +2323,22 @@ TeamTracks = {
       { start: 183, end: 187, location: "Post 10" },
       { start: 187, end: 198, location: "Post 10#Post 11" },
       { start: 199, end: 200, location: "Post 11" },
+      { start: 200, end: 222, location: "Post 11#Slut" },
+      { start: 222, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "11": {
     name: "11",
-    extendedName: "11",
+    extendedName: "11 (K: 81)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 18, location: "Start#Post 1" },
+      { start: 3, end: 7, location: "Start#Post 1/3" },
+      { start: 7, end: 8, location: "Post 1/3" },
+      { start: 8, end: 15, location: "Post 1/3#Post 2/3" },
+      { start: 15, end: 16, location: "Post 2/3" },
+      { start: 16, end: 18, location: "Post 2/3#Post 1" },
       { start: 18, end: 24, location: "Post 1" },
       { start: 24, end: 38, location: "Post 1#Post 2" },
       { start: 38, end: 49, location: "Post 2" },
@@ -2097,16 +2346,22 @@ TeamTracks = {
       { start: 87, end: 107, location: "Post 4" },
       { start: 107, end: 162, location: "Post 4#Post 9" },
       { start: 162, end: 171, location: "Post 9" },
+      { start: 172, end: 227, location: "Post 9#Slut" },
+      { start: 228, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "12": {
     name: "12",
-    extendedName: "12",
+    extendedName: "12 (K: 102)",
     times: [
       { start: 0, end: 4, location: "Start" },
-      { start: 4, end: 18, location: "Start#Post 1" },
+      { start: 4, end: 7, location: "Start#Post 1/3" },
+      { start: 7, end: 8, location: "Post 1/3" },
+      { start: 8, end: 15, location: "Post 1/3#Post 2/3" },
+      { start: 15, end: 16, location: "Post 2/3" },
+      { start: 16, end: 18, location: "Post 2/3#Post 1" },
       { start: 19, end: 22, location: "Post 1" },
       { start: 22, end: 40, location: "Post 1#Post 2" },
       { start: 40, end: 55, location: "Post 2" },
@@ -2120,16 +2375,22 @@ TeamTracks = {
       { start: 178, end: 188, location: "Post 9" },
       { start: 188, end: 206, location: "Post 9#Post 10" },
       { start: 206, end: 211, location: "Post 10" },
+      { start: 211, end: 232, location: "Post 10#Slut" },
+      { start: 233, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "13": {
     name: "13",
-    extendedName: "13",
+    extendedName: "13 (K: 221)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 3, end: 11, location: "Start#Post 1" },
+      { start: 3, end: 4, location: "Start#Post 1/3" },
+      { start: 4, end: 5, location: "Post 1/3" },
+      { start: 5, end: 8, location: "Post 1/3#Post 2/3" },
+      { start: 8, end: 9, location: "Post 2/3" },
+      { start: 10, end: 11, location: "Post 2/3#Post 1" },
       { start: 11, end: 13, location: "Post 1" },
       { start: 14, end: 24, location: "Post 1#Post 2" },
       { start: 24, end: 35, location: "Post 2" },
@@ -2149,16 +2410,22 @@ TeamTracks = {
       { start: 169, end: 180, location: "Post 9" },
       { start: 180, end: 191, location: "Post 9#Post 10" },
       { start: 191, end: 202, location: "Post 10" },
+      { start: 202, end: 223, location: "Post 10#Slut" },
+      { start: 223, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "14": {
     name: "14",
-    extendedName: "14",
+    extendedName: "14 (K: 114)",
     times: [
       { start: 0, end: -215, location: "Start" },
-      { start: -214, end: 11, location: "Start#Post 1" },
+      { start: -214, end: 4, location: "Start#Post 1/3" },
+      { start: 4, end: 5, location: "Post 1/3" },
+      { start: 6, end: 9, location: "Post 1/3#Post 2/3" },
+      { start: 9, end: 10, location: "Post 2/3" },
+      { start: 10, end: 11, location: "Post 2/3#Post 1" },
       { start: 11, end: 14, location: "Post 1" },
       { start: 14, end: 30, location: "Post 1#Post 2" },
       { start: 30, end: 42, location: "Post 2" },
@@ -2172,16 +2439,22 @@ TeamTracks = {
       { start: 143, end: 144, location: "Post 7" },
       { start: 144, end: 159, location: "Post 7#Post 7" },
       { start: 159, end: 160, location: "Post 7" },
+      { start: 160, end: 238, location: "Post 7#Slut" },
+      { start: 239, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "15": {
     name: "15",
-    extendedName: "15",
+    extendedName: "15 (K: 138)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 12, location: "Start#Post 1" },
+      { start: 3, end: 5, location: "Start#Post 1/3" },
+      { start: 5, end: 6, location: "Post 1/3" },
+      { start: 6, end: 9, location: "Post 1/3#Post 2/3" },
+      { start: 9, end: 10, location: "Post 2/3" },
+      { start: 10, end: 12, location: "Post 2/3#Post 1" },
       { start: 12, end: 14, location: "Post 1" },
       { start: 14, end: 29, location: "Post 1#Post 2" },
       { start: 29, end: 41, location: "Post 2" },
@@ -2197,16 +2470,20 @@ TeamTracks = {
       { start: 197, end: 198, location: "Post 5" },
       { start: 198, end: 199, location: "Post 5#Post 11" },
       { start: 200, end: 201, location: "Post 11" },
+      { start: 201, end: 235, location: "Post 11#Slut" },
+      { start: 235, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "16": {
     name: "16",
-    extendedName: "16",
+    extendedName: "16 (NC: 151)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 3, end: 9, location: "Start#Post 1" },
+      { start: 3, end: 4, location: "Start#Post 1/3" },
+      { start: 4, end: 5, location: "Post 1/3" },
+      { start: 5, end: 9, location: "Post 1/3#Post 1" },
       { start: 10, end: 11, location: "Post 1" },
       { start: 12, end: 21, location: "Post 1#Post 2" },
       { start: 21, end: 32, location: "Post 2" },
@@ -2222,13 +2499,15 @@ TeamTracks = {
       { start: 161, end: 162, location: "Post 7" },
       { start: 163, end: 191, location: "Post 7#Post 10" },
       { start: 192, end: 199, location: "Post 10" },
+      { start: 199, end: 225, location: "Post 10#Slut" },
+      { start: 225, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "17": {
     name: "17",
-    extendedName: "17",
+    extendedName: "17 (K: 196)",
     times: [
       { start: 0, end: 3, location: "Start" },
       { start: 3, end: 10, location: "Start#Post 1" },
@@ -2253,16 +2532,22 @@ TeamTracks = {
       { start: 172, end: 184, location: "Post 9" },
       { start: 185, end: 195, location: "Post 9#Post 10" },
       { start: 196, end: 204, location: "Post 10" },
+      { start: 204, end: 239, location: "Post 10#Slut" },
+      { start: 239, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "18": {
     name: "18",
-    extendedName: "18",
+    extendedName: "18 (K: 170)",
     times: [
       { start: 0, end: 4, location: "Start" },
-      { start: 4, end: 17, location: "Start#Post 1" },
+      { start: 4, end: 6, location: "Start#Post 1/3" },
+      { start: 6, end: 7, location: "Post 1/3" },
+      { start: 8, end: 15, location: "Post 1/3#Post 2/3" },
+      { start: 15, end: 16, location: "Post 2/3" },
+      { start: 16, end: 17, location: "Post 2/3#Post 1" },
       { start: 18, end: 22, location: "Post 1" },
       { start: 22, end: 36, location: "Post 1#Post 2" },
       { start: 36, end: 49, location: "Post 2" },
@@ -2278,16 +2563,22 @@ TeamTracks = {
       { start: 172, end: 188, location: "Post 9" },
       { start: 188, end: 201, location: "Post 9#Post 10" },
       { start: 202, end: 213, location: "Post 10" },
+      { start: 213, end: 233, location: "Post 10#Slut" },
+      { start: 233, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "19": {
     name: "19",
-    extendedName: "19",
+    extendedName: "19 (K: 219)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 2, end: 9, location: "Start#Post 1" },
+      { start: 2, end: 4, location: "Start#Post 1/3" },
+      { start: 4, end: 5, location: "Post 1/3" },
+      { start: 5, end: 7, location: "Post 1/3#Post 2/3" },
+      { start: 7, end: 8, location: "Post 2/3" },
+      { start: 8, end: 9, location: "Post 2/3#Post 1" },
       { start: 9, end: 11, location: "Post 1" },
       { start: 11, end: 19, location: "Post 1#Post 2" },
       { start: 19, end: 36, location: "Post 2" },
@@ -2309,16 +2600,22 @@ TeamTracks = {
       { start: 167, end: 177, location: "Post 9" },
       { start: 177, end: 194, location: "Post 9#Post 10" },
       { start: 194, end: 200, location: "Post 10" },
+      { start: 200, end: 233, location: "Post 10#Slut" },
+      { start: 234, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "20": {
     name: "20",
-    extendedName: "20",
+    extendedName: "20 (K: 203)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 11, location: "Start#Post 1" },
+      { start: 3, end: 5, location: "Start#Post 1/3" },
+      { start: 5, end: 6, location: "Post 1/3" },
+      { start: 6, end: 9, location: "Post 1/3#Post 2/3" },
+      { start: 9, end: 10, location: "Post 2/3" },
+      { start: 10, end: 11, location: "Post 2/3#Post 1" },
       { start: 12, end: 14, location: "Post 1" },
       { start: 14, end: 24, location: "Post 1#Post 2" },
       { start: 24, end: 34, location: "Post 2" },
@@ -2336,16 +2633,20 @@ TeamTracks = {
       { start: 175, end: 185, location: "Post 9" },
       { start: 185, end: 197, location: "Post 9#Post 10" },
       { start: 197, end: 204, location: "Post 10" },
+      { start: 205, end: 234, location: "Post 10#Slut" },
+      { start: 234, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "21": {
     name: "21",
-    extendedName: "21",
+    extendedName: "21 (MIX2: 233)",
     times: [
       { start: 0, end: 1, location: "Start" },
-      { start: 1, end: 10, location: "Start#Post 1" },
+      { start: 1, end: 3, location: "Start#Post 1/3" },
+      { start: 3, end: 4, location: "Post 1/3" },
+      { start: 4, end: 10, location: "Post 1/3#Post 1" },
       { start: 11, end: 14, location: "Post 1" },
       { start: 14, end: 26, location: "Post 1#Post 2" },
       { start: 27, end: 37, location: "Post 2" },
@@ -2365,16 +2666,22 @@ TeamTracks = {
       { start: 181, end: 187, location: "Post 10" },
       { start: 187, end: 208, location: "Post 10#Post 11" },
       { start: 208, end: 209, location: "Post 11" },
+      { start: 209, end: 240, location: "Post 11#Slut" },
+      { start: 241, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "22": {
     name: "22",
-    extendedName: "22",
+    extendedName: "22 (K: 287)",
     times: [
       { start: 0, end: 1, location: "Start" },
-      { start: 1, end: 10, location: "Start#Post 1" },
+      { start: 1, end: 3, location: "Start#Post 1/3" },
+      { start: 3, end: 4, location: "Post 1/3" },
+      { start: 4, end: 8, location: "Post 1/3#Post 2/3" },
+      { start: 8, end: 9, location: "Post 2/3" },
+      { start: 9, end: 10, location: "Post 2/3#Post 1" },
       { start: 10, end: 12, location: "Post 1" },
       { start: 13, end: 19, location: "Post 1#Post 2" },
       { start: 19, end: 32, location: "Post 2" },
@@ -2396,16 +2703,22 @@ TeamTracks = {
       { start: 174, end: 183, location: "Post 9" },
       { start: 183, end: 192, location: "Post 9#Post 10" },
       { start: 192, end: 202, location: "Post 10" },
+      { start: 202, end: 236, location: "Post 10#Slut" },
+      { start: 236, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "23": {
     name: "23",
-    extendedName: "23",
+    extendedName: "23 (MIX: 104)",
     times: [
       { start: 0, end: 4, location: "Start" },
-      { start: 4, end: 19, location: "Start#Post 1" },
+      { start: 4, end: 6, location: "Start#Post 1/3" },
+      { start: 6, end: 7, location: "Post 1/3" },
+      { start: 8, end: 15, location: "Post 1/3#Post 2/3" },
+      { start: 15, end: 16, location: "Post 2/3" },
+      { start: 16, end: 19, location: "Post 2/3#Post 1" },
       { start: 19, end: 22, location: "Post 1" },
       { start: 22, end: 35, location: "Post 1#Post 2" },
       { start: 35, end: 51, location: "Post 2" },
@@ -2417,16 +2730,22 @@ TeamTracks = {
       { start: 172, end: 182, location: "Post 9" },
       { start: 183, end: 195, location: "Post 9#Post 10" },
       { start: 195, end: 205, location: "Post 10" },
+      { start: 206, end: 230, location: "Post 10#Slut" },
+      { start: 230, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "24": {
     name: "24",
-    extendedName: "24",
+    extendedName: "24 (MIX3: 214)",
     times: [
       { start: 0, end: 0, location: "Start" },
-      { start: 1, end: 9, location: "Start#Post 1" },
+      { start: 1, end: 2, location: "Start#Post 1/3" },
+      { start: 3, end: 4, location: "Post 1/3" },
+      { start: 4, end: 7, location: "Post 1/3#Post 2/3" },
+      { start: 7, end: 8, location: "Post 2/3" },
+      { start: 8, end: 9, location: "Post 2/3#Post 1" },
       { start: 9, end: 11, location: "Post 1" },
       { start: 11, end: 21, location: "Post 1#Post 2" },
       { start: 21, end: 31, location: "Post 2" },
@@ -2446,16 +2765,22 @@ TeamTracks = {
       { start: 170, end: 177, location: "Post 9" },
       { start: 177, end: 192, location: "Post 9#Post 10" },
       { start: 192, end: 203, location: "Post 10" },
+      { start: 203, end: 222, location: "Post 10#Slut" },
+      { start: 223, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "25": {
     name: "25",
-    extendedName: "25 (MIX)",
+    extendedName: "25 (MIX1: 296)",
     times: [
       { start: 0, end: 1, location: "Start" },
-      { start: 1, end: 8, location: "Start#Post 1" },
+      { start: 1, end: 3, location: "Start#Post 1/3" },
+      { start: 3, end: 4, location: "Post 1/3" },
+      { start: 4, end: 7, location: "Post 1/3#Post 2/3" },
+      { start: 7, end: 8, location: "Post 2/3" },
+      { start: 8, end: 8, location: "Post 2/3#Post 1" },
       { start: 9, end: 11, location: "Post 1" },
       { start: 11, end: 19, location: "Post 1#Post 2" },
       { start: 19, end: 30, location: "Post 2" },
@@ -2479,13 +2804,15 @@ TeamTracks = {
       { start: 189, end: 201, location: "Post 10" },
       { start: 201, end: 209, location: "Post 10#Post 11" },
       { start: 209, end: 210, location: "Post 11" },
+      { start: 210, end: 236, location: "Post 11#Slut" },
+      { start: 236, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "26": {
     name: "26",
-    extendedName: "26",
+    extendedName: "26 (MIX: 172)",
     times: [
       { start: 0, end: 3, location: "Start" },
       { start: 3, end: 9, location: "Start#Post 1" },
@@ -2508,13 +2835,15 @@ TeamTracks = {
       { start: 169, end: 181, location: "Post 9" },
       { start: 181, end: 193, location: "Post 9#Post 10" },
       { start: 193, end: 209, location: "Post 10" },
+      { start: 209, end: 227, location: "Post 10#Slut" },
+      { start: 227, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "27": {
     name: "27",
-    extendedName: "27 (NC)",
+    extendedName: "27 (NC1: 272)",
     times: [
       { start: 0, end: 3, location: "Start" },
       { start: 3, end: 9, location: "Start#Post 1" },
@@ -2541,16 +2870,22 @@ TeamTracks = {
       { start: 195, end: 202, location: "Post 10" },
       { start: 202, end: 212, location: "Post 10#Post 11" },
       { start: 212, end: 213, location: "Post 11" },
+      { start: 214, end: 239, location: "Post 11#Slut" },
+      { start: 240, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "29": {
     name: "29",
-    extendedName: "29",
+    extendedName: "29 (NC: 143)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 18, location: "Start#Post 1" },
+      { start: 3, end: 6, location: "Start#Post 1/3" },
+      { start: 6, end: 7, location: "Post 1/3" },
+      { start: 7, end: 15, location: "Post 1/3#Post 2/3" },
+      { start: 15, end: 16, location: "Post 2/3" },
+      { start: 16, end: 18, location: "Post 2/3#Post 1" },
       { start: 19, end: 23, location: "Post 1" },
       { start: 23, end: 38, location: "Post 1#Post 2" },
       { start: 38, end: 50, location: "Post 2" },
@@ -2568,16 +2903,20 @@ TeamTracks = {
       { start: 172, end: 182, location: "Post 9" },
       { start: 182, end: 199, location: "Post 9#Post 10" },
       { start: 200, end: 210, location: "Post 10" },
+      { start: 210, end: 242, location: "Post 10#Slut" },
+      { start: 243, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "30": {
     name: "30",
-    extendedName: "30",
+    extendedName: "30 (NC: 90)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 19, location: "Start#Post 1" },
+      { start: 3, end: 15, location: "Start#Post 2/3" },
+      { start: 15, end: 16, location: "Post 2/3" },
+      { start: 16, end: 19, location: "Post 2/3#Post 1" },
       { start: 19, end: 24, location: "Post 1" },
       { start: 25, end: 38, location: "Post 1#Post 2" },
       { start: 39, end: 56, location: "Post 2" },
@@ -2587,16 +2926,22 @@ TeamTracks = {
       { start: 123, end: 130, location: "Post 5" },
       { start: 131, end: 182, location: "Post 5#Post 9" },
       { start: 182, end: 192, location: "Post 9" },
+      { start: 193, end: 230, location: "Post 9#Slut" },
+      { start: 230, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "31": {
     name: "31",
-    extendedName: "31",
+    extendedName: "31 (NC: 147)",
     times: [
       { start: 0, end: -215, location: "Start" },
-      { start: -214, end: 11, location: "Start#Post 1" },
+      { start: -214, end: 3, location: "Start#Post 1/3" },
+      { start: 4, end: 5, location: "Post 1/3" },
+      { start: 5, end: 7, location: "Post 1/3#Post 2/3" },
+      { start: 8, end: 9, location: "Post 2/3" },
+      { start: 9, end: 11, location: "Post 2/3#Post 1" },
       { start: 11, end: 13, location: "Post 1" },
       { start: 13, end: 24, location: "Post 1#Post 2" },
       { start: 24, end: 36, location: "Post 2" },
@@ -2614,16 +2959,22 @@ TeamTracks = {
       { start: 172, end: 183, location: "Post 9" },
       { start: 184, end: 203, location: "Post 9#Post 10" },
       { start: 203, end: 210, location: "Post 10" },
+      { start: 210, end: 232, location: "Post 10#Slut" },
+      { start: 232, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "32": {
     name: "32",
-    extendedName: "32",
+    extendedName: "32 (NC: 134)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 13, location: "Start#Post 1" },
+      { start: 3, end: 5, location: "Start#Post 1/3" },
+      { start: 5, end: 6, location: "Post 1/3" },
+      { start: 7, end: 11, location: "Post 1/3#Post 2/3" },
+      { start: 11, end: 12, location: "Post 2/3" },
+      { start: 12, end: 13, location: "Post 2/3#Post 1" },
       { start: 13, end: 16, location: "Post 1" },
       { start: 16, end: 28, location: "Post 1#Post 2" },
       { start: 28, end: 37, location: "Post 2" },
@@ -2637,16 +2988,22 @@ TeamTracks = {
       { start: 117, end: 128, location: "Post 5" },
       { start: 128, end: 184, location: "Post 5#Post 9" },
       { start: 184, end: 192, location: "Post 9" },
+      { start: 193, end: 234, location: "Post 9#Slut" },
+      { start: 234, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "33": {
     name: "33",
-    extendedName: "33",
+    extendedName: "33 (NC: 213)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 11, location: "Start#Post 1" },
+      { start: 3, end: 5, location: "Start#Post 1/3" },
+      { start: 5, end: 6, location: "Post 1/3" },
+      { start: 6, end: 9, location: "Post 1/3#Post 2/3" },
+      { start: 9, end: 10, location: "Post 2/3" },
+      { start: 10, end: 11, location: "Post 2/3#Post 1" },
       { start: 12, end: 14, location: "Post 1" },
       { start: 14, end: 23, location: "Post 1#Post 2" },
       { start: 24, end: 33, location: "Post 2" },
@@ -2668,16 +3025,22 @@ TeamTracks = {
       { start: 169, end: 175, location: "Post 9" },
       { start: 175, end: 189, location: "Post 9#Post 10" },
       { start: 190, end: 197, location: "Post 10" },
+      { start: 198, end: 230, location: "Post 10#Slut" },
+      { start: 231, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "34": {
     name: "34",
-    extendedName: "34",
+    extendedName: "34 (NC3: 222)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 11, location: "Start#Post 1" },
+      { start: 3, end: 5, location: "Start#Post 1/3" },
+      { start: 5, end: 6, location: "Post 1/3" },
+      { start: 6, end: 8, location: "Post 1/3#Post 2/3" },
+      { start: 9, end: 10, location: "Post 2/3" },
+      { start: 10, end: 11, location: "Post 2/3#Post 1" },
       { start: 11, end: 13, location: "Post 1" },
       { start: 13, end: 22, location: "Post 1#Post 2" },
       { start: 22, end: 36, location: "Post 2" },
@@ -2699,16 +3062,22 @@ TeamTracks = {
       { start: 187, end: 196, location: "Post 9" },
       { start: 196, end: 208, location: "Post 9#Post 10" },
       { start: 209, end: 215, location: "Post 10" },
+      { start: 216, end: 238, location: "Post 10#Slut" },
+      { start: 239, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "35": {
     name: "35",
-    extendedName: "35",
+    extendedName: "35 (NC: 175)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 4, end: 19, location: "Start#Post 1" },
+      { start: 4, end: 7, location: "Start#Post 1/3" },
+      { start: 7, end: 8, location: "Post 1/3" },
+      { start: 8, end: 15, location: "Post 1/3#Post 2/3" },
+      { start: 15, end: 16, location: "Post 2/3" },
+      { start: 17, end: 19, location: "Post 2/3#Post 1" },
       { start: 19, end: 22, location: "Post 1" },
       { start: 22, end: 37, location: "Post 1#Post 2" },
       { start: 37, end: 47, location: "Post 2" },
@@ -2722,16 +3091,20 @@ TeamTracks = {
       { start: 165, end: 173, location: "Post 9" },
       { start: 173, end: 195, location: "Post 9#Post 10" },
       { start: 195, end: 206, location: "Post 10" },
+      { start: 206, end: 241, location: "Post 10#Slut" },
+      { start: 241, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "36": {
     name: "36",
-    extendedName: "36",
+    extendedName: "36 (NC: 220)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 3, end: 10, location: "Start#Post 1" },
+      { start: 3, end: 4, location: "Start#Post 1/3" },
+      { start: 4, end: 5, location: "Post 1/3" },
+      { start: 6, end: 10, location: "Post 1/3#Post 1" },
       { start: 10, end: 12, location: "Post 1" },
       { start: 13, end: 22, location: "Post 1#Post 2" },
       { start: 22, end: 35, location: "Post 2" },
@@ -2753,16 +3126,22 @@ TeamTracks = {
       { start: 176, end: 185, location: "Post 9" },
       { start: 186, end: 200, location: "Post 9#Post 10" },
       { start: 200, end: 210, location: "Post 10" },
+      { start: 210, end: 242, location: "Post 10#Slut" },
+      { start: 243, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "37": {
     name: "37",
-    extendedName: "37",
+    extendedName: "37 (NC: 91)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 12, location: "Start#Post 1" },
+      { start: 3, end: 5, location: "Start#Post 1/3" },
+      { start: 5, end: 6, location: "Post 1/3" },
+      { start: 6, end: 10, location: "Post 1/3#Post 2/3" },
+      { start: 10, end: 11, location: "Post 2/3" },
+      { start: 11, end: 12, location: "Post 2/3#Post 1" },
       { start: 12, end: 17, location: "Post 1" },
       { start: 17, end: 26, location: "Post 1#Post 2" },
       { start: 27, end: 46, location: "Post 2" },
@@ -2780,16 +3159,22 @@ TeamTracks = {
       { start: 174, end: 186, location: "Post 9" },
       { start: 186, end: 200, location: "Post 9#Post 10" },
       { start: 201, end: 205, location: "Post 10" },
+      { start: 205, end: 237, location: "Post 10#Slut" },
+      { start: 237, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "38": {
     name: "38",
-    extendedName: "38",
+    extendedName: "38 (NC2: 247)",
     times: [
       { start: 0, end: 1, location: "Start" },
-      { start: 1, end: 8, location: "Start#Post 1" },
+      { start: 1, end: 2, location: "Start#Post 1/3" },
+      { start: 3, end: 4, location: "Post 1/3" },
+      { start: 4, end: 7, location: "Post 1/3#Post 2/3" },
+      { start: 7, end: 8, location: "Post 2/3" },
+      { start: 8, end: 8, location: "Post 2/3#Post 1" },
       { start: 9, end: 10, location: "Post 1" },
       { start: 10, end: 19, location: "Post 1#Post 2" },
       { start: 19, end: 29, location: "Post 2" },
@@ -2811,16 +3196,20 @@ TeamTracks = {
       { start: 167, end: 179, location: "Post 9" },
       { start: 179, end: 193, location: "Post 9#Post 10" },
       { start: 193, end: 203, location: "Post 10" },
+      { start: 203, end: 242, location: "Post 10#Slut" },
+      { start: 243, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "39": {
     name: "39",
-    extendedName: "39",
+    extendedName: "39 (NC: 217)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 2, end: 9, location: "Start#Post 1" },
+      { start: 2, end: 7, location: "Start#Post 2/3" },
+      { start: 7, end: 8, location: "Post 2/3" },
+      { start: 8, end: 9, location: "Post 2/3#Post 1" },
       { start: 9, end: 11, location: "Post 1" },
       { start: 12, end: 20, location: "Post 1#Post 2" },
       { start: 20, end: 30, location: "Post 2" },
@@ -2838,16 +3227,22 @@ TeamTracks = {
       { start: 185, end: 194, location: "Post 10" },
       { start: 195, end: 203, location: "Post 10#Post 11" },
       { start: 204, end: 205, location: "Post 11" },
+      { start: 205, end: 231, location: "Post 11#Slut" },
+      { start: 232, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "40": {
     name: "40",
-    extendedName: "40",
+    extendedName: "40 (NC: 84)",
     times: [
       { start: 0, end: 4, location: "Start" },
-      { start: 4, end: 18, location: "Start#Post 1" },
+      { start: 4, end: 7, location: "Start#Post 1/3" },
+      { start: 8, end: 9, location: "Post 1/3" },
+      { start: 9, end: 15, location: "Post 1/3#Post 2/3" },
+      { start: 15, end: 16, location: "Post 2/3" },
+      { start: 17, end: 18, location: "Post 2/3#Post 1" },
       { start: 18, end: 22, location: "Post 1" },
       { start: 23, end: 56, location: "Post 1#Post 2" },
       { start: 57, end: 68, location: "Post 2" },
@@ -2861,16 +3256,20 @@ TeamTracks = {
       { start: 178, end: 189, location: "Post 9" },
       { start: 190, end: 213, location: "Post 9#Post 10" },
       { start: 214, end: 215, location: "Post 10" },
+      { start: 215, end: 236, location: "Post 10#Slut" },
+      { start: 236, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "41": {
     name: "41",
-    extendedName: "41",
+    extendedName: "41 (NC: 214)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 2, end: 12, location: "Start#Post 1" },
+      { start: 2, end: 9, location: "Start#Post 2/3" },
+      { start: 9, end: 10, location: "Post 2/3" },
+      { start: 10, end: 12, location: "Post 2/3#Post 1" },
       { start: 12, end: 15, location: "Post 1" },
       { start: 15, end: 26, location: "Post 1#Post 2" },
       { start: 27, end: 42, location: "Post 2" },
@@ -2890,16 +3289,22 @@ TeamTracks = {
       { start: 176, end: 185, location: "Post 9" },
       { start: 185, end: 197, location: "Post 9#Post 10" },
       { start: 197, end: 206, location: "Post 10" },
+      { start: 207, end: 238, location: "Post 10#Slut" },
+      { start: 238, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "42": {
     name: "42",
-    extendedName: "42",
+    extendedName: "42 (NC: 194)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 17, location: "Start#Post 1" },
+      { start: 3, end: 7, location: "Start#Post 1/3" },
+      { start: 7, end: 8, location: "Post 1/3" },
+      { start: 8, end: 14, location: "Post 1/3#Post 2/3" },
+      { start: 15, end: 16, location: "Post 2/3" },
+      { start: 16, end: 17, location: "Post 2/3#Post 1" },
       { start: 17, end: 19, location: "Post 1" },
       { start: 20, end: 32, location: "Post 1#Post 2" },
       { start: 32, end: 48, location: "Post 2" },
@@ -2917,16 +3322,22 @@ TeamTracks = {
       { start: 176, end: 193, location: "Post 9" },
       { start: 193, end: 205, location: "Post 9#Post 10" },
       { start: 206, end: 211, location: "Post 10" },
+      { start: 211, end: 234, location: "Post 10#Slut" },
+      { start: 235, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "44": {
     name: "44",
-    extendedName: "44",
+    extendedName: "44 (NC: 169)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 13, location: "Start#Post 1" },
+      { start: 3, end: 5, location: "Start#Post 1/3" },
+      { start: 5, end: 6, location: "Post 1/3" },
+      { start: 6, end: 11, location: "Post 1/3#Post 2/3" },
+      { start: 11, end: 12, location: "Post 2/3" },
+      { start: 12, end: 13, location: "Post 2/3#Post 1" },
       { start: 13, end: 17, location: "Post 1" },
       { start: 17, end: 29, location: "Post 1#Post 2" },
       { start: 29, end: 39, location: "Post 2" },
@@ -2944,16 +3355,22 @@ TeamTracks = {
       { start: 174, end: 183, location: "Post 9" },
       { start: 183, end: 207, location: "Post 9#Post 10" },
       { start: 207, end: 213, location: "Post 10" },
+      { start: 213, end: 237, location: "Post 10#Slut" },
+      { start: 237, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "45": {
     name: "45",
-    extendedName: "45",
+    extendedName: "45 (NC: 196)",
     times: [
       { start: 0, end: 4, location: "Start" },
-      { start: 5, end: 19, location: "Start#Post 1" },
+      { start: 5, end: 7, location: "Start#Post 1/3" },
+      { start: 7, end: 8, location: "Post 1/3" },
+      { start: 8, end: 16, location: "Post 1/3#Post 2/3" },
+      { start: 16, end: 17, location: "Post 2/3" },
+      { start: 17, end: 19, location: "Post 2/3#Post 1" },
       { start: 20, end: 22, location: "Post 1" },
       { start: 22, end: 34, location: "Post 1#Post 2" },
       { start: 34, end: 50, location: "Post 2" },
@@ -2971,16 +3388,22 @@ TeamTracks = {
       { start: 169, end: 182, location: "Post 9" },
       { start: 182, end: 195, location: "Post 9#Post 10" },
       { start: 195, end: 200, location: "Post 10" },
+      { start: 200, end: 239, location: "Post 10#Slut" },
+      { start: 239, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "46": {
     name: "46",
-    extendedName: "46",
+    extendedName: "46 (NC: 162)",
     times: [
       { start: 0, end: 4, location: "Start" },
-      { start: 4, end: 18, location: "Start#Post 1" },
+      { start: 4, end: 7, location: "Start#Post 1/3" },
+      { start: 7, end: 8, location: "Post 1/3" },
+      { start: 8, end: 15, location: "Post 1/3#Post 2/3" },
+      { start: 16, end: 17, location: "Post 2/3" },
+      { start: 17, end: 18, location: "Post 2/3#Post 1" },
       { start: 18, end: 20, location: "Post 1" },
       { start: 20, end: 36, location: "Post 1#Post 2" },
       { start: 36, end: 52, location: "Post 2" },
@@ -2994,16 +3417,22 @@ TeamTracks = {
       { start: 173, end: 183, location: "Post 9" },
       { start: 183, end: 199, location: "Post 9#Post 10" },
       { start: 200, end: 211, location: "Post 10" },
+      { start: 211, end: 240, location: "Post 10#Slut" },
+      { start: 240, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "47": {
     name: "47",
-    extendedName: "47",
+    extendedName: "47 (NC: 123)",
     times: [
       { start: 0, end: 4, location: "Start" },
-      { start: 4, end: 18, location: "Start#Post 1" },
+      { start: 4, end: 6, location: "Start#Post 1/3" },
+      { start: 6, end: 7, location: "Post 1/3" },
+      { start: 8, end: 14, location: "Post 1/3#Post 2/3" },
+      { start: 15, end: 16, location: "Post 2/3" },
+      { start: 16, end: 18, location: "Post 2/3#Post 1" },
       { start: 18, end: 21, location: "Post 1" },
       { start: 22, end: 39, location: "Post 1#Post 2" },
       { start: 40, end: 55, location: "Post 2" },
@@ -3017,16 +3446,20 @@ TeamTracks = {
       { start: 178, end: 188, location: "Post 9" },
       { start: 189, end: 206, location: "Post 9#Post 10" },
       { start: 206, end: 212, location: "Post 10" },
+      { start: 212, end: 233, location: "Post 10#Slut" },
+      { start: 233, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "48": {
     name: "48",
-    extendedName: "48",
+    extendedName: "48 (O: 369)",
     times: [
       { start: 0, end: 1, location: "Start" },
-      { start: 2, end: 9, location: "Start#Post 1" },
+      { start: 2, end: 7, location: "Start#Post 2/3" },
+      { start: 7, end: 8, location: "Post 2/3" },
+      { start: 9, end: 9, location: "Post 2/3#Post 1" },
       { start: 9, end: 11, location: "Post 1" },
       { start: 11, end: 19, location: "Post 1#Post 2" },
       { start: 20, end: 35, location: "Post 2" },
@@ -3052,13 +3485,15 @@ TeamTracks = {
       { start: 193, end: 204, location: "Post 10" },
       { start: 204, end: 212, location: "Post 10#Post 11" },
       { start: 212, end: 213, location: "Post 11" },
+      { start: 214, end: 237, location: "Post 11#Slut" },
+      { start: 237, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "49": {
     name: "49",
-    extendedName: "49",
+    extendedName: "49 (O: 224)",
     times: [
       { start: 0, end: 2, location: "Start" },
       { start: 3, end: 10, location: "Start#Post 1" },
@@ -3083,16 +3518,22 @@ TeamTracks = {
       { start: 170, end: 178, location: "Post 9" },
       { start: 178, end: 189, location: "Post 9#Post 10" },
       { start: 189, end: 198, location: "Post 10" },
+      { start: 198, end: 217, location: "Post 10#Slut" },
+      { start: 217, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "50": {
     name: "50",
-    extendedName: "50",
+    extendedName: "50 (O: 192)",
     times: [
       { start: 0, end: 1, location: "Start" },
-      { start: 1, end: 7, location: "Start#Post 1" },
+      { start: 1, end: 3, location: "Start#Post 1/3" },
+      { start: 3, end: 4, location: "Post 1/3" },
+      { start: 4, end: 6, location: "Post 1/3#Post 2/3" },
+      { start: 6, end: 7, location: "Post 2/3" },
+      { start: 7, end: 7, location: "Post 2/3#Post 1" },
       { start: 7, end: 9, location: "Post 1" },
       { start: 9, end: 18, location: "Post 1#Post 2" },
       { start: 18, end: 25, location: "Post 2" },
@@ -3106,16 +3547,20 @@ TeamTracks = {
       { start: 106, end: 116, location: "Post 5" },
       { start: 116, end: 136, location: "Post 5#Post 6" },
       { start: 136, end: 141, location: "Post 6" },
+      { start: 141, end: 220, location: "Post 6#Slut" },
+      { start: 220, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "51": {
     name: "51",
-    extendedName: "51",
+    extendedName: "51 (O: 288)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 3, end: 20, location: "Start#Post 1" },
+      { start: 3, end: 17, location: "Start#Post 2/3" },
+      { start: 17, end: 18, location: "Post 2/3" },
+      { start: 18, end: 20, location: "Post 2/3#Post 1" },
       { start: 20, end: 23, location: "Post 1" },
       { start: 23, end: 34, location: "Post 1#Post 2" },
       { start: 34, end: 42, location: "Post 2" },
@@ -3139,16 +3584,20 @@ TeamTracks = {
       { start: 185, end: 195, location: "Post 10" },
       { start: 195, end: 208, location: "Post 10#Post 11" },
       { start: 208, end: 209, location: "Post 11" },
+      { start: 210, end: 240, location: "Post 11#Slut" },
+      { start: 240, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "52": {
     name: "52",
-    extendedName: "52 (OB1)",
+    extendedName: "52 (O1: 470)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 2, end: 7, location: "Start#Post 1" },
+      { start: 2, end: 6, location: "Start#Post 2/3" },
+      { start: 6, end: 7, location: "Post 2/3" },
+      { start: 7, end: 7, location: "Post 2/3#Post 1" },
       { start: 7, end: 8, location: "Post 1" },
       { start: 8, end: 14, location: "Post 1#Post 2" },
       { start: 15, end: 22, location: "Post 2" },
@@ -3172,6 +3621,8 @@ TeamTracks = {
       { start: 164, end: 172, location: "Post 9" },
       { start: 172, end: 179, location: "Post 9#Post 10" },
       { start: 179, end: 189, location: "Post 10" },
+      { start: 189, end: 223, location: "Post 10#Slut" },
+      { start: 223, end: 244, location: "Slut" },
     ],
     scores: {
       "Start": { start:10, end:10 },
@@ -3191,10 +3642,12 @@ TeamTracks = {
   },
   "53": {
     name: "53",
-    extendedName: "53",
+    extendedName: "53 (O: 260)",
     times: [
       { start: 0, end: 0, location: "Start" },
-      { start: 0, end: 11, location: "Start#Post 1" },
+      { start: 0, end: 7, location: "Start#Post 2/3" },
+      { start: 8, end: 9, location: "Post 2/3" },
+      { start: 9, end: 11, location: "Post 2/3#Post 1" },
       { start: 11, end: 13, location: "Post 1" },
       { start: 13, end: 23, location: "Post 1#Post 2" },
       { start: 24, end: 31, location: "Post 2" },
@@ -3216,16 +3669,20 @@ TeamTracks = {
       { start: 180, end: 189, location: "Post 9" },
       { start: 189, end: 200, location: "Post 9#Post 10" },
       { start: 200, end: 211, location: "Post 10" },
+      { start: 212, end: 240, location: "Post 10#Slut" },
+      { start: 240, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "54": {
     name: "54",
-    extendedName: "54",
+    extendedName: "54 (O: 320)",
     times: [
       { start: 0, end: 1, location: "Start" },
-      { start: 1, end: 7, location: "Start#Post 1" },
+      { start: 1, end: 6, location: "Start#Post 2/3" },
+      { start: 6, end: 7, location: "Post 2/3" },
+      { start: 7, end: 7, location: "Post 2/3#Post 1" },
       { start: 7, end: 9, location: "Post 1" },
       { start: 10, end: 17, location: "Post 1#Post 2" },
       { start: 18, end: 27, location: "Post 2" },
@@ -3249,16 +3706,20 @@ TeamTracks = {
       { start: 174, end: 185, location: "Post 9" },
       { start: 185, end: 197, location: "Post 9#Post 10" },
       { start: 198, end: 204, location: "Post 10" },
+      { start: 204, end: 241, location: "Post 10#Slut" },
+      { start: 241, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "55": {
     name: "55",
-    extendedName: "55 (OB3)",
+    extendedName: "55 (O3: 431)",
     times: [
       { start: 0, end: 1, location: "Start" },
-      { start: 1, end: 7, location: "Start#Post 1" },
+      { start: 1, end: 6, location: "Start#Post 2/3" },
+      { start: 6, end: 7, location: "Post 2/3" },
+      { start: 7, end: 7, location: "Post 2/3#Post 1" },
       { start: 7, end: 9, location: "Post 1" },
       { start: 10, end: 18, location: "Post 1#Post 2" },
       { start: 18, end: 26, location: "Post 2" },
@@ -3284,16 +3745,33 @@ TeamTracks = {
       { start: 191, end: 196, location: "Post 10" },
       { start: 196, end: 208, location: "Post 10#Post 11" },
       { start: 208, end: 209, location: "Post 11" },
+      { start: 209, end: 240, location: "Post 11#Slut" },
+      { start: 240, end: 244, location: "Slut" },
     ],
     scores: {
+      "Start": { start:10, end:10 },
+      "Post 1": { start:15, end:15 },
+      "Post 2": { start:20, end:37 },
+      "Post 3": { start:42, end:65 },
+      "Post 3½": { start:65, end:70 },
+      "Post 4": { start:75, end:131 },
+      "Post 5": { start:136, end:156 },
+      "Post 6": { start:161, end:180 },
+      "Post 7": { start:185, end:206 },
+      "Post 8": { start:246, end:246 },
+      "Post 9": { start:251, end:270 },
+      "post 10": { start:275, end:289 },
+      "Post 11": { start:294, end:308 },
     }
   },
   "56": {
     name: "56",
-    extendedName: "56 (OB2)",
+    extendedName: "56 (O2: 439)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 2, end: 7, location: "Start#Post 1" },
+      { start: 2, end: 6, location: "Start#Post 2/3" },
+      { start: 6, end: 7, location: "Post 2/3" },
+      { start: 7, end: 7, location: "Post 2/3#Post 1" },
       { start: 7, end: 8, location: "Post 1" },
       { start: 9, end: 14, location: "Post 1#Post 2" },
       { start: 15, end: 22, location: "Post 2" },
@@ -3319,6 +3797,8 @@ TeamTracks = {
       { start: 179, end: 180, location: "Post 10" },
       { start: 180, end: 197, location: "Post 10#Post 11" },
       { start: 197, end: 198, location: "Post 11" },
+      { start: 199, end: 224, location: "Post 11#Slut" },
+      { start: 224, end: 244, location: "Slut" },
     ],
     scores: {
       "Start": { start:10, end:10 },
@@ -3338,10 +3818,14 @@ TeamTracks = {
   },
   "57": {
     name: "57",
-    extendedName: "57",
+    extendedName: "57 (O: 73)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 19, location: "Start#Post 1" },
+      { start: 3, end: 6, location: "Start#Post 1/3" },
+      { start: 6, end: 7, location: "Post 1/3" },
+      { start: 8, end: 14, location: "Post 1/3#Post 2/3" },
+      { start: 15, end: 16, location: "Post 2/3" },
+      { start: 16, end: 19, location: "Post 2/3#Post 1" },
       { start: 20, end: 24, location: "Post 1" },
       { start: 24, end: 39, location: "Post 1#Post 2" },
       { start: 39, end: 56, location: "Post 2" },
@@ -3351,13 +3835,15 @@ TeamTracks = {
       { start: 139, end: 140, location: "Post 7" },
       { start: 140, end: 159, location: "Post 7#Post 7" },
       { start: 160, end: 161, location: "Post 7" },
+      { start: 161, end: 242, location: "Post 7#Slut" },
+      { start: 243, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "58": {
     name: "58",
-    extendedName: "58",
+    extendedName: "58 (O: 204)",
     times: [
       { start: 0, end: 3, location: "Start" },
       { start: 3, end: 11, location: "Start#Post 1" },
@@ -3380,16 +3866,22 @@ TeamTracks = {
       { start: 174, end: 183, location: "Post 9" },
       { start: 184, end: 193, location: "Post 9#Post 10" },
       { start: 194, end: 202, location: "Post 10" },
+      { start: 202, end: 231, location: "Post 10#Slut" },
+      { start: 231, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "59": {
     name: "59",
-    extendedName: "59",
+    extendedName: "59 (O: 232)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 13, location: "Start#Post 1" },
+      { start: 3, end: 5, location: "Start#Post 1/3" },
+      { start: 5, end: 6, location: "Post 1/3" },
+      { start: 6, end: 10, location: "Post 1/3#Post 2/3" },
+      { start: 11, end: 12, location: "Post 2/3" },
+      { start: 12, end: 13, location: "Post 2/3#Post 1" },
       { start: 13, end: 15, location: "Post 1" },
       { start: 15, end: 30, location: "Post 1#Post 2" },
       { start: 30, end: 39, location: "Post 2" },
@@ -3411,16 +3903,20 @@ TeamTracks = {
       { start: 211, end: 212, location: "Post 5" },
       { start: 212, end: 213, location: "Post 5#Post 11" },
       { start: 213, end: 214, location: "Post 11" },
+      { start: 214, end: 240, location: "Post 11#Slut" },
+      { start: 241, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "60": {
     name: "60",
-    extendedName: "60",
+    extendedName: "60 (O: 319)",
     times: [
       { start: 0, end: 0, location: "Start" },
-      { start: 1, end: 8, location: "Start#Post 1" },
+      { start: 1, end: 7, location: "Start#Post 2/3" },
+      { start: 7, end: 8, location: "Post 2/3" },
+      { start: 8, end: 8, location: "Post 2/3#Post 1" },
       { start: 8, end: 10, location: "Post 1" },
       { start: 10, end: 18, location: "Post 1#Post 2" },
       { start: 19, end: 29, location: "Post 2" },
@@ -3444,16 +3940,22 @@ TeamTracks = {
       { start: 196, end: 202, location: "Post 10" },
       { start: 202, end: 213, location: "Post 10#Post 11" },
       { start: 214, end: 215, location: "Post 11" },
+      { start: 215, end: 241, location: "Post 11#Slut" },
+      { start: 241, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "61": {
     name: "61",
-    extendedName: "61",
+    extendedName: "61 (O: 293)",
     times: [
       { start: 0, end: -215, location: "Start" },
-      { start: -214, end: 12, location: "Start#Post 1" },
+      { start: -214, end: 8, location: "Start#Post 1/3" },
+      { start: 8, end: 9, location: "Post 1/3" },
+      { start: 9, end: 11, location: "Post 1/3#Post 2/3" },
+      { start: 11, end: 12, location: "Post 2/3" },
+      { start: 12, end: 12, location: "Post 2/3#Post 1" },
       { start: 12, end: 15, location: "Post 1" },
       { start: 15, end: 23, location: "Post 1#Post 2" },
       { start: 24, end: 33, location: "Post 2" },
@@ -3475,13 +3977,15 @@ TeamTracks = {
       { start: 169, end: 177, location: "Post 9" },
       { start: 177, end: 189, location: "Post 9#Post 10" },
       { start: 189, end: 201, location: "Post 10" },
+      { start: 201, end: 239, location: "Post 10#Slut" },
+      { start: 240, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "62": {
     name: "62",
-    extendedName: "62",
+    extendedName: "62 (O: 252)",
     times: [
       { start: 0, end: 1, location: "Start" },
       { start: 1, end: 9, location: "Start#Post 1" },
@@ -3506,16 +4010,20 @@ TeamTracks = {
       { start: 173, end: 182, location: "Post 9" },
       { start: 182, end: 195, location: "Post 9#Post 10" },
       { start: 196, end: 202, location: "Post 10" },
+      { start: 202, end: 241, location: "Post 10#Slut" },
+      { start: 241, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "63": {
     name: "63",
-    extendedName: "63",
+    extendedName: "63 (O: 315)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 9, location: "Start#Post 1" },
+      { start: 3, end: 4, location: "Start#Post 1/3" },
+      { start: 5, end: 6, location: "Post 1/3" },
+      { start: 6, end: 9, location: "Post 1/3#Post 1" },
       { start: 10, end: 11, location: "Post 1" },
       { start: 12, end: 22, location: "Post 1#Post 2" },
       { start: 22, end: 31, location: "Post 2" },
@@ -3539,16 +4047,20 @@ TeamTracks = {
       { start: 180, end: 188, location: "Post 9" },
       { start: 188, end: 200, location: "Post 9#Post 10" },
       { start: 200, end: 211, location: "Post 10" },
+      { start: 212, end: 240, location: "Post 10#Slut" },
+      { start: 240, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "64": {
     name: "64",
-    extendedName: "64",
+    extendedName: "64 (O: 253)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 3, end: 14, location: "Start#Post 1" },
+      { start: 3, end: 5, location: "Start#Post 1/3" },
+      { start: 5, end: 6, location: "Post 1/3" },
+      { start: 6, end: 14, location: "Post 1/3#Post 1" },
       { start: 14, end: 15, location: "Post 1" },
       { start: 15, end: 31, location: "Post 1#Post 2" },
       { start: 31, end: 38, location: "Post 2" },
@@ -3568,6 +4080,8 @@ TeamTracks = {
       { start: 199, end: 200, location: "Post 5" },
       { start: 200, end: 202, location: "Post 5#Post 11" },
       { start: 202, end: 203, location: "Post 11" },
+      { start: 203, end: 241, location: "Post 11#Slut" },
+      { start: 241, end: 244, location: "Slut" },
     ],
     scores: {
       "Start": { start:10, end:10 },
@@ -3587,10 +4101,12 @@ TeamTracks = {
   },
   "65": {
     name: "65",
-    extendedName: "65",
+    extendedName: "65 (O: 258)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 2, end: 10, location: "Start#Post 1" },
+      { start: 2, end: 7, location: "Start#Post 2/3" },
+      { start: 8, end: 9, location: "Post 2/3" },
+      { start: 9, end: 10, location: "Post 2/3#Post 1" },
       { start: 10, end: 12, location: "Post 1" },
       { start: 12, end: 23, location: "Post 1#Post 2" },
       { start: 23, end: 35, location: "Post 2" },
@@ -3610,13 +4126,15 @@ TeamTracks = {
       { start: 181, end: 189, location: "Post 10" },
       { start: 189, end: 201, location: "Post 10#Post 11" },
       { start: 201, end: 202, location: "Post 11" },
+      { start: 202, end: 240, location: "Post 11#Slut" },
+      { start: 241, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "66": {
     name: "66",
-    extendedName: "66",
+    extendedName: "66 (O: 348)",
     times: [
       { start: 0, end: 1, location: "Start" },
       { start: 2, end: 8, location: "Start#Post 1" },
@@ -3645,16 +4163,20 @@ TeamTracks = {
       { start: 187, end: 194, location: "Post 10" },
       { start: 194, end: 205, location: "Post 10#Post 11" },
       { start: 205, end: 206, location: "Post 11" },
+      { start: 206, end: 239, location: "Post 11#Slut" },
+      { start: 239, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "67": {
     name: "67",
-    extendedName: "67",
+    extendedName: "67 (O: 140)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 2, end: 10, location: "Start#Post 1" },
+      { start: 2, end: 4, location: "Start#Post 1/3" },
+      { start: 4, end: 5, location: "Post 1/3" },
+      { start: 5, end: 10, location: "Post 1/3#Post 1" },
       { start: 10, end: 12, location: "Post 1" },
       { start: 12, end: 25, location: "Post 1#Post 2" },
       { start: 25, end: 34, location: "Post 2" },
@@ -3670,16 +4192,22 @@ TeamTracks = {
       { start: 168, end: 178, location: "Post 9" },
       { start: 178, end: 191, location: "Post 9#Post 10" },
       { start: 191, end: 203, location: "Post 10" },
+      { start: 203, end: 233, location: "Post 10#Slut" },
+      { start: 233, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "68": {
     name: "68",
-    extendedName: "68",
+    extendedName: "68 (O: 215)",
     times: [
       { start: 0, end: 2, location: "Start" },
-      { start: 2, end: 12, location: "Start#Post 1" },
+      { start: 2, end: 5, location: "Start#Post 1/3" },
+      { start: 5, end: 6, location: "Post 1/3" },
+      { start: 6, end: 9, location: "Post 1/3#Post 2/3" },
+      { start: 10, end: 11, location: "Post 2/3" },
+      { start: 11, end: 12, location: "Post 2/3#Post 1" },
       { start: 12, end: 16, location: "Post 1" },
       { start: 17, end: 26, location: "Post 1#Post 2" },
       { start: 26, end: 34, location: "Post 2" },
@@ -3695,16 +4223,22 @@ TeamTracks = {
       { start: 165, end: 178, location: "Post 9" },
       { start: 178, end: 194, location: "Post 9#Post 10" },
       { start: 195, end: 205, location: "Post 10" },
+      { start: 205, end: 240, location: "Post 10#Slut" },
+      { start: 240, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "69": {
     name: "69",
-    extendedName: "69",
+    extendedName: "69 (O: 379)",
     times: [
       { start: 0, end: 1, location: "Start" },
-      { start: 1, end: 8, location: "Start#Post 1" },
+      { start: 1, end: 2, location: "Start#Post 1/3" },
+      { start: 3, end: 4, location: "Post 1/3" },
+      { start: 4, end: 7, location: "Post 1/3#Post 2/3" },
+      { start: 7, end: 8, location: "Post 2/3" },
+      { start: 8, end: 8, location: "Post 2/3#Post 1" },
       { start: 8, end: 9, location: "Post 1" },
       { start: 10, end: 19, location: "Post 1#Post 2" },
       { start: 19, end: 29, location: "Post 2" },
@@ -3730,13 +4264,15 @@ TeamTracks = {
       { start: 190, end: 195, location: "Post 10" },
       { start: 195, end: 204, location: "Post 10#Post 11" },
       { start: 204, end: 205, location: "Post 11" },
+      { start: 206, end: 240, location: "Post 11#Slut" },
+      { start: 240, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "70": {
     name: "70",
-    extendedName: "70 (PIGE)",
+    extendedName: "70 (P1: 250)",
     times: [
       { start: 0, end: 2, location: "Start" },
       { start: 2, end: 7, location: "Start#Post 1" },
@@ -3761,16 +4297,22 @@ TeamTracks = {
       { start: 174, end: 179, location: "Post 9" },
       { start: 179, end: 191, location: "Post 9#Post 10" },
       { start: 191, end: 205, location: "Post 10" },
+      { start: 205, end: 220, location: "Post 10#Slut" },
+      { start: 220, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "71": {
     name: "71",
-    extendedName: "71",
+    extendedName: "71 (P2: 223)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 20, location: "Start#Post 1" },
+      { start: 3, end: 12, location: "Start#Post 1/3" },
+      { start: 12, end: 13, location: "Post 1/3" },
+      { start: 13, end: 16, location: "Post 1/3#Post 2/3" },
+      { start: 16, end: 17, location: "Post 2/3" },
+      { start: 17, end: 20, location: "Post 2/3#Post 1" },
       { start: 20, end: 22, location: "Post 1" },
       { start: 23, end: 34, location: "Post 1#Post 2" },
       { start: 34, end: 40, location: "Post 2" },
@@ -3786,18 +4328,24 @@ TeamTracks = {
       { start: 169, end: 178, location: "Post 9" },
       { start: 178, end: 193, location: "Post 9#Post 10" },
       { start: 194, end: 207, location: "Post 10" },
+      { start: 208, end: 235, location: "Post 10#Slut" },
+      { start: 235, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "72": {
     name: "72",
-    extendedName: "72",
+    extendedName: "72 (P: 114)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 14, location: "Start#Post 1" },
+      { start: 3, end: 5, location: "Start#Post 1/3" },
+      { start: 5, end: 6, location: "Post 1/3" },
+      { start: 6, end: 14, location: "Post 1/3#Post 1" },
       { start: 14, end: 17, location: "Post 1" },
-      { start: 17, end: 35, location: "Post 1#Post 2" },
+      { start: 17, end: 19, location: "Post 1#Post 2/3" },
+      { start: 19, end: 20, location: "Post 2/3" },
+      { start: 20, end: 35, location: "Post 2/3#Post 2" },
       { start: 35, end: 41, location: "Post 2" },
       { start: 41, end: 73, location: "Post 2#Post 3" },
       { start: 73, end: 75, location: "Post 3" },
@@ -3811,16 +4359,22 @@ TeamTracks = {
       { start: 197, end: 198, location: "Post 5" },
       { start: 198, end: 200, location: "Post 5#Post 11" },
       { start: 200, end: 201, location: "Post 11" },
+      { start: 201, end: 233, location: "Post 11#Slut" },
+      { start: 233, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "73": {
     name: "73",
-    extendedName: "73",
+    extendedName: "73 (P: 156)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 17, location: "Start#Post 1" },
+      { start: 3, end: 5, location: "Start#Post 1/3" },
+      { start: 5, end: 6, location: "Post 1/3" },
+      { start: 7, end: 13, location: "Post 1/3#Post 2/3" },
+      { start: 13, end: 14, location: "Post 2/3" },
+      { start: 14, end: 17, location: "Post 2/3#Post 1" },
       { start: 17, end: 20, location: "Post 1" },
       { start: 20, end: 34, location: "Post 1#Post 2" },
       { start: 34, end: 44, location: "Post 2" },
@@ -3836,16 +4390,20 @@ TeamTracks = {
       { start: 168, end: 184, location: "Post 9" },
       { start: 184, end: 199, location: "Post 9#Post 10" },
       { start: 199, end: 209, location: "Post 10" },
+      { start: 210, end: 242, location: "Post 10#Slut" },
+      { start: 243, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "74": {
     name: "74",
-    extendedName: "74",
+    extendedName: "74 (P: 131)",
     times: [
       { start: 0, end: 3, location: "Start" },
-      { start: 3, end: 16, location: "Start#Post 1" },
+      { start: 3, end: 6, location: "Start#Post 1/3" },
+      { start: 7, end: 8, location: "Post 1/3" },
+      { start: 8, end: 16, location: "Post 1/3#Post 1" },
       { start: 17, end: 19, location: "Post 1" },
       { start: 19, end: 40, location: "Post 1#Post 2" },
       { start: 40, end: 56, location: "Post 2" },
@@ -3857,13 +4415,15 @@ TeamTracks = {
       { start: 166, end: 182, location: "Post 9" },
       { start: 183, end: 198, location: "Post 9#Post 10" },
       { start: 199, end: 213, location: "Post 10" },
+      { start: 213, end: 238, location: "Post 10#Slut" },
+      { start: 238, end: 244, location: "Slut" },
     ],
     scores: {
     }
   },
   "75": {
     name: "75",
-    extendedName: "75",
+    extendedName: "75 (P2: 173)",
     times: [
       { start: 0, end: 2, location: "Start" },
       { start: 3, end: 10, location: "Start#Post 1" },
@@ -3884,6 +4444,8 @@ TeamTracks = {
       { start: 174, end: 179, location: "Post 9" },
       { start: 179, end: 192, location: "Post 9#Post 10" },
       { start: 192, end: 201, location: "Post 10" },
+      { start: 201, end: 237, location: "Post 10#Slut" },
+      { start: 237, end: 244, location: "Slut" },
     ],
     scores: {
     }

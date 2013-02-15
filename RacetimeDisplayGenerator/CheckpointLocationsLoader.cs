@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using SharpKml.Engine;
+using RacetimeDisplayGenerator.Registrations;
 using SharpKml.Dom;
+using SharpKml.Engine;
+
 
 namespace RacetimeDisplayGenerator
 {
@@ -34,10 +34,14 @@ namespace RacetimeDisplayGenerator
 
     private void FindCheckpoints(Placemark p, List<CheckpointLocation> locations)
     {
+      Point point = p.Flatten().OfType<Point>().FirstOrDefault();
+      if (point == null)
+        return;
+
       CheckpointLocation location = new CheckpointLocation
       {
         Name = p.Name,
-        Location = p.Flatten().OfType<Point>().First().Coordinate
+        Location = point.Coordinate
       };
       locations.Add(location);
     }

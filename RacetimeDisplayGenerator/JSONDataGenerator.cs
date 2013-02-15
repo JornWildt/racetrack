@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
-using System;
 using System.Text;
-using System.Globalization;
+using RacetimeDisplayGenerator.Registrations;
 
 
 namespace RacetimeDisplayGenerator
@@ -96,9 +96,9 @@ namespace RacetimeDisplayGenerator
       foreach (string teamName in teams)
       {
         TeamRegistration team = data.Teams.FirstOrDefault(t => t.Name == teamName);
-        string extendedTeamName = teamName;
-        if (team != null && !string.IsNullOrEmpty(team.Comment))
-          extendedTeamName += " (" + team.Comment + ")";
+        
+        string extendedTeamName = CreatedExtendedTeamName(teamName, team);
+
         w.WriteLine("  \"{0}\": {{", teamName);
         w.WriteLine("    name: \"{0}\",", teamName);
         w.WriteLine("    extendedName: \"{0}\",", extendedTeamName);
@@ -139,6 +139,18 @@ namespace RacetimeDisplayGenerator
           w.WriteLine("");
       }
       w.WriteLine("}");
+    }
+
+    
+    private string CreatedExtendedTeamName(string teamName, TeamRegistration team)
+    {
+      if (team == null)
+        return teamName;
+      if (!string.IsNullOrEmpty(team.Position) && team.TotalScore != null)
+        return string.Format("{0} ({1}: {2})", teamName, team.Position, team.TotalScore);
+      else if (team.TotalScore != null)
+        return string.Format("{0} ({1})", teamName, team.TotalScore);
+      return teamName;
     }
   }
 }

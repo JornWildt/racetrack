@@ -1,7 +1,7 @@
 ﻿using SharpKml.Base;
 
 
-namespace RacetimeDisplayGenerator
+namespace RacetimeDisplayGenerator.Registrations
 {
   public class CheckpointLocation
   {

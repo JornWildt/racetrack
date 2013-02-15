@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace RacetimeDisplayGenerator
+namespace RacetimeDisplayGenerator.Registrations
 {
   public class CheckpointTimeRegistration
   {

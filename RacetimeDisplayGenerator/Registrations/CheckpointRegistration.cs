@@ -1,5 +1,7 @@
 ﻿using SharpKml.Base;
-namespace RacetimeDisplayGenerator
+
+
+namespace RacetimeDisplayGenerator.Registrations
 {
   public enum CheckpointType { Race, Intermediate }
 

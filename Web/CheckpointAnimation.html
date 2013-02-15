@@ -13,16 +13,16 @@
       <div id="buttons">
         <button onclick="OnBackward()" title="Hurtigt baglæns">&lt;&lt;</button>
         <button onclick="OnTogglePauseClicked()" id="pauseButton">Start</button>
-        <button onclick="OnForward()" title="Hurtigt fremad"">&gt;&gt;</button><br />
-        <a href="#" onclick="OnReset()">Genstart</a>
+        <button onclick="OnReset()">Genstart</button>
+        <button onclick="OnForward()" title="Hurtigt fremad"">&gt;&gt;</button>
       </div>
       <div class="selector-row">
-        Fremhæv sjak A (gul): <select id="teamSelector0" onchange="OnTeamSelectorChanged(this)"></select>
+        Fremhæv sjak A (<span class="color0">gul</span>): <select id="teamSelector0" onchange="OnTeamSelectorChanged(this)"></select>
         <span onclick="OnShowTeamHelp()" class="help">?</span>
         <span>point: </span><span id="teamScore0">0</span>
       </div>
       <div class="selector-row">
-        Fremhæv sjak B (blå): <select id="teamSelector1" onchange="OnTeamSelectorChanged(this)"></select>
+        Fremhæv sjak B (<span class="color1">blå</span>): <select id="teamSelector1" onchange="OnTeamSelectorChanged(this)"></select>
         <span onclick="OnShowTeamHelp()" class="help">?</span>
         <span>point: </span><span id="teamScore1">0</span>
       </div>
