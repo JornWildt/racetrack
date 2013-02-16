@@ -36,42 +36,49 @@ select, button, body
   border-bottom: 2px solid black;
 }
 
+#infolink-panel
+{
+  float: right;
+  text-align: right;
+  margin-right: 10px;
+}
+
+#aboutlink
+{
+  font-size: 10pt;
+}
+
+#teams-panel
+{
+  float: left;
+}
+
+#player-panel
+{
+  float: left;
+  margin: 0 0 0 50px;
+  text-align: center;
+}
+
+#player-panel a
+{
+  font-size: 10pt;
+}
+
 #clockpanel
 {
-  position: absolute;
-  z-index: 10;
+  xposition: absolute;
+  xz-index: 10;
   color: Red;
   font-weight: bold;
   font-size: 24px;
   font-family: ‘Courier New’, Courier, monospace;
-  left: 50%;
-  top: 3px;
-  width: 280px;
-  height: 25px;
-  margin: 0 0 0 -140px;
+  xleft: 50%;
+  xtop: 3px;
+  xwidth: 280px;
+  xheight: 25px;
+  xmargin: 0 0 0 -140px;
   text-align: center;
-}
-
-#infolink
-{
-  float: right;
-  margin-right: 10px;
-}
-
-#buttons
-{
-  position: absolute;
-  height: 35px;
-  width: 300px;
-  margin: 0 0 0 -150px;
-  left: 50%;
-  top: 30px;
-  text-align: center;
-}
-
-#buttons a
-{
-  font-size: 10pt;
 }
 
 .color0, .color1

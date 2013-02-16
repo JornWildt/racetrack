@@ -123,7 +123,8 @@ namespace RacetimeDisplayGenerator
         w.WriteLine("    scores: {");
         if (data.TeamTeamScore.ContainsKey(teamName))
         {
-          foreach (TeamScoreRegistration reg in data.TeamTeamScore[teamName])
+          var scoresByCheckpoint = data.TeamTeamScore[teamName].OrderBy(s => data.CheckpointRegistration[s.Checkpoint].Position);
+          foreach (TeamScoreRegistration reg in scoresByCheckpoint)
           {
             w.WriteLine("      \"{0}\": {{ start:{1}, end:{2} }},",
               reg.Checkpoint,
@@ -147,9 +148,9 @@ namespace RacetimeDisplayGenerator
       if (team == null)
         return teamName;
       if (!string.IsNullOrEmpty(team.Position) && team.TotalScore != null)
-        return string.Format("{0} ({1}: {2})", teamName, team.Position, team.TotalScore);
+        return string.Format("Sjak {0} (nr. {1}, {2}, {3})", teamName, team.TotalPosition, team.Position, team.TotalScore);
       else if (team.TotalScore != null)
-        return string.Format("{0} ({1})", teamName, team.TotalScore);
+        return string.Format("Sjak {0} ({1})", teamName, team.TotalScore);
       return teamName;
     }
   }

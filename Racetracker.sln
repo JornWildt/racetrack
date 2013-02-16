@@ -5,10 +5,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RacetimeDisplayGenerator", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{FFEDE28A-E78F-474D-BC1F-1B9FC0610F31}"
 	ProjectSection(SolutionItems) = preProject
+		Web\About.html = Web\About.html
 		Web\CheckpointAnimation.css = Web\CheckpointAnimation.css
 		Web\CheckpointAnimation.html = Web\CheckpointAnimation.html
 		Web\CheckpointAnimation.js = Web\CheckpointAnimation.js
 		Web\Introduction.html = Web\Introduction.html
+		README.md = README.md
 		Web\TeamHelp.html = Web\TeamHelp.html
 	EndProjectSection
 EndProject

@@ -9,26 +9,31 @@
   </head>
   <body onload="Initialize()">
     <div id="headerpanel">
-      <div id="infolink"><a href="http://www.alligator.dk">Alligatorløbet 2013</a></div>
-      <div id="buttons">
+      <div id="infolink-panel">
+        <a href="http://www.alligator.dk">Alligatorløbet 2013</a><br /><br />
+        <a href="#" onclick="OnShowAbout()" id="aboutlink">Om denne side</a>
+      </div>
+      <div id="teams-panel">
+        <div class="selector-row">
+          Fremhæv sjak A (<span class="color0">gul</span>): <select id="teamSelector0" onchange="OnTeamSelectorChanged(this)"></select>
+          <span onclick="OnShowTeamHelp()" class="help">?</span>
+          <span>point: </span><span id="teamScore0">0</span>
+        </div>
+        <div class="selector-row">
+          Fremhæv sjak B (<span class="color1">blå</span>): <select id="teamSelector1" onchange="OnTeamSelectorChanged(this)"></select>
+          <span onclick="OnShowTeamHelp()" class="help">?</span>
+          <span>point: </span><span id="teamScore1">0</span>
+        </div>
+      </div>
+      <div id="player-panel">
+        <div id="clockpanel"><span id="time">00-00-0000 00:00:00</span></div>
         <button onclick="OnBackward()" title="Hurtigt baglæns">&lt;&lt;</button>
         <button onclick="OnTogglePauseClicked()" id="pauseButton">Start</button>
         <button onclick="OnReset()">Genstart</button>
         <button onclick="OnForward()" title="Hurtigt fremad"">&gt;&gt;</button>
       </div>
-      <div class="selector-row">
-        Fremhæv sjak A (<span class="color0">gul</span>): <select id="teamSelector0" onchange="OnTeamSelectorChanged(this)"></select>
-        <span onclick="OnShowTeamHelp()" class="help">?</span>
-        <span>point: </span><span id="teamScore0">0</span>
-      </div>
-      <div class="selector-row">
-        Fremhæv sjak B (<span class="color1">blå</span>): <select id="teamSelector1" onchange="OnTeamSelectorChanged(this)"></select>
-        <span onclick="OnShowTeamHelp()" class="help">?</span>
-        <span>point: </span><span id="teamScore1">0</span>
-      </div>
     </div>
     <div id="map_canvas"></div>
-    <div id="clockpanel"><span id="time">00-00-0000 00:00:00</span></div>
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization&key=AIzaSyBMOpV97gLT2lczMSw0MRPdOnu1WPUX__0"></script>
     <script type="text/javascript"src="CheckpointData.js"></script>

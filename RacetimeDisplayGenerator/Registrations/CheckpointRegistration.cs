@@ -12,6 +12,7 @@ namespace RacetimeDisplayGenerator.Registrations
 
     #region Derived values
 
+    public int Position { get; set; }
     public CheckpointType Type { get; set; }
     public Vector Location { get; set; }
 

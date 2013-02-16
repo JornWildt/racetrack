@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using RacetimeDisplayGenerator.Registrations;
 using SharpKml.Base;
 
@@ -128,8 +129,10 @@ namespace RacetimeDisplayGenerator
 
     private static void CalculateCheckpointLocations(IList<CheckpointRegistration> checkpoints, IList<CheckpointLocation> checkpointLocations, RaceData data)
     {
+      int i = 0;
       foreach (CheckpointRegistration reg in checkpoints)
       {
+        reg.Position = i++;
         data.CheckpointRegistration[reg.Checkpoint] = reg;
       }
 
@@ -224,10 +227,11 @@ namespace RacetimeDisplayGenerator
 
     private static void CalculateSummarizedScores(RaceData data)
     {
-      foreach (string team in data.TeamTeamScore.Keys)
+      foreach (string teamName in data.TeamTeamScore.Keys)
       {
         int score = 0;
-        foreach (TeamScoreRegistration reg in data.TeamTeamScore[team])
+        var scoresByCheckpoint = data.TeamTeamScore[teamName].OrderBy(s => data.CheckpointRegistration[s.Checkpoint].Position);
+        foreach (TeamScoreRegistration reg in scoresByCheckpoint)
         {
           score += reg.Fixed.Value;
           reg.Start = score;

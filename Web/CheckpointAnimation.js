@@ -39,7 +39,7 @@ BlueStarSmall = {
 
 
 TeamCount = 2;
-TeamNamesDefault = ["52", "64"];
+TeamNamesDefault = ["52", "56"];
 TeamNames = TeamNamesDefault;
 TeamMarkers = [null, null];
 TeamIcons = [GoldStar, BlueStar];
@@ -219,4 +219,8 @@ function OnReset() {
 
 function OnShowTeamHelp() {
   TINY.box.show({ url: 'TeamHelp.html', width: 500, height: 250 });
+}
+
+function OnShowAbout() {
+  TINY.box.show({ url: 'About.html', width: 500, height: 250 });
 }
