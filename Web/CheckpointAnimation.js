@@ -132,14 +132,28 @@ function UpdateDisplay() {
         var location = teamTimes[j].location;
         if (teamTimes[j].end < TimeFrame && teamScores.hasOwnProperty(location) && teamScores[location].end > TeamScore[i])
           teamScore = teamScores[location].end;
+
         if (teamTimes[j].start <= TimeFrame && TimeFrame <= teamTimes[j].end) {
           if (teamScores.hasOwnProperty(location) && teamScores[location].start > TeamScore[i])
             teamScore = teamScores[location].start;
-          if (location.indexOf("#") > 0)
+          if (location.indexOf("#") > 0) {
+            locations = location.split("#");
+            teamLocation0 = CheckpointLocations[locations[0]];
+            teamLocation1 = CheckpointLocations[locations[1]];
+
+            var interval = teamTimes[j].end - teamTimes[j].start;
+            var dist = TimeFrame - teamTimes[j].start;
+
+            var lat = teamLocation0.lat() + (teamLocation1.lat() - teamLocation0.lat()) * dist / interval;
+            var lng = teamLocation0.lng() + (teamLocation1.lng() - teamLocation0.lng()) * dist / interval;
+
+            teamLocation = new google.maps.LatLng(lat, lng);
             TeamMarkers[i].setIcon(TeamIconsSmall[i]);
-          else
+          }
+          else {
             TeamMarkers[i].setIcon(TeamIcons[i]);
-          teamLocation = CheckpointLocations[location];
+            teamLocation = CheckpointLocations[location];
+          }
           TeamMarkers[i].setPosition(teamLocation);
           break;
         }
