@@ -53,7 +53,7 @@ namespace RacetimeDisplayGenerator
     {
       bool firstHeatmap = true;
       w.WriteLine("CheckpointHeatMaps = [");
-      for (int d=0; d<data.EndTimeFrame; d += Configuration.OutputSampleTime.Minutes)
+      for (int d=0; d<data.EndTimeFrame; d += SamplingConfiguration.OutputSampleTime.Minutes)
       {
         if (!firstHeatmap)
           w.WriteLine(",");
@@ -109,13 +109,13 @@ namespace RacetimeDisplayGenerator
           if (prevReg != null)
           {
             w.WriteLine("      {{ start: {0}, end: {1}, location: \"{2}\" }},",
-              Configuration.ConvertInputTimeFrameToOutput(prevReg.EndTimeFrame.Value + 1),
-              Configuration.ConvertInputTimeFrameToOutput(reg.StartTimeFrame.Value - 1),
+              SamplingConfiguration.ConvertInputTimeFrameToOutput(prevReg.EndTimeFrame.Value + 1),
+              SamplingConfiguration.ConvertInputTimeFrameToOutput(reg.StartTimeFrame.Value - 1),
               prevReg.Checkpoint + "#" + reg.Checkpoint);
           }
           w.WriteLine("      {{ start: {0}, end: {1}, location: \"{2}\" }},",
-            Configuration.ConvertInputTimeFrameToOutput(reg.StartTimeFrame.Value), 
-            Configuration.ConvertInputTimeFrameToOutput(reg.EndTimeFrame.Value), 
+            SamplingConfiguration.ConvertInputTimeFrameToOutput(reg.StartTimeFrame.Value),
+            SamplingConfiguration.ConvertInputTimeFrameToOutput(reg.EndTimeFrame.Value), 
             reg.Checkpoint);
           prevReg = reg;
         }
@@ -147,8 +147,8 @@ namespace RacetimeDisplayGenerator
     {
       if (team == null)
         return teamName;
-      if (!string.IsNullOrEmpty(team.Position) && team.TotalScore != null)
-        return string.Format("Sjak {0} (nr. {1}, {2}, {3})", teamName, team.TotalPosition, team.Position, team.TotalScore);
+      if (!string.IsNullOrEmpty(team.Type) && team.TotalScore != null)
+        return string.Format("Sjak {0} (nr. {1}, {2}, {3})", teamName, team.TotalPosition, team.Type, team.TotalScore);
       else if (team.TotalScore != null)
         return string.Format("Sjak {0} ({1})", teamName, team.TotalScore);
       return teamName;

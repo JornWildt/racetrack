@@ -39,7 +39,7 @@ BlueStarSmall = {
 
 
 TeamCount = 2;
-TeamNamesDefault = ["52", "56"];
+TeamNamesDefault = ["1", "2"]; // Xxx
 TeamNames = TeamNamesDefault;
 TeamMarkers = [null, null];
 TeamIcons = [GoldStar, BlueStar];
@@ -57,7 +57,7 @@ function Initialize() {
     mapTypeId: google.maps.MapTypeId.HYBRID
   };
   map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-  var ctaLayer = new google.maps.KmlLayer("http://www.elfisk.dk/allitrack/Checkpoint_locations.3.kml");
+  var ctaLayer = new google.maps.KmlLayer("http://www.elfisk.dk/allitrack-2017-fredefup/Checkpoint_locations.kml");
   ctaLayer.setMap(map);
 
   HeatMap = new google.maps.visualization.HeatmapLayer({ maxIntensity: 40 });
@@ -80,7 +80,7 @@ function Initialize() {
     selector.value = TeamNames[i];
   }
 
-  window.setInterval(UpdateTimeFrame, 500);
+  window.setInterval(UpdateTimeFrame, 200);
 
   TINY.box.show({ url: 'Introduction.html', width: 500, height: 250 });
 
@@ -90,7 +90,7 @@ function Initialize() {
 
 function ClearScores() {
   for (var i = 0; i < TeamCount; ++i) {
-    document.getElementById("teamScore" + i).innerHTML = 0;
+    //document.getElementById("teamScore" + i).innerHTML = 0;
     TeamScore[i] = 0;
   }
 }
@@ -141,6 +141,11 @@ function UpdateDisplay() {
             teamLocation0 = CheckpointLocations[locations[0]];
             teamLocation1 = CheckpointLocations[locations[1]];
 
+            if (teamLocation0 == null)
+              window.alert("Unknown location: " + locations[0]);
+            if (teamLocation1 == null)
+              window.alert("Unknown location: " + locations[1]);
+
             var interval = teamTimes[j].end - teamTimes[j].start;
             var dist = TimeFrame - teamTimes[j].start;
 
@@ -163,7 +168,7 @@ function UpdateDisplay() {
         TeamMarkers[i].setMap(newMap);
       if (teamScore != null) {
         TeamScore[i] = teamScore;
-        document.getElementById("teamScore" + i).innerHTML = teamScore;
+        //document.getElementById("teamScore" + i).innerHTML = teamScore;
       }
     }
   }
@@ -197,8 +202,9 @@ function OnTeamSelectorChanged(selector) {
   var teamIndex = selector.id.substring(12);
   TeamScore[teamIndex] = 0;
   TeamMarkers[teamIndex].setMap(null);
-  document.getElementById("teamScore" + teamIndex).innerHTML = 0;
+  //document.getElementById("teamScore" + teamIndex).innerHTML = 0;
   TeamNames[teamIndex] = selector.value;
+  alert(select.value);
 }
 
 function OnForward() {

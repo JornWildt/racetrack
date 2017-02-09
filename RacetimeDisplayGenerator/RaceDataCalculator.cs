@@ -72,9 +72,12 @@ namespace RacetimeDisplayGenerator
         UpdateTeamAndTimeIntervalIndex(data.TeamAndTimeInterval, reg);
       }
 
-      foreach (TeamScoreRegistration reg in teamScores)
+      if (teamScores != null)
       {
-        UpdateTeamAndCheckpointTeamScoreIndex(data.TeamTeamScore, reg);
+        foreach (TeamScoreRegistration reg in teamScores)
+        {
+          UpdateTeamAndCheckpointTeamScoreIndex(data.TeamTeamScore, reg);
+        }
       }
 
       CalculateSummarizedScores(data);
@@ -92,9 +95,9 @@ namespace RacetimeDisplayGenerator
       foreach (CheckpointTimeRegistration reg in checkpointTimes)
       {
         if (reg.Start == null && reg.End != null)
-          reg.Start = reg.End - Configuration.OutputSampleTime;
+          reg.Start = reg.End - SamplingConfiguration.OutputSampleTime;
         else if (reg.End == null && reg.Start != null)
-          reg.End = reg.Start + Configuration.OutputSampleTime;
+          reg.End = reg.Start + SamplingConfiguration.OutputSampleTime;
 
         if (start == null || reg.Start != null && reg.Start < start)
           start = reg.Start;
@@ -104,7 +107,7 @@ namespace RacetimeDisplayGenerator
         reg.Team = reg.Team.Trim();
       }
 
-      data.StartTime = Trim(start.Value, Configuration.OutputSampleTime);
+      data.StartTime = Trim(start.Value, SamplingConfiguration.OutputSampleTime);
       data.EndTime = end.Value;
       data.EndTimeFrame = data.ConvertDateTimeToTimeFrame(data.EndTime);
 
@@ -117,12 +120,15 @@ namespace RacetimeDisplayGenerator
           reg.EndTimeFrame = data.ConvertDateTimeToTimeFrame(reg.End.Value);
       }
 
-      foreach (TeamScoreRegistration reg in teamScores)
+      if (teamScores != null)
       {
-        if (reg.Fixed == null)
-          reg.Fixed = 0;
-        if (reg.Work == null)
-          reg.Work = 0;
+        foreach (TeamScoreRegistration reg in teamScores)
+        {
+          if (reg.Fixed == null)
+            reg.Fixed = 0;
+          if (reg.Work == null)
+            reg.Work = 0;
+        }
       }
     }
 
@@ -155,7 +161,7 @@ namespace RacetimeDisplayGenerator
 
         for (int d1 = reg.StartTimeFrame.Value; d1 <= reg.EndTimeFrame.Value; ++d1)
         {
-          int d = Configuration.TrimTimeFrameToOutputSample(d1);
+          int d = SamplingConfiguration.TrimTimeFrameToOutputSample(d1);
           if (!checkpointMinutes.ContainsKey(d))
             checkpointMinutes[d] = new List<CheckpointTimeRegistration>();
 
@@ -172,7 +178,7 @@ namespace RacetimeDisplayGenerator
       {
         for (int d1=reg.StartTimeFrame.Value; d1<reg.EndTimeFrame.Value; ++d1)
         {
-          int d = Configuration.TrimTimeFrameToOutputSample(d1);
+          int d = SamplingConfiguration.TrimTimeFrameToOutputSample(d1);
           if (!index.ContainsKey(d))
             index[d] = new Dictionary<string, List<CheckpointTimeRegistration>>();
 
@@ -197,7 +203,7 @@ namespace RacetimeDisplayGenerator
 
         for (int d1 = reg.StartTimeFrame.Value; d1 <= reg.EndTimeFrame.Value; ++d1)
         {
-          int d = Configuration.TrimTimeFrameToOutputSample(d1);
+          int d = SamplingConfiguration.TrimTimeFrameToOutputSample(d1);
           teamMinutes[d] = reg;
         }
       }

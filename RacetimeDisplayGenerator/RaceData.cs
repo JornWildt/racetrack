@@ -62,13 +62,13 @@ namespace RacetimeDisplayGenerator
     
     public int ConvertDateTimeToTimeFrame(DateTime d)
     {
-      return (int)(d - StartTime).TotalMinutes / Configuration.InputSampleTime.Minutes;
+      return (int)(d - StartTime).TotalMinutes / SamplingConfiguration.InputSampleTime.Minutes;
     }
 
 
     public DateTime ConvertTimeFrameToDateTime(int d)
     {
-      return StartTime + TimeSpan.FromMinutes(d * Configuration.InputSampleTime.Minutes);
+      return StartTime + TimeSpan.FromMinutes(d * SamplingConfiguration.InputSampleTime.Minutes);
     }
   }
 }

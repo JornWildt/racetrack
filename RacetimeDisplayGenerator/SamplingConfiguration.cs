@@ -3,7 +3,7 @@
 
 namespace RacetimeDisplayGenerator
 {
-  public class Configuration
+  public class SamplingConfiguration
   {
     public static readonly TimeSpan InputSampleTime = TimeSpan.FromMinutes(1);
     public static readonly TimeSpan OutputSampleTime = TimeSpan.FromMinutes(5);

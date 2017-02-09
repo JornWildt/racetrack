@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Alligatorløb 2013 minut for minut</title>
+    <title>Alligatorløb 2017 minut for minut</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="CheckpointAnimation.css" />
     <link rel="stylesheet" href="tinybox2/style.css" type="text/css" />
@@ -10,19 +10,21 @@
   <body onload="Initialize()">
     <div id="headerpanel">
       <div id="infolink-panel">
-        <a href="http://www.alligator.dk">Alligatorløbet 2013</a><br /><br />
+        <a href="http://www.alligator.dk">Alligatorløbet 2017</a><br /><br />
         <a href="#" onclick="OnShowAbout()" id="aboutlink">Om denne side</a>
       </div>
       <div id="teams-panel">
         <div class="selector-row">
           Fremhæv sjak A (<span class="color0">gul</span>): <select id="teamSelector0" onchange="OnTeamSelectorChanged(this)"></select>
-          <span onclick="OnShowTeamHelp()" class="help">?</span>
-          <span>point: </span><span id="teamScore0">0</span>
+          <!--<span onclick="OnShowTeamHelp()" class="help">?</span>-->
+          <!--<span>point: </span><span id="teamScore0">0</span>-->
+          <span></span><span id="teamScore0"></span>
         </div>
         <div class="selector-row">
           Fremhæv sjak B (<span class="color1">blå</span>): <select id="teamSelector1" onchange="OnTeamSelectorChanged(this)"></select>
-          <span onclick="OnShowTeamHelp()" class="help">?</span>
-          <span>point: </span><span id="teamScore1">0</span>
+          <!--<span onclick="OnShowTeamHelp()" class="help">?</span>-->
+          <!--<span>point: </span><span id="teamScore1">0</span>-->
+          <span></span><span id="teamScore1"></span>
         </div>
       </div>
       <div id="player-panel">
