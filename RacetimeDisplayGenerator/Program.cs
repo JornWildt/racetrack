@@ -13,8 +13,6 @@ namespace RacetimeDisplayGenerator
 {
   class Program
   {
-    static readonly DateTime RaceStartTime = new DateTime(2016, 2, 6, 18, 00, 00);
-
     const string CheckpointsFilename = "Checkpoints.csv";
 
     const string CheckpointTimesFilename = "Checkpoint_times.csv";
@@ -84,7 +82,7 @@ namespace RacetimeDisplayGenerator
       timestampReader.Configuration.WillThrowOnMissingField = false;
       timestampReader.Configuration.CultureInfo = CultureInfo.GetCultureInfo("en-US");
       List<CheckpointTimestamp> timestamps = timestampReader.GetRecords<CheckpointTimestamp>()
-                                                            .Where(c => c.Time != null && c.Time.Value > RaceStartTime)
+                                                            .Where(c => c.Time != null && c.Time.Value > cfg.StartTime)
                                                             .ToList();
 
       List<CheckpointTimeRegistration> checkpointTimes = ConvertTimestamps(timestamps);
