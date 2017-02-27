@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RacetimeDisplayGenerator", "RacetimeDisplayGenerator\RacetimeDisplayGenerator.csproj", "{67EA39D3-2B64-4000-9CC4-59C0385D053F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{FFEDE28A-E78F-474D-BC1F-1B9FC0610F31}"
@@ -12,6 +14,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{FFEDE28A-E78
 		Web\Introduction.html = Web\Introduction.html
 		README.md = README.md
 		Web\TeamHelp.html = Web\TeamHelp.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{667BAEDE-E4F5-42F8-993C-02A93EBABDDD}"
+	ProjectSection(SolutionItems) = preProject
+		HOWTO.md = HOWTO.md
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
